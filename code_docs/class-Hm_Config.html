@@ -511,6 +511,11 @@
 						lib					</a>
 
 						</li>
+				<li>
+					<a href="package-modules.ldap.contacts.output.html">
+						output					</a>
+
+						</li>
 							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.local.html">
@@ -872,7 +877,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.config.html">config</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Config.html#9-76" title="Go to source code">config.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Config.html#9-98" title="Go to source code">config.php</a>
 		<br>
 	</div>
 
@@ -892,7 +897,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Hm_Config.html#20-25" title="Go to source code">load</a>( <span>string <var>$source</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_Config.html#23-28" title="Go to source code">load</a>( <span>string <var>$source</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>This method must be overriden by classes extending this one</p>
@@ -929,7 +934,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Hm_Config.html#27-33" title="Go to source code">dump</a>( )</code>
+		<code><a href="source-class-Hm_Config.html#30-36" title="Go to source code">dump</a>( )</code>
 
 		<div class="description short">
 			<p>Return all config values</p>
@@ -963,7 +968,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Hm_Config.html#35-43" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Hm_Config.html#38-46" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Set a config value</p>
@@ -1000,7 +1005,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_Config.html#45-53" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Config.html#48-56" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return a config value if it exists</p>
@@ -1041,7 +1046,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_tz">#</a>
-		<code><a href="source-class-Hm_Config.html#55-61" title="Go to source code">set_tz</a>( )</code>
+		<code><a href="source-class-Hm_Config.html#58-64" title="Go to source code">set_tz</a>( )</code>
 
 		<div class="description short">
 			<p>Set the timezone</p>
@@ -1071,17 +1076,58 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_shuffle">#</a>
-		<code><a href="source-class-Hm_Config.html#63-75" title="Go to source code">shuffle</a>( )</code>
+		<code><a href="source-class-Hm_Config.html#66-78" title="Go to source code">shuffle</a>( )</code>
 
 		<div class="description short">
-			<p>shuffle the config value order</p>
+			<p>Shuffle the config value order</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>shuffle the config value order</p>
+			<p>Shuffle the config value order</p>
 
 
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="decode" id="_decode">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_decode">#</a>
+		<code><a href="source-class-Hm_Config.html#80-97" title="Go to source code">decode</a>( <span>string <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Decode user settings with json_decode or unserialize depending
+on the format</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Decode user settings with json_decode or unserialize depending
+on the format</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>serialized or json encoded string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array, or false on failure
+				</div>
 
 
 
@@ -1151,6 +1197,31 @@
 			<div>
 				<a href="#$config" class="anchor">#</a>
 				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="decrypt_failed" id="$decrypt_failed">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Config.html#21" title="Go to source code"><var>$decrypt_failed</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$decrypt_failed" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
 			</div>
 		</td>
 	</tr>

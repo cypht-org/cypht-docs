@@ -511,6 +511,11 @@
 						lib					</a>
 
 						</li>
+				<li>
+					<a href="package-modules.ldap.contacts.output.html">
+						output					</a>
+
+						</li>
 							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.local.html">
@@ -880,7 +885,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.config.html">config</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_User_Config_File.html#78-147" title="Go to source code">config.php</a>
+			<b>Located at</b> <a href="source-class-Hm_User_Config_File.html#100-172" title="Go to source code">config.php</a>
 		<br>
 	</div>
 
@@ -900,7 +905,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_User_Config_File.html#86-93" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_File.html#108-115" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
 
 		<div class="description short">
 			<p>Load site configuration</p>
@@ -935,7 +940,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_path">#</a>
-		<code><a href="source-class-Hm_User_Config_File.html#95-103" title="Go to source code">get_path</a>( <span>string <var>$username</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_File.html#117-125" title="Go to source code">get_path</a>( <span>string <var>$username</var></span> )</code>
 
 		<div class="description short">
 			<p>Get the filesystem path for a user settings file</p>
@@ -974,7 +979,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Hm_User_Config_File.html#105-123" title="Go to source code">load</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_File.html#127-148" title="Go to source code">load</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Load the settings for a user</p>
@@ -1011,7 +1016,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reload">#</a>
-		<code><a href="source-class-Hm_User_Config_File.html#125-133" title="Go to source code">reload</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_File.html#150-158" title="Go to source code">reload</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Reload from outside input</p>
@@ -1046,7 +1051,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Hm_User_Config_File.html#135-146" title="Go to source code">save</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_File.html#160-171" title="Go to source code">save</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Save user settings to a file</p>
@@ -1077,6 +1082,7 @@
 	<caption>Methods inherited from <a href="class-Hm_Config.html#methods">Hm_Config</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-Hm_Config.html#_decode">decode()</a>, 
 			<a href="class-Hm_Config.html#_dump">dump()</a>, 
 			<a href="class-Hm_Config.html#_get">get()</a>, 
 			<a href="class-Hm_Config.html#_set">set()</a>, 
@@ -1105,7 +1111,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_User_Config_File.html#84" title="Go to source code"><var>$site_config</var></a>
+				<a href="source-class-Hm_User_Config_File.html#106" title="Go to source code"><var>$site_config</var></a>
 
 			<div class="description short">
 				
@@ -1130,6 +1136,7 @@
 	<tr>
 		<td><code>
 			<a href="class-Hm_Config.html#$config"><var>$config</var></a>, 
+			<a href="class-Hm_Config.html#$decrypt_failed"><var>$decrypt_failed</var></a>, 
 			<a href="class-Hm_Config.html#$source"><var>$source</var></a>
 		</code></td>
 	</tr>
