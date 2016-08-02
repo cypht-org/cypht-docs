@@ -870,6 +870,27 @@
 
 
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Hm_Auth.html"><span>Hm_Auth</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Hm_Auth_LDAP.html"><span>Hm_Auth_LDAP</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Hm_LDAP_Contacts</span></b>			
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -884,7 +905,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.ldap.html">ldap</a>\<a href="package-modules.ldap.contacts.html">contacts</a>\<a href="package-modules.ldap.contacts.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_LDAP_Contacts.html#11-138" title="Go to source code">ldap_contacts/hm-ldap-contacts.php</a>
+			<b>Located at</b> <a href="source-class-Hm_LDAP_Contacts.html#11-103" title="Go to source code">ldap_contacts/hm-ldap-contacts.php</a>
 		<br>
 	</div>
 
@@ -904,80 +925,27 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#20-27" title="Go to source code">__construct</a>( <span> <var>$config</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#16-23" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Assign site config</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Assign site config</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd>site config</dd>
+				</dl></div>
 
 
 
 
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="connect_details" id="_connect_details">
-
-		<td class="attributes"><code>
-			 private 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_connect_details">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#29-43" title="Go to source code">connect_details</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="connect" id="_connect">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#45-58" title="Go to source code">connect</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Hm_Auth.html#___construct">Hm_Auth::__construct()</a></code></div>
 
 		</div>
 		</div></td>
@@ -994,7 +962,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rename">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#60-62" title="Go to source code">rename</a>( <span> <var>$dn</var></span>, <span> <var>$new_dn</var></span>, <span> <var>$parent</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#25-27" title="Go to source code">rename</a>( <span> <var>$dn</var></span>, <span> <var>$new_dn</var></span>, <span> <var>$parent</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1024,7 +992,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_modify">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#64-66" title="Go to source code">modify</a>( <span> <var>$entry</var></span>, <span> <var>$dn</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#29-31" title="Go to source code">modify</a>( <span> <var>$entry</var></span>, <span> <var>$dn</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1054,7 +1022,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#68-70" title="Go to source code">add</a>( <span> <var>$entry</var></span>, <span> <var>$dn</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#33-35" title="Go to source code">add</a>( <span> <var>$entry</var></span>, <span> <var>$dn</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1084,7 +1052,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_delete">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#72-74" title="Go to source code">delete</a>( <span> <var>$dn</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#37-39" title="Go to source code">delete</a>( <span> <var>$dn</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1105,7 +1073,7 @@
 	<tr data-order="auth" id="_auth">
 
 		<td class="attributes"><code>
-			 private 
+			 protected 
 
 			
 			
@@ -1114,7 +1082,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_auth">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#76-86" title="Go to source code">auth</a>( )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#41-51" title="Go to source code">auth</a>( )</code>
 
 		<div class="description short">
 			
@@ -1128,6 +1096,8 @@
 
 
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Hm_Auth_LDAP.html#_auth">Hm_Auth_LDAP::auth()</a></code></div>
 
 		</div>
 		</div></td>
@@ -1144,7 +1114,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#88-120" title="Go to source code">parse</a>( <span> <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#53-85" title="Go to source code">parse</a>( <span> <var>$data</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1174,7 +1144,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_fetch">#</a>
-		<code><a href="source-class-Hm_LDAP_Contacts.html#122-137" title="Go to source code">fetch</a>( )</code>
+		<code><a href="source-class-Hm_LDAP_Contacts.html#87-102" title="Go to source code">fetch</a>( )</code>
 
 		<div class="description short">
 			
@@ -1194,96 +1164,54 @@
 	</tr>
 	</table>
 
-
-
-
-
-
-
-
-
-
-
-
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="config" id="$config">
-		<td class="attributes"><code>
-			private  
-			array
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Hm_Auth_LDAP.html#methods">Hm_Auth_LDAP</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Auth_LDAP.html#_check_credentials">check_credentials()</a>, 
+			<a href="class-Hm_Auth_LDAP.html#_connect">connect()</a>
 		</code></td>
-
-		<td class="name">
-				<a href="source-class-Hm_LDAP_Contacts.html#16" title="Go to source code"><var>$config</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$config" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
-			</div>
-		</td>
 	</tr>
-	<tr data-order="fh" id="$fh">
-		<td class="attributes"><code>
-			private  
-			
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Hm_Auth.html#methods">Hm_Auth</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Auth.html#_save_auth_detail">save_auth_detail()</a>
 		</code></td>
-
-		<td class="name">
-				<a href="source-class-Hm_LDAP_Contacts.html#17" title="Go to source code"><var>$fh</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$fh" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="source" id="$source">
-		<td class="attributes"><code>
-			private  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Hm_LDAP_Contacts.html#18" title="Go to source code"><var>$source</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$source" class="anchor">#</a>
-				<code><span class="php-quote">'ldap'</span></code>
-			</div>
-		</td>
 	</tr>
 	</table>
 
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Hm_Auth_LDAP.html#properties">Hm_Auth_LDAP</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Auth_LDAP.html#$config"><var>$config</var></a>, 
+			<a href="class-Hm_Auth_LDAP.html#$fh"><var>$fh</var></a>, 
+			<a href="class-Hm_Auth_LDAP.html#$source"><var>$source</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Hm_Auth.html#properties">Hm_Auth</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Auth.html#$internal_users"><var>$internal_users</var></a>, 
+			<a href="class-Hm_Auth.html#$site_config"><var>$site_config</var></a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

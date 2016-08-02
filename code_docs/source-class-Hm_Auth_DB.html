@@ -821,6 +821,7 @@
 				<li><a href="class-Hm_Auth.html">Hm_Auth</a></li>
 				<li><a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a></li>
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
+				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
 				<li><a href="class-Hm_Auth_None.html">Hm_Auth_None</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
 				<li><a href="class-Hm_Cal_Data.html">Hm_Cal_Data</a></li>
@@ -926,6 +927,7 @@
 				<li><a href="class-Hm_Handler_load_imap_servers_for_search.html">Hm_Handler_load_imap_servers_for_search</a></li>
 				<li><a href="class-Hm_Handler_load_imap_servers_from_config.html">Hm_Handler_load_imap_servers_from_config</a></li>
 				<li><a href="class-Hm_Handler_load_ldap_contacts.html">Hm_Handler_load_ldap_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_ldap_settings.html">Hm_Handler_load_ldap_settings</a></li>
 				<li><a href="class-Hm_Handler_load_local_contacts.html">Hm_Handler_load_local_contacts</a></li>
 				<li><a href="class-Hm_Handler_load_pop3_cache.html">Hm_Handler_load_pop3_cache</a></li>
 				<li><a href="class-Hm_Handler_load_pop3_folders.html">Hm_Handler_load_pop3_folders</a></li>
@@ -995,6 +997,7 @@
 				<li><a href="class-Hm_Handler_process_imap_source_update.html">Hm_Handler_process_imap_source_update</a></li>
 				<li><a href="class-Hm_Handler_process_inline_message_setting.html">Hm_Handler_process_inline_message_setting</a></li>
 				<li><a href="class-Hm_Handler_process_language_setting.html">Hm_Handler_process_language_setting</a></li>
+				<li><a href="class-Hm_Handler_process_ldap_auth_settings.html">Hm_Handler_process_ldap_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_ldap_fields.html">Hm_Handler_process_ldap_fields</a></li>
 				<li><a href="class-Hm_Handler_process_list_style_setting.html">Hm_Handler_process_list_style_setting</a></li>
 				<li><a href="class-Hm_Handler_process_nasa_connection.html">Hm_Handler_process_nasa_connection</a></li>
@@ -1197,6 +1200,7 @@
 				<li><a href="class-Hm_Output_js_data.html">Hm_Output_js_data</a></li>
 				<li><a href="class-Hm_Output_js_search_data.html">Hm_Output_js_search_data</a></li>
 				<li><a href="class-Hm_Output_language_setting.html">Hm_Output_language_setting</a></li>
+				<li><a href="class-Hm_Output_ldap_auth_settings.html">Hm_Output_ldap_auth_settings</a></li>
 				<li><a href="class-Hm_Output_ldap_contact_form_end.html">Hm_Output_ldap_contact_form_end</a></li>
 				<li><a href="class-Hm_Output_ldap_contact_form_start.html">Hm_Output_ldap_contact_form_start</a></li>
 				<li><a href="class-Hm_Output_ldap_form_car.html">Hm_Output_ldap_form_car</a></li>
@@ -1416,6 +1420,7 @@
 				<li><a href="function-is_email.html">is_email</a></li>
 				<li><a href="function-is_feed.html">is_feed</a></li>
 				<li><a href="function-lc_headers.html">lc_headers</a></li>
+				<li><a href="function-ldap_add_user_auth.html">ldap_add_user_auth</a></li>
 				<li><a href="function-ldap_config.html">ldap_config</a></li>
 				<li><a href="function-list_controls.html">list_controls</a></li>
 				<li><a href="function-list_sources.html">list_sources</a></li>
@@ -1825,7 +1830,78 @@
 </span><span id="308" class="l"><a href="#308">308: </a>        <span class="php-var">$session</span>-&gt;set(<span class="php-quote">'pop3_auth_server_settings'</span>, <span class="php-var">$this</span>-&gt;pop3_settings);
 </span><span id="309" class="l"><a href="#309">309: </a>    }
 </span><span id="310" class="l"><a href="#310">310: </a>}
-</span><span id="311" class="l"><a href="#311">311: </a></span></code></pre>
+</span><span id="311" class="l"><a href="#311">311: </a>
+</span><span id="312" class="l"><a href="#312">312: </a><span class="php-comment">/**
+</span></span><span id="313" class="l"><a href="#313">313: </a><span class="php-comment"> * Authenticate against an LDAP server
+</span></span><span id="314" class="l"><a href="#314">314: </a><span class="php-comment"> */</span>
+</span><span id="315" class="l"><a href="#315">315: </a><span class="php-keyword1">class</span> Hm_Auth_LDAP <span class="php-keyword1">extends</span> Hm_Auth {
+</span><span id="316" class="l"><a href="#316">316: </a>
+</span><span id="317" class="l"><a href="#317">317: </a>    <span class="php-keyword1">protected</span> <span class="php-var">$config</span> = <span class="php-keyword1">array</span>();
+</span><span id="318" class="l"><a href="#318">318: </a>    <span class="php-keyword1">protected</span> <span class="php-var">$fh</span>;
+</span><span id="319" class="l"><a href="#319">319: </a>    <span class="php-keyword1">protected</span> <span class="php-var">$source</span> = <span class="php-quote">'ldap'</span>;
+</span><span id="320" class="l"><a href="#320">320: </a>
+</span><span id="321" class="l"><a href="#321">321: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> connect_details() {
+</span><span id="322" class="l"><a href="#322">322: </a>        <span class="php-var">$prefix</span> = <span class="php-quote">'ldaps://'</span>;
+</span><span id="323" class="l"><a href="#323">323: </a>        <span class="php-var">$server</span> = <span class="php-quote">'localhost'</span>;
+</span><span id="324" class="l"><a href="#324">324: </a>        <span class="php-var">$port</span> = <span class="php-num">389</span>;
+</span><span id="325" class="l"><a href="#325">325: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'server'</span>, <span class="php-var">$this</span>-&gt;config)) {
+</span><span id="326" class="l"><a href="#326">326: </a>            <span class="php-var">$server</span> = <span class="php-var">$this</span>-&gt;config[<span class="php-quote">'server'</span>];
+</span><span id="327" class="l"><a href="#327">327: </a>        }
+</span><span id="328" class="l"><a href="#328">328: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'port'</span>, <span class="php-var">$this</span>-&gt;config)) {
+</span><span id="329" class="l"><a href="#329">329: </a>            <span class="php-var">$port</span> = <span class="php-var">$this</span>-&gt;config[<span class="php-quote">'port'</span>];
+</span><span id="330" class="l"><a href="#330">330: </a>        }
+</span><span id="331" class="l"><a href="#331">331: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'enable_tls'</span>, <span class="php-var">$this</span>-&gt;config) &amp;&amp; !<span class="php-var">$this</span>-&gt;config[<span class="php-quote">'enable_tls'</span>]) {
+</span><span id="332" class="l"><a href="#332">332: </a>            <span class="php-var">$prefix</span> = <span class="php-quote">'ldap://'</span>;
+</span><span id="333" class="l"><a href="#333">333: </a>        }
+</span><span id="334" class="l"><a href="#334">334: </a>        <span class="php-keyword1">return</span> <span class="php-var">$prefix</span>.<span class="php-var">$server</span>.<span class="php-quote">':'</span>.<span class="php-var">$port</span>;
+</span><span id="335" class="l"><a href="#335">335: </a>    }
+</span><span id="336" class="l"><a href="#336">336: </a>
+</span><span id="337" class="l"><a href="#337">337: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> check_credentials(<span class="php-var">$user</span>, <span class="php-var">$pass</span>) {
+</span><span id="338" class="l"><a href="#338">338: </a>        <span class="php-keyword1">list</span>(<span class="php-var">$server</span>, <span class="php-var">$port</span>, <span class="php-var">$tls</span>, <span class="php-var">$base_dn</span>) = <span class="php-var">$this</span>-&gt;get_ldap_config();
+</span><span id="339" class="l"><a href="#339">339: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$server</span> &amp;&amp; <span class="php-var">$port</span> &amp;&amp; <span class="php-var">$base_dn</span>) {
+</span><span id="340" class="l"><a href="#340">340: </a>            <span class="php-var">$user</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'cn=%s,%s'</span>, <span class="php-var">$user</span>, <span class="php-var">$base_dn</span>);
+</span><span id="341" class="l"><a href="#341">341: </a>            <span class="php-var">$this</span>-&gt;config = <span class="php-keyword1">array</span>(
+</span><span id="342" class="l"><a href="#342">342: </a>                <span class="php-quote">'server'</span> =&gt; <span class="php-var">$server</span>,
+</span><span id="343" class="l"><a href="#343">343: </a>                <span class="php-quote">'port'</span> =&gt; <span class="php-var">$port</span>,
+</span><span id="344" class="l"><a href="#344">344: </a>                <span class="php-quote">'enable_tls'</span> =&gt; <span class="php-var">$tls</span>,
+</span><span id="345" class="l"><a href="#345">345: </a>                <span class="php-quote">'base_dn'</span> =&gt; <span class="php-var">$base_dn</span>,
+</span><span id="346" class="l"><a href="#346">346: </a>                <span class="php-quote">'user'</span> =&gt; <span class="php-var">$user</span>,
+</span><span id="347" class="l"><a href="#347">347: </a>                <span class="php-quote">'pass'</span> =&gt; <span class="php-var">$pass</span>
+</span><span id="348" class="l"><a href="#348">348: </a>            );
+</span><span id="349" class="l"><a href="#349">349: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;connect();
+</span><span id="350" class="l"><a href="#350">350: </a>        }
+</span><span id="351" class="l"><a href="#351">351: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="352" class="l"><a href="#352">352: </a>    }
+</span><span id="353" class="l"><a href="#353">353: </a>
+</span><span id="354" class="l"><a href="#354">354: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> get_ldap_config() {
+</span><span id="355" class="l"><a href="#355">355: </a>        <span class="php-var">$server</span> = <span class="php-var">$this</span>-&gt;site_config-&gt;get(<span class="php-quote">'ldap_auth_server'</span>, <span class="php-keyword1">false</span>);
+</span><span id="356" class="l"><a href="#356">356: </a>        <span class="php-var">$port</span> = <span class="php-var">$this</span>-&gt;site_config-&gt;get(<span class="php-quote">'ldap_auth_port'</span>, <span class="php-keyword1">false</span>);
+</span><span id="357" class="l"><a href="#357">357: </a>        <span class="php-var">$tls</span> = <span class="php-var">$this</span>-&gt;site_config-&gt;get(<span class="php-quote">'ldap_auth_tls'</span>, <span class="php-keyword1">false</span>);
+</span><span id="358" class="l"><a href="#358">358: </a>        <span class="php-var">$base_dn</span> = <span class="php-var">$this</span>-&gt;site_config-&gt;get(<span class="php-quote">'ldap_auth_base_dn'</span>, <span class="php-keyword1">false</span>);
+</span><span id="359" class="l"><a href="#359">359: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-var">$server</span>, <span class="php-var">$port</span>, <span class="php-var">$tls</span>, <span class="php-var">$base_dn</span>);
+</span><span id="360" class="l"><a href="#360">360: </a>
+</span><span id="361" class="l"><a href="#361">361: </a>    }
+</span><span id="362" class="l"><a href="#362">362: </a>
+</span><span id="363" class="l"><a href="#363">363: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> connect() {
+</span><span id="364" class="l"><a href="#364">364: </a>        <span class="php-keyword1">if</span> (!Hm_Functions::<span class="php-keyword2">function_exists</span>(<span class="php-quote">'ldap_connect'</span>)) {
+</span><span id="365" class="l"><a href="#365">365: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="366" class="l"><a href="#366">366: </a>        }
+</span><span id="367" class="l"><a href="#367">367: </a>        <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;connect_details();
+</span><span id="368" class="l"><a href="#368">368: </a>        <span class="php-var">$this</span>-&gt;fh = @<span class="php-keyword2">ldap_connect</span>(<span class="php-var">$uri</span>);
+</span><span id="369" class="l"><a href="#369">369: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;fh) {
+</span><span id="370" class="l"><a href="#370">370: </a>            <span class="php-keyword2">ldap_set_option</span>(<span class="php-var">$this</span>-&gt;fh, LDAP_OPT_PROTOCOL_VERSION, <span class="php-num">3</span>);
+</span><span id="371" class="l"><a href="#371">371: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;auth();
+</span><span id="372" class="l"><a href="#372">372: </a>        }
+</span><span id="373" class="l"><a href="#373">373: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="374" class="l"><a href="#374">374: </a>    }
+</span><span id="375" class="l"><a href="#375">375: </a>
+</span><span id="376" class="l"><a href="#376">376: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> auth() {
+</span><span id="377" class="l"><a href="#377">377: </a>        <span class="php-var">$result</span> = @<span class="php-keyword2">ldap_bind</span>(<span class="php-var">$this</span>-&gt;fh, <span class="php-var">$this</span>-&gt;config[<span class="php-quote">'user'</span>], <span class="php-var">$this</span>-&gt;config[<span class="php-quote">'pass'</span>]);
+</span><span id="378" class="l"><a href="#378">378: </a>        <span class="php-keyword2">ldap_unbind</span>(<span class="php-var">$this</span>-&gt;fh);
+</span><span id="379" class="l"><a href="#379">379: </a>        <span class="php-keyword1">return</span> <span class="php-var">$result</span>;
+</span><span id="380" class="l"><a href="#380">380: </a>    }
+</span><span id="381" class="l"><a href="#381">381: </a>}
+</span><span id="382" class="l"><a href="#382">382: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -1833,6 +1909,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?e775ba23207d80f0ff8c83e74407478700f2e6a6"></script>
+<script src="elementlist.js?81c8dc52c932fbf05b7f5def9d43c54e526b9c40"></script>
 </body>
 </html>
