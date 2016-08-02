@@ -668,6 +668,11 @@
 						handler					</a>
 
 						</li>
+				<li>
+					<a href="package-modules.recover.settings.output.html">
+						output					</a>
+
+						</li>
 							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.savedsearches.html">
@@ -903,7 +908,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.config.html">config</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_User_Config_DB.html#174-271" title="Go to source code">config.php</a>
+			<b>Located at</b> <a href="source-class-Hm_User_Config_DB.html#202-300" title="Go to source code">config.php</a>
 		<br>
 	</div>
 
@@ -923,7 +928,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_User_Config_DB.html#185-192" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_DB.html#213-220" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
 
 		<div class="description short">
 			<p>Load site config</p>
@@ -958,7 +963,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Hm_User_Config_DB.html#194-224" title="Go to source code">load</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_DB.html#222-253" title="Go to source code">load</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Load the user settings from the DB</p>
@@ -995,7 +1000,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reload">#</a>
-		<code><a href="source-class-Hm_User_Config_DB.html#226-234" title="Go to source code">reload</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_DB.html#255-263" title="Go to source code">reload</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Reload from outside input</p>
@@ -1030,7 +1035,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_User_Config_DB.html#236-246" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Hm_User_Config_DB.html#265-275" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			<p>Connect to a configured DB</p>
@@ -1064,7 +1069,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Hm_User_Config_DB.html#248-270" title="Go to source code">save</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_User_Config_DB.html#277-299" title="Go to source code">save</a>( <span>string <var>$username</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Save user settings to the DB</p>
@@ -1096,11 +1101,13 @@
 	<tr>
 		<td><code>
 			<a href="class-Hm_Config.html#_decode">decode()</a>, 
+			<a href="class-Hm_Config.html#_del">del()</a>, 
 			<a href="class-Hm_Config.html#_dump">dump()</a>, 
 			<a href="class-Hm_Config.html#_get">get()</a>, 
 			<a href="class-Hm_Config.html#_set">set()</a>, 
 			<a href="class-Hm_Config.html#_set_tz">set_tz()</a>, 
-			<a href="class-Hm_Config.html#_shuffle">shuffle()</a>
+			<a href="class-Hm_Config.html#_shuffle">shuffle()</a>, 
+			<a href="class-Hm_Config.html#_version">version()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -1124,7 +1131,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_User_Config_DB.html#180" title="Go to source code"><var>$site_config</var></a>
+				<a href="source-class-Hm_User_Config_DB.html#208" title="Go to source code"><var>$site_config</var></a>
 
 			<div class="description short">
 				
@@ -1149,7 +1156,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_User_Config_DB.html#183" title="Go to source code"><var>$dbh</var></a>
+				<a href="source-class-Hm_User_Config_DB.html#211" title="Go to source code"><var>$dbh</var></a>
 
 			<div class="description short">
 				
@@ -1175,6 +1182,7 @@
 		<td><code>
 			<a href="class-Hm_Config.html#$config"><var>$config</var></a>, 
 			<a href="class-Hm_Config.html#$decrypt_failed"><var>$decrypt_failed</var></a>, 
+			<a href="class-Hm_Config.html#$encrypted_str"><var>$encrypted_str</var></a>, 
 			<a href="class-Hm_Config.html#$source"><var>$source</var></a>
 		</code></td>
 	</tr>
