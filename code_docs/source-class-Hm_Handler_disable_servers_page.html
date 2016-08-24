@@ -1011,6 +1011,7 @@
 				<li><a href="class-Hm_Handler_process_update_ldap_contact.html">Hm_Handler_process_update_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_update_ldap_server.html">Hm_Handler_process_update_ldap_server</a></li>
 				<li><a href="class-Hm_Handler_process_wordpress_authorization.html">Hm_Handler_process_wordpress_authorization</a></li>
+				<li><a href="class-Hm_Handler_process_wordpress_since_setting.html">Hm_Handler_process_wordpress_since_setting</a></li>
 				<li><a href="class-Hm_Handler_profile_data.html">Hm_Handler_profile_data</a></li>
 				<li><a href="class-Hm_Handler_profile_edit_data.html">Hm_Handler_profile_edit_data</a></li>
 				<li><a href="class-Hm_Handler_reload_folder_cookie.html">Hm_Handler_reload_folder_cookie</a></li>
@@ -1047,7 +1048,6 @@
 				<li><a href="class-Hm_Handler_wordpress_folders_data.html">Hm_Handler_wordpress_folders_data</a></li>
 				<li><a href="class-Hm_Handler_wordpress_list_type.html">Hm_Handler_wordpress_list_type</a></li>
 				<li><a href="class-Hm_Handler_wordpress_msg_action.html">Hm_Handler_wordpress_msg_action</a></li>
-				<li><a href="class-Hm_Handler_wp_freshly_pressed_data.html">Hm_Handler_wp_freshly_pressed_data</a></li>
 				<li><a href="class-Hm_Handler_wp_load_sources.html">Hm_Handler_wp_load_sources</a></li>
 				<li><a href="class-Hm_Handler_wp_notification_data.html">Hm_Handler_wp_notification_data</a></li>
 				<li><a href="class-Hm_Image_Sources.html">Hm_Image_Sources</a></li>
@@ -1152,7 +1152,6 @@
 				<li><a href="class-Hm_Output_filter_service_select.html">Hm_Output_filter_service_select</a></li>
 				<li><a href="class-Hm_Output_filter_unread_data.html">Hm_Output_filter_unread_data</a></li>
 				<li><a href="class-Hm_Output_filter_upload_file_details.html">Hm_Output_filter_upload_file_details</a></li>
-				<li><a href="class-Hm_Output_filter_wp_freshly_pressed_data.html">Hm_Output_filter_wp_freshly_pressed_data</a></li>
 				<li><a href="class-Hm_Output_filter_wp_notice_data.html">Hm_Output_filter_wp_notice_data</a></li>
 				<li><a href="class-Hm_Output_filter_wp_notification_data.html">Hm_Output_filter_wp_notification_data</a></li>
 				<li><a href="class-Hm_Output_flagged_since_setting.html">Hm_Output_flagged_since_setting</a></li>
@@ -1287,6 +1286,7 @@
 				<li><a href="class-Hm_Output_start_settings_form.html">Hm_Output_start_settings_form</a></li>
 				<li><a href="class-Hm_Output_start_shortcuts_page.html">Hm_Output_start_shortcuts_page</a></li>
 				<li><a href="class-Hm_Output_start_unread_settings.html">Hm_Output_start_unread_settings</a></li>
+				<li><a href="class-Hm_Output_start_wordpress_settings.html">Hm_Output_start_wordpress_settings</a></li>
 				<li><a href="class-Hm_Output_tag_bar.html">Hm_Output_tag_bar</a></li>
 				<li><a href="class-Hm_Output_tag_folders.html">Hm_Output_tag_folders</a></li>
 				<li><a href="class-Hm_Output_theme_css.html">Hm_Output_theme_css</a></li>
@@ -1302,6 +1302,7 @@
 				<li><a href="class-Hm_Output_welcome_dialog.html">Hm_Output_welcome_dialog</a></li>
 				<li><a href="class-Hm_Output_wordpress_connect_section.html">Hm_Output_wordpress_connect_section</a></li>
 				<li><a href="class-Hm_Output_wordpress_folders.html">Hm_Output_wordpress_folders</a></li>
+				<li><a href="class-Hm_Output_wordpress_since_setting.html">Hm_Output_wordpress_since_setting</a></li>
 				<li><a href="class-Hm_Page_Cache.html">Hm_Page_Cache</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_POP3.html">Hm_POP3</a></li>
@@ -1365,6 +1366,7 @@
 				<li><a href="function-email_is_active.html">email_is_active</a></li>
 				<li><a href="function-feed_memcached_fetch.html">feed_memcached_fetch</a></li>
 				<li><a href="function-feed_memcached_save.html">feed_memcached_save</a></li>
+				<li><a href="function-feed_source_callback.html">feed_source_callback</a></li>
 				<li><a href="function-fetch_gmail_contacts.html">fetch_gmail_contacts</a></li>
 				<li><a href="function-fetch_ldap_contacts.html">fetch_ldap_contacts</a></li>
 				<li><a href="function-filter_auth_servers.html">filter_auth_servers</a></li>
@@ -1378,7 +1380,7 @@
 				<li><a href="function-format_msg_part_section.html">format_msg_part_section</a></li>
 				<li><a href="function-format_msg_text.html">format_msg_text</a></li>
 				<li><a href="function-format_pop3_message_list.html">format_pop3_message_list</a></li>
-				<li><a href="function-format_reply_all_address.html">format_reply_all_address</a></li>
+				<li><a href="function-format_reply_address.html">format_reply_address</a></li>
 				<li><a href="function-format_reply_as_html.html">format_reply_as_html</a></li>
 				<li><a href="function-format_reply_as_text.html">format_reply_as_text</a></li>
 				<li><a href="function-format_reply_fields.html">format_reply_fields</a></li>
@@ -1466,7 +1468,6 @@
 				<li><a href="function-wp_build_notice_text.html">wp_build_notice_text</a></li>
 				<li><a href="function-wp_connect_details.html">wp_connect_details</a></li>
 				<li><a href="function-wp_fetch_content.html">wp_fetch_content</a></li>
-				<li><a href="function-wp_get_freshly_pressed.html">wp_get_freshly_pressed</a></li>
 				<li><a href="function-wp_get_notice_detail.html">wp_get_notice_detail</a></li>
 				<li><a href="function-wp_get_notifications.html">wp_get_notifications</a></li>
 			</ul>
@@ -1549,6 +1550,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?1a00e1150180b93b0d88ad45611ba26f52b9fa2e"></script>
+<script src="elementlist.js?4b82fb541cb1576845035ee3fb54cbbe057301d1"></script>
 </body>
 </html>

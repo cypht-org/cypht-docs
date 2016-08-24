@@ -1011,6 +1011,7 @@
 				<li><a href="class-Hm_Handler_process_update_ldap_contact.html">Hm_Handler_process_update_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_update_ldap_server.html">Hm_Handler_process_update_ldap_server</a></li>
 				<li><a href="class-Hm_Handler_process_wordpress_authorization.html">Hm_Handler_process_wordpress_authorization</a></li>
+				<li><a href="class-Hm_Handler_process_wordpress_since_setting.html">Hm_Handler_process_wordpress_since_setting</a></li>
 				<li><a href="class-Hm_Handler_profile_data.html">Hm_Handler_profile_data</a></li>
 				<li><a href="class-Hm_Handler_profile_edit_data.html">Hm_Handler_profile_edit_data</a></li>
 				<li><a href="class-Hm_Handler_reload_folder_cookie.html">Hm_Handler_reload_folder_cookie</a></li>
@@ -1047,7 +1048,6 @@
 				<li><a href="class-Hm_Handler_wordpress_folders_data.html">Hm_Handler_wordpress_folders_data</a></li>
 				<li><a href="class-Hm_Handler_wordpress_list_type.html">Hm_Handler_wordpress_list_type</a></li>
 				<li><a href="class-Hm_Handler_wordpress_msg_action.html">Hm_Handler_wordpress_msg_action</a></li>
-				<li><a href="class-Hm_Handler_wp_freshly_pressed_data.html">Hm_Handler_wp_freshly_pressed_data</a></li>
 				<li><a href="class-Hm_Handler_wp_load_sources.html">Hm_Handler_wp_load_sources</a></li>
 				<li><a href="class-Hm_Handler_wp_notification_data.html">Hm_Handler_wp_notification_data</a></li>
 				<li><a href="class-Hm_Image_Sources.html">Hm_Image_Sources</a></li>
@@ -1152,7 +1152,6 @@
 				<li><a href="class-Hm_Output_filter_service_select.html">Hm_Output_filter_service_select</a></li>
 				<li><a href="class-Hm_Output_filter_unread_data.html">Hm_Output_filter_unread_data</a></li>
 				<li><a href="class-Hm_Output_filter_upload_file_details.html">Hm_Output_filter_upload_file_details</a></li>
-				<li><a href="class-Hm_Output_filter_wp_freshly_pressed_data.html">Hm_Output_filter_wp_freshly_pressed_data</a></li>
 				<li><a href="class-Hm_Output_filter_wp_notice_data.html">Hm_Output_filter_wp_notice_data</a></li>
 				<li><a href="class-Hm_Output_filter_wp_notification_data.html">Hm_Output_filter_wp_notification_data</a></li>
 				<li><a href="class-Hm_Output_flagged_since_setting.html">Hm_Output_flagged_since_setting</a></li>
@@ -1287,6 +1286,7 @@
 				<li><a href="class-Hm_Output_start_settings_form.html">Hm_Output_start_settings_form</a></li>
 				<li><a href="class-Hm_Output_start_shortcuts_page.html">Hm_Output_start_shortcuts_page</a></li>
 				<li><a href="class-Hm_Output_start_unread_settings.html">Hm_Output_start_unread_settings</a></li>
+				<li><a href="class-Hm_Output_start_wordpress_settings.html">Hm_Output_start_wordpress_settings</a></li>
 				<li><a href="class-Hm_Output_tag_bar.html">Hm_Output_tag_bar</a></li>
 				<li><a href="class-Hm_Output_tag_folders.html">Hm_Output_tag_folders</a></li>
 				<li><a href="class-Hm_Output_theme_css.html">Hm_Output_theme_css</a></li>
@@ -1302,6 +1302,7 @@
 				<li><a href="class-Hm_Output_welcome_dialog.html">Hm_Output_welcome_dialog</a></li>
 				<li><a href="class-Hm_Output_wordpress_connect_section.html">Hm_Output_wordpress_connect_section</a></li>
 				<li><a href="class-Hm_Output_wordpress_folders.html">Hm_Output_wordpress_folders</a></li>
+				<li><a href="class-Hm_Output_wordpress_since_setting.html">Hm_Output_wordpress_since_setting</a></li>
 				<li><a href="class-Hm_Page_Cache.html">Hm_Page_Cache</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_POP3.html">Hm_POP3</a></li>
@@ -1365,6 +1366,7 @@
 				<li><a href="function-email_is_active.html">email_is_active</a></li>
 				<li><a href="function-feed_memcached_fetch.html">feed_memcached_fetch</a></li>
 				<li><a href="function-feed_memcached_save.html">feed_memcached_save</a></li>
+				<li><a href="function-feed_source_callback.html">feed_source_callback</a></li>
 				<li><a href="function-fetch_gmail_contacts.html">fetch_gmail_contacts</a></li>
 				<li><a href="function-fetch_ldap_contacts.html">fetch_ldap_contacts</a></li>
 				<li><a href="function-filter_auth_servers.html">filter_auth_servers</a></li>
@@ -1378,7 +1380,7 @@
 				<li><a href="function-format_msg_part_section.html">format_msg_part_section</a></li>
 				<li><a href="function-format_msg_text.html">format_msg_text</a></li>
 				<li><a href="function-format_pop3_message_list.html">format_pop3_message_list</a></li>
-				<li><a href="function-format_reply_all_address.html">format_reply_all_address</a></li>
+				<li><a href="function-format_reply_address.html">format_reply_address</a></li>
 				<li><a href="function-format_reply_as_html.html">format_reply_as_html</a></li>
 				<li><a href="function-format_reply_as_text.html">format_reply_as_text</a></li>
 				<li><a href="function-format_reply_fields.html">format_reply_fields</a></li>
@@ -1466,7 +1468,6 @@
 				<li><a href="function-wp_build_notice_text.html">wp_build_notice_text</a></li>
 				<li><a href="function-wp_connect_details.html">wp_connect_details</a></li>
 				<li><a href="function-wp_fetch_content.html">wp_fetch_content</a></li>
-				<li><a href="function-wp_get_freshly_pressed.html">wp_get_freshly_pressed</a></li>
 				<li><a href="function-wp_get_notice_detail.html">wp_get_notice_detail</a></li>
 				<li><a href="function-wp_get_notifications.html">wp_get_notifications</a></li>
 			</ul>
@@ -1569,78 +1570,80 @@
 </span><span id="54" class="l"><a href="#54"> 54: </a>        <span class="php-var">$this</span>-&gt;secure_cookie(<span class="php-var">$request</span>, <span class="php-var">$this</span>-&gt;cname, <span class="php-var">$this</span>-&gt;session_key, <span class="php-num">0</span>);
 </span><span id="55" class="l"><a href="#55"> 55: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;save_data()) {
 </span><span id="56" class="l"><a href="#56"> 56: </a>            <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">true</span>;
-</span><span id="57" class="l"><a href="#57"> 57: </a>        }
-</span><span id="58" class="l"><a href="#58"> 58: </a>    }
-</span><span id="59" class="l"><a href="#59"> 59: </a>
-</span><span id="60" class="l"><a href="#60"> 60: </a>    <span class="php-comment">/**
-</span></span><span id="61" class="l"><a href="#61"> 61: </a><span class="php-comment">     * Continue an existing session
-</span></span><span id="62" class="l"><a href="#62"> 62: </a><span class="php-comment">     * @param object $request request details
-</span></span><span id="63" class="l"><a href="#63"> 63: </a><span class="php-comment">     * @param string $key session key
-</span></span><span id="64" class="l"><a href="#64"> 64: </a><span class="php-comment">     * @return void
-</span></span><span id="65" class="l"><a href="#65"> 65: </a><span class="php-comment">     */</span>
-</span><span id="66" class="l"><a href="#66"> 66: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> start_existing(<span class="php-var">$request</span>, <span class="php-var">$key</span>) {
-</span><span id="67" class="l"><a href="#67"> 67: </a>        <span class="php-var">$this</span>-&gt;session_key = <span class="php-var">$key</span>;
-</span><span id="68" class="l"><a href="#68"> 68: </a>        <span class="php-var">$data</span> = <span class="php-var">$this</span>-&gt;plaintext(<span class="php-var">$this</span>-&gt;conn-&gt;get(<span class="php-var">$key</span>));
-</span><span id="69" class="l"><a href="#69"> 69: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$data</span>)) {
-</span><span id="70" class="l"><a href="#70"> 70: </a>            <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">true</span>;
-</span><span id="71" class="l"><a href="#71"> 71: </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$data</span>;
-</span><span id="72" class="l"><a href="#72"> 72: </a>        }
-</span><span id="73" class="l"><a href="#73"> 73: </a>    }
-</span><span id="74" class="l"><a href="#74"> 74: </a>
-</span><span id="75" class="l"><a href="#75"> 75: </a>    <span class="php-comment">/**
-</span></span><span id="76" class="l"><a href="#76"> 76: </a><span class="php-comment">     * update memcache with current data
-</span></span><span id="77" class="l"><a href="#77"> 77: </a><span class="php-comment">     */</span>
-</span><span id="78" class="l"><a href="#78"> 78: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> save_data() {
-</span><span id="79" class="l"><a href="#79"> 79: </a>        <span class="php-var">$enc_data</span> = <span class="php-var">$this</span>-&gt;ciphertext(<span class="php-var">$this</span>-&gt;data);
-</span><span id="80" class="l"><a href="#80"> 80: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;conn-&gt;set(<span class="php-var">$this</span>-&gt;session_key, <span class="php-var">$enc_data</span>, <span class="php-var">$this</span>-&gt;lifetime);
-</span><span id="81" class="l"><a href="#81"> 81: </a>    }
-</span><span id="82" class="l"><a href="#82"> 82: </a>
-</span><span id="83" class="l"><a href="#83"> 83: </a>    <span class="php-comment">/**
-</span></span><span id="84" class="l"><a href="#84"> 84: </a><span class="php-comment">     * End a session after a page request is complete. This only closes the session and
-</span></span><span id="85" class="l"><a href="#85"> 85: </a><span class="php-comment">     * does not destroy it
-</span></span><span id="86" class="l"><a href="#86"> 86: </a><span class="php-comment">     * @return void
-</span></span><span id="87" class="l"><a href="#87"> 87: </a><span class="php-comment">     */</span>
-</span><span id="88" class="l"><a href="#88"> 88: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">end</span>() {
-</span><span id="89" class="l"><a href="#89"> 89: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;active &amp;&amp; !<span class="php-var">$this</span>-&gt;session_closed) {
-</span><span id="90" class="l"><a href="#90"> 90: </a>            <span class="php-var">$this</span>-&gt;save_data();
-</span><span id="91" class="l"><a href="#91"> 91: </a>            <span class="php-var">$this</span>-&gt;conn-&gt;close();
-</span><span id="92" class="l"><a href="#92"> 92: </a>        }
-</span><span id="93" class="l"><a href="#93"> 93: </a>        <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">false</span>;
-</span><span id="94" class="l"><a href="#94"> 94: </a>    }
-</span><span id="95" class="l"><a href="#95"> 95: </a>
-</span><span id="96" class="l"><a href="#96"> 96: </a>    <span class="php-comment">/**
-</span></span><span id="97" class="l"><a href="#97"> 97: </a><span class="php-comment">     * Close a session early, but don't destroy it
-</span></span><span id="98" class="l"><a href="#98"> 98: </a><span class="php-comment">     * @return void
-</span></span><span id="99" class="l"><a href="#99"> 99: </a><span class="php-comment">     */</span>
-</span><span id="100" class="l"><a href="#100">100: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> close_early() {
-</span><span id="101" class="l"><a href="#101">101: </a>        <span class="php-var">$this</span>-&gt;session_closed = <span class="php-keyword1">true</span>;
-</span><span id="102" class="l"><a href="#102">102: </a>        <span class="php-var">$this</span>-&gt;save_data();
-</span><span id="103" class="l"><a href="#103">103: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;close();
-</span><span id="104" class="l"><a href="#104">104: </a>    }
-</span><span id="105" class="l"><a href="#105">105: </a>
-</span><span id="106" class="l"><a href="#106">106: </a>    <span class="php-comment">/**
-</span></span><span id="107" class="l"><a href="#107">107: </a><span class="php-comment">     * Destroy a session for good
-</span></span><span id="108" class="l"><a href="#108">108: </a><span class="php-comment">     * @param object $request request details
-</span></span><span id="109" class="l"><a href="#109">109: </a><span class="php-comment">     * @return void
-</span></span><span id="110" class="l"><a href="#110">110: </a><span class="php-comment">     */</span>
-</span><span id="111" class="l"><a href="#111">111: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> destroy(<span class="php-var">$request</span>) {
-</span><span id="112" class="l"><a href="#112">112: </a>        <span class="php-keyword1">if</span> (Hm_Functions::<span class="php-keyword2">function_exists</span>(<span class="php-quote">'delete_uploaded_files'</span>)) {
-</span><span id="113" class="l"><a href="#113">113: </a>            delete_uploaded_files(<span class="php-var">$this</span>);
-</span><span id="114" class="l"><a href="#114">114: </a>        }
-</span><span id="115" class="l"><a href="#115">115: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;del(<span class="php-var">$this</span>-&gt;session_key);
-</span><span id="116" class="l"><a href="#116">116: </a>        <span class="php-var">$this</span>-&gt;secure_cookie(<span class="php-var">$request</span>, <span class="php-var">$this</span>-&gt;cname, <span class="php-quote">''</span>, <span class="php-keyword2">time</span>()-<span class="php-num">3600</span>);
-</span><span id="117" class="l"><a href="#117">117: </a>        <span class="php-var">$this</span>-&gt;secure_cookie(<span class="php-var">$request</span>, <span class="php-quote">'hm_id'</span>, <span class="php-quote">''</span>, <span class="php-keyword2">time</span>()-<span class="php-num">3600</span>);
-</span><span id="118" class="l"><a href="#118">118: </a>        <span class="php-var">$this</span>-&gt;session_closed = <span class="php-keyword1">true</span>;
-</span><span id="119" class="l"><a href="#119">119: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;close();
-</span><span id="120" class="l"><a href="#120">120: </a>        <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">false</span>;
-</span><span id="121" class="l"><a href="#121">121: </a>        Hm_Request_Key::load(<span class="php-var">$this</span>, <span class="php-var">$request</span>, <span class="php-keyword1">false</span>);
-</span><span id="122" class="l"><a href="#122">122: </a>    }
-</span><span id="123" class="l"><a href="#123">123: </a>
-</span><span id="124" class="l"><a href="#124">124: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> connect() {
-</span><span id="125" class="l"><a href="#125">125: </a>        <span class="php-var">$this</span>-&gt;conn = <span class="php-keyword1">new</span> Hm_Memcached(<span class="php-var">$this</span>-&gt;site_config);
-</span><span id="126" class="l"><a href="#126">126: </a>    }
-</span><span id="127" class="l"><a href="#127">127: </a>}
-</span><span id="128" class="l"><a href="#128">128: </a></span></code></pre>
+</span><span id="57" class="l"><a href="#57"> 57: </a>            <span class="php-keyword1">return</span>;
+</span><span id="58" class="l"><a href="#58"> 58: </a>        }
+</span><span id="59" class="l"><a href="#59"> 59: </a>        Hm_Debug::add(<span class="php-quote">'MEM SESSION failed to start a new session'</span>);
+</span><span id="60" class="l"><a href="#60"> 60: </a>    }
+</span><span id="61" class="l"><a href="#61"> 61: </a>
+</span><span id="62" class="l"><a href="#62"> 62: </a>    <span class="php-comment">/**
+</span></span><span id="63" class="l"><a href="#63"> 63: </a><span class="php-comment">     * Continue an existing session
+</span></span><span id="64" class="l"><a href="#64"> 64: </a><span class="php-comment">     * @param object $request request details
+</span></span><span id="65" class="l"><a href="#65"> 65: </a><span class="php-comment">     * @param string $key session key
+</span></span><span id="66" class="l"><a href="#66"> 66: </a><span class="php-comment">     * @return void
+</span></span><span id="67" class="l"><a href="#67"> 67: </a><span class="php-comment">     */</span>
+</span><span id="68" class="l"><a href="#68"> 68: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> start_existing(<span class="php-var">$request</span>, <span class="php-var">$key</span>) {
+</span><span id="69" class="l"><a href="#69"> 69: </a>        <span class="php-var">$this</span>-&gt;session_key = <span class="php-var">$key</span>;
+</span><span id="70" class="l"><a href="#70"> 70: </a>        <span class="php-var">$data</span> = <span class="php-var">$this</span>-&gt;plaintext(<span class="php-var">$this</span>-&gt;conn-&gt;get(<span class="php-var">$key</span>));
+</span><span id="71" class="l"><a href="#71"> 71: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$data</span>)) {
+</span><span id="72" class="l"><a href="#72"> 72: </a>            <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">true</span>;
+</span><span id="73" class="l"><a href="#73"> 73: </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$data</span>;
+</span><span id="74" class="l"><a href="#74"> 74: </a>        }
+</span><span id="75" class="l"><a href="#75"> 75: </a>    }
+</span><span id="76" class="l"><a href="#76"> 76: </a>
+</span><span id="77" class="l"><a href="#77"> 77: </a>    <span class="php-comment">/**
+</span></span><span id="78" class="l"><a href="#78"> 78: </a><span class="php-comment">     * update memcache with current data
+</span></span><span id="79" class="l"><a href="#79"> 79: </a><span class="php-comment">     */</span>
+</span><span id="80" class="l"><a href="#80"> 80: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> save_data() {
+</span><span id="81" class="l"><a href="#81"> 81: </a>        <span class="php-var">$enc_data</span> = <span class="php-var">$this</span>-&gt;ciphertext(<span class="php-var">$this</span>-&gt;data);
+</span><span id="82" class="l"><a href="#82"> 82: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;conn-&gt;set(<span class="php-var">$this</span>-&gt;session_key, <span class="php-var">$enc_data</span>, <span class="php-var">$this</span>-&gt;lifetime);
+</span><span id="83" class="l"><a href="#83"> 83: </a>    }
+</span><span id="84" class="l"><a href="#84"> 84: </a>
+</span><span id="85" class="l"><a href="#85"> 85: </a>    <span class="php-comment">/**
+</span></span><span id="86" class="l"><a href="#86"> 86: </a><span class="php-comment">     * End a session after a page request is complete. This only closes the session and
+</span></span><span id="87" class="l"><a href="#87"> 87: </a><span class="php-comment">     * does not destroy it
+</span></span><span id="88" class="l"><a href="#88"> 88: </a><span class="php-comment">     * @return void
+</span></span><span id="89" class="l"><a href="#89"> 89: </a><span class="php-comment">     */</span>
+</span><span id="90" class="l"><a href="#90"> 90: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">end</span>() {
+</span><span id="91" class="l"><a href="#91"> 91: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;active &amp;&amp; !<span class="php-var">$this</span>-&gt;session_closed) {
+</span><span id="92" class="l"><a href="#92"> 92: </a>            <span class="php-var">$this</span>-&gt;save_data();
+</span><span id="93" class="l"><a href="#93"> 93: </a>            <span class="php-var">$this</span>-&gt;conn-&gt;close();
+</span><span id="94" class="l"><a href="#94"> 94: </a>        }
+</span><span id="95" class="l"><a href="#95"> 95: </a>        <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">false</span>;
+</span><span id="96" class="l"><a href="#96"> 96: </a>    }
+</span><span id="97" class="l"><a href="#97"> 97: </a>
+</span><span id="98" class="l"><a href="#98"> 98: </a>    <span class="php-comment">/**
+</span></span><span id="99" class="l"><a href="#99"> 99: </a><span class="php-comment">     * Close a session early, but don't destroy it
+</span></span><span id="100" class="l"><a href="#100">100: </a><span class="php-comment">     * @return void
+</span></span><span id="101" class="l"><a href="#101">101: </a><span class="php-comment">     */</span>
+</span><span id="102" class="l"><a href="#102">102: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> close_early() {
+</span><span id="103" class="l"><a href="#103">103: </a>        <span class="php-var">$this</span>-&gt;session_closed = <span class="php-keyword1">true</span>;
+</span><span id="104" class="l"><a href="#104">104: </a>        <span class="php-var">$this</span>-&gt;save_data();
+</span><span id="105" class="l"><a href="#105">105: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;close();
+</span><span id="106" class="l"><a href="#106">106: </a>    }
+</span><span id="107" class="l"><a href="#107">107: </a>
+</span><span id="108" class="l"><a href="#108">108: </a>    <span class="php-comment">/**
+</span></span><span id="109" class="l"><a href="#109">109: </a><span class="php-comment">     * Destroy a session for good
+</span></span><span id="110" class="l"><a href="#110">110: </a><span class="php-comment">     * @param object $request request details
+</span></span><span id="111" class="l"><a href="#111">111: </a><span class="php-comment">     * @return void
+</span></span><span id="112" class="l"><a href="#112">112: </a><span class="php-comment">     */</span>
+</span><span id="113" class="l"><a href="#113">113: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> destroy(<span class="php-var">$request</span>) {
+</span><span id="114" class="l"><a href="#114">114: </a>        <span class="php-keyword1">if</span> (Hm_Functions::<span class="php-keyword2">function_exists</span>(<span class="php-quote">'delete_uploaded_files'</span>)) {
+</span><span id="115" class="l"><a href="#115">115: </a>            delete_uploaded_files(<span class="php-var">$this</span>);
+</span><span id="116" class="l"><a href="#116">116: </a>        }
+</span><span id="117" class="l"><a href="#117">117: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;del(<span class="php-var">$this</span>-&gt;session_key);
+</span><span id="118" class="l"><a href="#118">118: </a>        <span class="php-var">$this</span>-&gt;secure_cookie(<span class="php-var">$request</span>, <span class="php-var">$this</span>-&gt;cname, <span class="php-quote">''</span>, <span class="php-keyword2">time</span>()-<span class="php-num">3600</span>);
+</span><span id="119" class="l"><a href="#119">119: </a>        <span class="php-var">$this</span>-&gt;secure_cookie(<span class="php-var">$request</span>, <span class="php-quote">'hm_id'</span>, <span class="php-quote">''</span>, <span class="php-keyword2">time</span>()-<span class="php-num">3600</span>);
+</span><span id="120" class="l"><a href="#120">120: </a>        <span class="php-var">$this</span>-&gt;session_closed = <span class="php-keyword1">true</span>;
+</span><span id="121" class="l"><a href="#121">121: </a>        <span class="php-var">$this</span>-&gt;conn-&gt;close();
+</span><span id="122" class="l"><a href="#122">122: </a>        <span class="php-var">$this</span>-&gt;active = <span class="php-keyword1">false</span>;
+</span><span id="123" class="l"><a href="#123">123: </a>        Hm_Request_Key::load(<span class="php-var">$this</span>, <span class="php-var">$request</span>, <span class="php-keyword1">false</span>);
+</span><span id="124" class="l"><a href="#124">124: </a>    }
+</span><span id="125" class="l"><a href="#125">125: </a>
+</span><span id="126" class="l"><a href="#126">126: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> connect() {
+</span><span id="127" class="l"><a href="#127">127: </a>        <span class="php-var">$this</span>-&gt;conn = <span class="php-keyword1">new</span> Hm_Memcached(<span class="php-var">$this</span>-&gt;site_config);
+</span><span id="128" class="l"><a href="#128">128: </a>    }
+</span><span id="129" class="l"><a href="#129">129: </a>}
+</span><span id="130" class="l"><a href="#130">130: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -1648,6 +1651,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?1a00e1150180b93b0d88ad45611ba26f52b9fa2e"></script>
+<script src="elementlist.js?4b82fb541cb1576845035ee3fb54cbbe057301d1"></script>
 </body>
 </html>
