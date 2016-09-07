@@ -1766,67 +1766,66 @@
 </span><span id="237" class="l"><a href="#237">237: </a>    <span class="php-var">$contacts</span> = <span class="php-var">$contact</span>-&gt;export();
 </span><span id="238" class="l"><a href="#238">238: </a>    <span class="php-keyword2">ksort</span>(<span class="php-var">$contacts</span>);
 </span><span id="239" class="l"><a href="#239">239: </a>    <span class="php-keyword1">foreach</span> (<span class="php-var">$contacts</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$val</span>) {
-</span><span id="240" class="l"><a href="#240">240: </a>        elog(<span class="php-var">$val</span>);
-</span><span id="241" class="l"><a href="#241">241: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$name</span> == <span class="php-quote">'all_fields'</span>) {
-</span><span id="242" class="l"><a href="#242">242: </a>            <span class="php-var">$all_fields</span> = <span class="php-var">$val</span>;
-</span><span id="243" class="l"><a href="#243">243: </a>            <span class="php-keyword1">continue</span>;
-</span><span id="244" class="l"><a href="#244">244: </a>        }
-</span><span id="245" class="l"><a href="#245">245: </a>        <span class="php-var">$res</span> .= <span class="php-quote">'&lt;tr&gt;&lt;th&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;trans(name_map(<span class="php-var">$name</span>)).<span class="php-quote">'&lt;/th&gt;'</span>;
-</span><span id="246" class="l"><a href="#246">246: </a>        <span class="php-var">$res</span> .= <span class="php-quote">'&lt;td class=&quot;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$name</span>).<span class="php-quote">'&quot;&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$val</span>).<span class="php-quote">'&lt;/td&gt;&lt;/tr&gt;'</span>;
-</span><span id="247" class="l"><a href="#247">247: </a>    }
-</span><span id="248" class="l"><a href="#248">248: </a>    <span class="php-keyword1">if</span> (<span class="php-var">$all_fields</span>) {
-</span><span id="249" class="l"><a href="#249">249: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$all_fields</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$val</span>) {
-</span><span id="250" class="l"><a href="#250">250: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">in_array</span>(<span class="php-var">$name</span>, <span class="php-keyword1">array</span>(<span class="php-num">0</span>, <span class="php-quote">'objectclass'</span>, <span class="php-quote">'dn'</span>, <span class="php-quote">'ID'</span>, <span class="php-quote">'APP:EDITED'</span>, <span class="php-quote">'UPDATED'</span>), <span class="php-keyword1">true</span>)) {
-</span><span id="251" class="l"><a href="#251">251: </a>                <span class="php-keyword1">continue</span>;
-</span><span id="252" class="l"><a href="#252">252: </a>            }
-</span><span id="253" class="l"><a href="#253">253: </a>            <span class="php-var">$res</span> .= <span class="php-quote">'&lt;tr&gt;&lt;th&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;trans(name_map(<span class="php-var">$name</span>)).<span class="php-quote">'&lt;/th&gt;'</span>;
-</span><span id="254" class="l"><a href="#254">254: </a>            <span class="php-var">$res</span> .= <span class="php-quote">'&lt;td&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$val</span>).<span class="php-quote">'&lt;/td&gt;&lt;/tr&gt;'</span>;
-</span><span id="255" class="l"><a href="#255">255: </a>        }
-</span><span id="256" class="l"><a href="#256">256: </a>    }
-</span><span id="257" class="l"><a href="#257">257: </a>    <span class="php-var">$res</span> .= <span class="php-quote">'&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;'</span>;
-</span><span id="258" class="l"><a href="#258">258: </a>    <span class="php-keyword1">return</span> <span class="php-var">$res</span>;
-</span><span id="259" class="l"><a href="#259">259: </a>}
-</span><span id="260" class="l"><a href="#260">260: </a>
-</span><span id="261" class="l"><a href="#261">261: </a><span class="php-comment">/**
-</span></span><span id="262" class="l"><a href="#262">262: </a><span class="php-comment"> * @subpackage contacts/functions
-</span></span><span id="263" class="l"><a href="#263">263: </a><span class="php-comment"> */</span>
-</span><span id="264" class="l"><a href="#264">264: </a><span class="php-keyword1">function</span> name_map(<span class="php-var">$val</span>) {
-</span><span id="265" class="l"><a href="#265">265: </a>    <span class="php-var">$names</span> = <span class="php-keyword1">array</span>(
-</span><span id="266" class="l"><a href="#266">266: </a>        <span class="php-quote">'display_name'</span> =&gt; <span class="php-quote">'Display Name'</span>,
-</span><span id="267" class="l"><a href="#267">267: </a>        <span class="php-quote">'displayname'</span> =&gt; <span class="php-quote">'Display Name'</span>,
-</span><span id="268" class="l"><a href="#268">268: </a>        <span class="php-quote">'givenname'</span> =&gt; <span class="php-quote">'Given Name'</span>,
-</span><span id="269" class="l"><a href="#269">269: </a>        <span class="php-quote">'GD:GIVENNAME'</span> =&gt; <span class="php-quote">'Given Name'</span>,
-</span><span id="270" class="l"><a href="#270">270: </a>        <span class="php-quote">'GD:FAMILYNAME'</span> =&gt; <span class="php-quote">'Surname'</span>,
-</span><span id="271" class="l"><a href="#271">271: </a>        <span class="php-quote">'sn'</span> =&gt; <span class="php-quote">'Surname'</span>,
-</span><span id="272" class="l"><a href="#272">272: </a>        <span class="php-quote">'mail'</span> =&gt; <span class="php-quote">'E-mail Address'</span>,
-</span><span id="273" class="l"><a href="#273">273: </a>        <span class="php-quote">'source'</span> =&gt; <span class="php-quote">'Source'</span>,
-</span><span id="274" class="l"><a href="#274">274: </a>        <span class="php-quote">'email_address'</span> =&gt; <span class="php-quote">'E-mail Address'</span>,
-</span><span id="275" class="l"><a href="#275">275: </a>        <span class="php-quote">'l'</span> =&gt; <span class="php-quote">'Locality'</span>,
-</span><span id="276" class="l"><a href="#276">276: </a>        <span class="php-quote">'st'</span> =&gt; <span class="php-quote">'State'</span>,
-</span><span id="277" class="l"><a href="#277">277: </a>        <span class="php-quote">'street'</span> =&gt; <span class="php-quote">'Street'</span>,
-</span><span id="278" class="l"><a href="#278">278: </a>        <span class="php-quote">'postalcode'</span> =&gt; <span class="php-quote">'Postal Code'</span>,
-</span><span id="279" class="l"><a href="#279">279: </a>        <span class="php-quote">'title'</span> =&gt; <span class="php-quote">'Title'</span>,
-</span><span id="280" class="l"><a href="#280">280: </a>        <span class="php-quote">'TITLE'</span> =&gt; <span class="php-quote">'Title'</span>,
-</span><span id="281" class="l"><a href="#281">281: </a>        <span class="php-quote">'phone_number'</span> =&gt; <span class="php-quote">'Telephone Number'</span>,
-</span><span id="282" class="l"><a href="#282">282: </a>        <span class="php-quote">'telephonenumber'</span> =&gt; <span class="php-quote">'Telephone Number'</span>,
-</span><span id="283" class="l"><a href="#283">283: </a>        <span class="php-quote">'facsimiletelephonenumber'</span> =&gt; <span class="php-quote">'Fax Number'</span>,
-</span><span id="284" class="l"><a href="#284">284: </a>        <span class="php-quote">'mobile'</span> =&gt; <span class="php-quote">'Mobile Number'</span>,
-</span><span id="285" class="l"><a href="#285">285: </a>        <span class="php-quote">'roomnumber'</span> =&gt; <span class="php-quote">'Room Number'</span>,
-</span><span id="286" class="l"><a href="#286">286: </a>        <span class="php-quote">'carlicense'</span> =&gt; <span class="php-quote">'Vehicle License'</span>,
-</span><span id="287" class="l"><a href="#287">287: </a>        <span class="php-quote">'o'</span> =&gt; <span class="php-quote">'Organization'</span>,
-</span><span id="288" class="l"><a href="#288">288: </a>        <span class="php-quote">'ou'</span> =&gt; <span class="php-quote">'Organizational Unit'</span>,
-</span><span id="289" class="l"><a href="#289">289: </a>        <span class="php-quote">'departmentnumber'</span> =&gt; <span class="php-quote">'Department Number'</span>,
-</span><span id="290" class="l"><a href="#290">290: </a>        <span class="php-quote">'employeenumber'</span> =&gt; <span class="php-quote">'Employee Number'</span>,
-</span><span id="291" class="l"><a href="#291">291: </a>        <span class="php-quote">'employeetype'</span> =&gt; <span class="php-quote">'Employee Type'</span>,
-</span><span id="292" class="l"><a href="#292">292: </a>        <span class="php-quote">'preferredlanguage'</span> =&gt; <span class="php-quote">'Preferred Language'</span>,
-</span><span id="293" class="l"><a href="#293">293: </a>        <span class="php-quote">'labeleduri'</span> =&gt; <span class="php-quote">'Homepage URL'</span>
-</span><span id="294" class="l"><a href="#294">294: </a>    );
-</span><span id="295" class="l"><a href="#295">295: </a>    <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-var">$val</span>, <span class="php-var">$names</span>)) {
-</span><span id="296" class="l"><a href="#296">296: </a>        <span class="php-keyword1">return</span> <span class="php-var">$names</span>[<span class="php-var">$val</span>];
-</span><span id="297" class="l"><a href="#297">297: </a>    }
-</span><span id="298" class="l"><a href="#298">298: </a>    <span class="php-keyword1">return</span> <span class="php-var">$val</span>;
-</span><span id="299" class="l"><a href="#299">299: </a>}
-</span><span id="300" class="l"><a href="#300">300: </a></span></code></pre>
+</span><span id="240" class="l"><a href="#240">240: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$name</span> == <span class="php-quote">'all_fields'</span>) {
+</span><span id="241" class="l"><a href="#241">241: </a>            <span class="php-var">$all_fields</span> = <span class="php-var">$val</span>;
+</span><span id="242" class="l"><a href="#242">242: </a>            <span class="php-keyword1">continue</span>;
+</span><span id="243" class="l"><a href="#243">243: </a>        }
+</span><span id="244" class="l"><a href="#244">244: </a>        <span class="php-var">$res</span> .= <span class="php-quote">'&lt;tr&gt;&lt;th&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;trans(name_map(<span class="php-var">$name</span>)).<span class="php-quote">'&lt;/th&gt;'</span>;
+</span><span id="245" class="l"><a href="#245">245: </a>        <span class="php-var">$res</span> .= <span class="php-quote">'&lt;td class=&quot;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$name</span>).<span class="php-quote">'&quot;&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$val</span>).<span class="php-quote">'&lt;/td&gt;&lt;/tr&gt;'</span>;
+</span><span id="246" class="l"><a href="#246">246: </a>    }
+</span><span id="247" class="l"><a href="#247">247: </a>    <span class="php-keyword1">if</span> (<span class="php-var">$all_fields</span>) {
+</span><span id="248" class="l"><a href="#248">248: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$all_fields</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$val</span>) {
+</span><span id="249" class="l"><a href="#249">249: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">in_array</span>(<span class="php-var">$name</span>, <span class="php-keyword1">array</span>(<span class="php-num">0</span>, <span class="php-quote">'objectclass'</span>, <span class="php-quote">'dn'</span>, <span class="php-quote">'ID'</span>, <span class="php-quote">'APP:EDITED'</span>, <span class="php-quote">'UPDATED'</span>), <span class="php-keyword1">true</span>)) {
+</span><span id="250" class="l"><a href="#250">250: </a>                <span class="php-keyword1">continue</span>;
+</span><span id="251" class="l"><a href="#251">251: </a>            }
+</span><span id="252" class="l"><a href="#252">252: </a>            <span class="php-var">$res</span> .= <span class="php-quote">'&lt;tr&gt;&lt;th&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;trans(name_map(<span class="php-var">$name</span>)).<span class="php-quote">'&lt;/th&gt;'</span>;
+</span><span id="253" class="l"><a href="#253">253: </a>            <span class="php-var">$res</span> .= <span class="php-quote">'&lt;td&gt;'</span>.<span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$val</span>).<span class="php-quote">'&lt;/td&gt;&lt;/tr&gt;'</span>;
+</span><span id="254" class="l"><a href="#254">254: </a>        }
+</span><span id="255" class="l"><a href="#255">255: </a>    }
+</span><span id="256" class="l"><a href="#256">256: </a>    <span class="php-var">$res</span> .= <span class="php-quote">'&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;'</span>;
+</span><span id="257" class="l"><a href="#257">257: </a>    <span class="php-keyword1">return</span> <span class="php-var">$res</span>;
+</span><span id="258" class="l"><a href="#258">258: </a>}
+</span><span id="259" class="l"><a href="#259">259: </a>
+</span><span id="260" class="l"><a href="#260">260: </a><span class="php-comment">/**
+</span></span><span id="261" class="l"><a href="#261">261: </a><span class="php-comment"> * @subpackage contacts/functions
+</span></span><span id="262" class="l"><a href="#262">262: </a><span class="php-comment"> */</span>
+</span><span id="263" class="l"><a href="#263">263: </a><span class="php-keyword1">function</span> name_map(<span class="php-var">$val</span>) {
+</span><span id="264" class="l"><a href="#264">264: </a>    <span class="php-var">$names</span> = <span class="php-keyword1">array</span>(
+</span><span id="265" class="l"><a href="#265">265: </a>        <span class="php-quote">'display_name'</span> =&gt; <span class="php-quote">'Display Name'</span>,
+</span><span id="266" class="l"><a href="#266">266: </a>        <span class="php-quote">'displayname'</span> =&gt; <span class="php-quote">'Display Name'</span>,
+</span><span id="267" class="l"><a href="#267">267: </a>        <span class="php-quote">'givenname'</span> =&gt; <span class="php-quote">'Given Name'</span>,
+</span><span id="268" class="l"><a href="#268">268: </a>        <span class="php-quote">'GD:GIVENNAME'</span> =&gt; <span class="php-quote">'Given Name'</span>,
+</span><span id="269" class="l"><a href="#269">269: </a>        <span class="php-quote">'GD:FAMILYNAME'</span> =&gt; <span class="php-quote">'Surname'</span>,
+</span><span id="270" class="l"><a href="#270">270: </a>        <span class="php-quote">'sn'</span> =&gt; <span class="php-quote">'Surname'</span>,
+</span><span id="271" class="l"><a href="#271">271: </a>        <span class="php-quote">'mail'</span> =&gt; <span class="php-quote">'E-mail Address'</span>,
+</span><span id="272" class="l"><a href="#272">272: </a>        <span class="php-quote">'source'</span> =&gt; <span class="php-quote">'Source'</span>,
+</span><span id="273" class="l"><a href="#273">273: </a>        <span class="php-quote">'email_address'</span> =&gt; <span class="php-quote">'E-mail Address'</span>,
+</span><span id="274" class="l"><a href="#274">274: </a>        <span class="php-quote">'l'</span> =&gt; <span class="php-quote">'Locality'</span>,
+</span><span id="275" class="l"><a href="#275">275: </a>        <span class="php-quote">'st'</span> =&gt; <span class="php-quote">'State'</span>,
+</span><span id="276" class="l"><a href="#276">276: </a>        <span class="php-quote">'street'</span> =&gt; <span class="php-quote">'Street'</span>,
+</span><span id="277" class="l"><a href="#277">277: </a>        <span class="php-quote">'postalcode'</span> =&gt; <span class="php-quote">'Postal Code'</span>,
+</span><span id="278" class="l"><a href="#278">278: </a>        <span class="php-quote">'title'</span> =&gt; <span class="php-quote">'Title'</span>,
+</span><span id="279" class="l"><a href="#279">279: </a>        <span class="php-quote">'TITLE'</span> =&gt; <span class="php-quote">'Title'</span>,
+</span><span id="280" class="l"><a href="#280">280: </a>        <span class="php-quote">'phone_number'</span> =&gt; <span class="php-quote">'Telephone Number'</span>,
+</span><span id="281" class="l"><a href="#281">281: </a>        <span class="php-quote">'telephonenumber'</span> =&gt; <span class="php-quote">'Telephone Number'</span>,
+</span><span id="282" class="l"><a href="#282">282: </a>        <span class="php-quote">'facsimiletelephonenumber'</span> =&gt; <span class="php-quote">'Fax Number'</span>,
+</span><span id="283" class="l"><a href="#283">283: </a>        <span class="php-quote">'mobile'</span> =&gt; <span class="php-quote">'Mobile Number'</span>,
+</span><span id="284" class="l"><a href="#284">284: </a>        <span class="php-quote">'roomnumber'</span> =&gt; <span class="php-quote">'Room Number'</span>,
+</span><span id="285" class="l"><a href="#285">285: </a>        <span class="php-quote">'carlicense'</span> =&gt; <span class="php-quote">'Vehicle License'</span>,
+</span><span id="286" class="l"><a href="#286">286: </a>        <span class="php-quote">'o'</span> =&gt; <span class="php-quote">'Organization'</span>,
+</span><span id="287" class="l"><a href="#287">287: </a>        <span class="php-quote">'ou'</span> =&gt; <span class="php-quote">'Organizational Unit'</span>,
+</span><span id="288" class="l"><a href="#288">288: </a>        <span class="php-quote">'departmentnumber'</span> =&gt; <span class="php-quote">'Department Number'</span>,
+</span><span id="289" class="l"><a href="#289">289: </a>        <span class="php-quote">'employeenumber'</span> =&gt; <span class="php-quote">'Employee Number'</span>,
+</span><span id="290" class="l"><a href="#290">290: </a>        <span class="php-quote">'employeetype'</span> =&gt; <span class="php-quote">'Employee Type'</span>,
+</span><span id="291" class="l"><a href="#291">291: </a>        <span class="php-quote">'preferredlanguage'</span> =&gt; <span class="php-quote">'Preferred Language'</span>,
+</span><span id="292" class="l"><a href="#292">292: </a>        <span class="php-quote">'labeleduri'</span> =&gt; <span class="php-quote">'Homepage URL'</span>
+</span><span id="293" class="l"><a href="#293">293: </a>    );
+</span><span id="294" class="l"><a href="#294">294: </a>    <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-var">$val</span>, <span class="php-var">$names</span>)) {
+</span><span id="295" class="l"><a href="#295">295: </a>        <span class="php-keyword1">return</span> <span class="php-var">$names</span>[<span class="php-var">$val</span>];
+</span><span id="296" class="l"><a href="#296">296: </a>    }
+</span><span id="297" class="l"><a href="#297">297: </a>    <span class="php-keyword1">return</span> <span class="php-var">$val</span>;
+</span><span id="298" class="l"><a href="#298">298: </a>}
+</span><span id="299" class="l"><a href="#299">299: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
