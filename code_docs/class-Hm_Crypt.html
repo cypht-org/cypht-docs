@@ -600,6 +600,23 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.pgp.html">
+						pgp<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.pgp.handler.html">
+						handler					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.pgp.output.html">
+						output					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.pop3.html">
 						pop3<span></span>
 					</a>
@@ -882,7 +899,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.crypt.html">crypt</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Crypt.html#52-265" title="Go to source code">crypt.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Crypt.html#57-270" title="Go to source code">crypt.php</a>
 		<br>
 	</div>
 
@@ -902,7 +919,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_plaintext">#</a>
-		<code><a href="source-class-Hm_Crypt.html#60-93" title="Go to source code">plaintext</a>( <span>string <var>$string</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#65-98" title="Go to source code">plaintext</a>( <span>string <var>$string</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Convert ciphertext to plaintext</p>
@@ -943,7 +960,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_hmac">#</a>
-		<code><a href="source-class-Hm_Crypt.html#95-110" title="Go to source code">check_hmac</a>( <span>string <var>$crypt_string</var></span>, <span>string <var>$hmac</var></span>, <span>string <var>$salt</var></span>, <span>string <var>$key</var></span>, <span> <var>$rounds</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#100-115" title="Go to source code">check_hmac</a>( <span>string <var>$crypt_string</var></span>, <span>string <var>$hmac</var></span>, <span>string <var>$salt</var></span>, <span>string <var>$key</var></span>, <span> <var>$rounds</var></span> )</code>
 
 		<div class="description short">
 			<p>Check hmac signature</p>
@@ -986,7 +1003,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ciphertext">#</a>
-		<code><a href="source-class-Hm_Crypt.html#112-135" title="Go to source code">ciphertext</a>( <span>string <var>$string</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#117-140" title="Go to source code">ciphertext</a>( <span>string <var>$string</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Convert plaintext into ciphertext</p>
@@ -1027,7 +1044,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generate_salt">#</a>
-		<code><a href="source-class-Hm_Crypt.html#137-144" title="Go to source code">generate_salt</a>( )</code>
+		<code><a href="source-class-Hm_Crypt.html#142-149" title="Go to source code">generate_salt</a>( )</code>
 
 		<div class="description short">
 			<p>Generate a strong random salt (hopefully)</p>
@@ -1061,7 +1078,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hash_compare">#</a>
-		<code><a href="source-class-Hm_Crypt.html#146-162" title="Go to source code">hash_compare</a>( <span>string <var>$a</var></span>, <span>string <var>$b</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#151-167" title="Go to source code">hash_compare</a>( <span>string <var>$a</var></span>, <span>string <var>$b</var></span> )</code>
 
 		<div class="description short">
 			<p>Compare password hashes</p>
@@ -1102,7 +1119,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_pbkdf2">#</a>
-		<code><a href="source-class-Hm_Crypt.html#164-192" title="Go to source code">pbkdf2</a>( <span>string <var>$key</var></span>, <span>string <var>$salt</var></span>, <span>string <var>$length</var></span>, <span>string <var>$count</var></span>, <span>string <var>$algo</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#169-197" title="Go to source code">pbkdf2</a>( <span>string <var>$key</var></span>, <span>string <var>$salt</var></span>, <span>string <var>$length</var></span>, <span>string <var>$count</var></span>, <span>string <var>$algo</var></span> )</code>
 
 		<div class="description short">
 			<p>Key derivation wth pbkdf2: http://en.wikipedia.org/wiki/PBKDF2</p>
@@ -1145,7 +1162,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hash_password">#</a>
-		<code><a href="source-class-Hm_Crypt.html#194-215" title="Go to source code">hash_password</a>( <span>string <var>$password</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$count</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$algo</var> = <span class="php-quote">'sha512'</span></span>, <span>string <var>$type</var> = <span class="php-quote">'php'</span></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#199-220" title="Go to source code">hash_password</a>( <span>string <var>$password</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$count</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$algo</var> = <span class="php-quote">'sha512'</span></span>, <span>string <var>$type</var> = <span class="php-quote">'php'</span></span> )</code>
 
 		<div class="description short">
 			<p>Hash a password using PBKDF2 or PHP password_hash if availble</p>
@@ -1192,7 +1209,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_password">#</a>
-		<code><a href="source-class-Hm_Crypt.html#217-236" title="Go to source code">check_password</a>( <span>string <var>$password</var></span>, <span>string <var>$hash</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#222-241" title="Go to source code">check_password</a>( <span>string <var>$password</var></span>, <span>string <var>$hash</var></span> )</code>
 
 		<div class="description short">
 			<p>Check a password against it's stored hash</p>
@@ -1233,7 +1250,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unique_id">#</a>
-		<code><a href="source-class-Hm_Crypt.html#238-245" title="Go to source code">unique_id</a>( <span>integer <var>$size</var> = <span class="php-num">128</span></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#243-250" title="Go to source code">unique_id</a>( <span>integer <var>$size</var> = <span class="php-num">128</span></span> )</code>
 
 		<div class="description short">
 			<p>Return a unique-enough-key for session cookie ids</p>
@@ -1272,7 +1289,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_random">#</a>
-		<code><a href="source-class-Hm_Crypt.html#247-264" title="Go to source code">random</a>( <span>integer <var>$size</var> = <span class="php-num">128</span></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#252-269" title="Go to source code">random</a>( <span>integer <var>$size</var> = <span class="php-num">128</span></span> )</code>
 
 		<div class="description short">
 			<p>Generate a random string</p>
@@ -1321,7 +1338,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Crypt.html#54" title="Go to source code"><var>$method</var></a>
+				<a href="source-class-Hm_Crypt.html#59" title="Go to source code"><var>$method</var></a>
 
 			<div class="description short">
 				
@@ -1346,7 +1363,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Crypt.html#55" title="Go to source code"><var>$hmac</var></a>
+				<a href="source-class-Hm_Crypt.html#60" title="Go to source code"><var>$hmac</var></a>
 
 			<div class="description short">
 				
@@ -1371,7 +1388,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Crypt.html#56" title="Go to source code"><var>$password_rounds</var></a>
+				<a href="source-class-Hm_Crypt.html#61" title="Go to source code"><var>$password_rounds</var></a>
 
 			<div class="description short">
 				
@@ -1396,7 +1413,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Crypt.html#57" title="Go to source code"><var>$encryption_rounds</var></a>
+				<a href="source-class-Hm_Crypt.html#62" title="Go to source code"><var>$encryption_rounds</var></a>
 
 			<div class="description short">
 				
@@ -1421,7 +1438,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Crypt.html#58" title="Go to source code"><var>$hmac_rounds</var></a>
+				<a href="source-class-Hm_Crypt.html#63" title="Go to source code"><var>$hmac_rounds</var></a>
 
 			<div class="description short">
 				

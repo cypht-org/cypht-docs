@@ -600,6 +600,23 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.pgp.html">
+						pgp<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.pgp.handler.html">
+						handler					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.pgp.output.html">
+						output					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.pop3.html">
 						pop3<span></span>
 					</a>
@@ -917,7 +934,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.imap.html">imap</a>\<a href="package-modules.imap.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_IMAP.html#59-2052" title="Go to source code">imap/hm-imap.php</a>
+			<b>Located at</b> <a href="source-class-Hm_IMAP.html#59-2037" title="Go to source code">imap/hm-imap.php</a>
 		<br>
 	</div>
 
@@ -1367,7 +1384,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_message_list">#</a>
-		<code><a href="source-class-Hm_IMAP.html#677-796" title="Go to source code">get_message_list</a>( <span>mixed <var>$uids</var></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#677-797" title="Go to source code">get_message_list</a>( <span>mixed <var>$uids</var></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>return a header list for the supplied message uids</p>
@@ -1412,7 +1429,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_message_structure">#</a>
-		<code><a href="source-class-Hm_IMAP.html#798-807" title="Go to source code">get_message_structure</a>( <span>integer <var>$uid</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#799-808" title="Go to source code">get_message_structure</a>( <span>integer <var>$uid</var></span> )</code>
 
 		<div class="description short">
 			<p>get the IMAP BODYSTRUCTURE of a message</p>
@@ -1451,7 +1468,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_raw_bodystructure">#</a>
-		<code><a href="source-class-Hm_IMAP.html#809-838" title="Go to source code">get_raw_bodystructure</a>( <span>integer <var>$uid</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#810-839" title="Go to source code">get_raw_bodystructure</a>( <span>integer <var>$uid</var></span> )</code>
 
 		<div class="description short">
 			<p>get the raw IMAP BODYSTRUCTURE response</p>
@@ -1490,7 +1507,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse_bodystructure_response">#</a>
-		<code><a href="source-class-Hm_IMAP.html#840-860" title="Go to source code">parse_bodystructure_response</a>( <span>array <var>$result</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#841-861" title="Go to source code">parse_bodystructure_response</a>( <span>array <var>$result</var></span> )</code>
 
 		<div class="description short">
 			<p>New BODYSTRUCTURE parsing routine</p>
@@ -1529,7 +1546,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_message_content">#</a>
-		<code><a href="source-class-Hm_IMAP.html#862-943" title="Go to source code">get_message_content</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var></span>, <span>boolean <var>$max</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$struct</var> = <span class="php-keyword1">true</span></span>, <span>mixed <var>$struct</var>,…</span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#863-944" title="Go to source code">get_message_content</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var></span>, <span>boolean <var>$max</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$struct</var> = <span class="php-keyword1">true</span></span>, <span>mixed <var>$struct</var>,…</span> )</code>
 
 		<div class="description short">
 			<p>get content for a message part</p>
@@ -1577,7 +1594,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_search">#</a>
-		<code><a href="source-class-Hm_IMAP.html#945-1046" title="Go to source code">search</a>( <span>string <var>$target</var> = <span class="php-quote">'ALL'</span></span>, <span>mixed <var>$uids</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$terms</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$esearch</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$exclude_deleted</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$exclude_auto_bcc</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$only_auto_bcc</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#946-1047" title="Go to source code">search</a>( <span>string <var>$target</var> = <span class="php-quote">'ALL'</span></span>, <span>mixed <var>$uids</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$terms</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$esearch</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$exclude_deleted</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$exclude_auto_bcc</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$only_auto_bcc</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>use IMAP SEARCH or ESEARCH
@@ -1632,7 +1649,7 @@ search a field for a keyword</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_message_headers">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1048-1141" title="Go to source code">get_message_headers</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var> = <span class="php-keyword1">false</span></span>, <span> <var>$raw</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1049-1142" title="Go to source code">get_message_headers</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var> = <span class="php-keyword1">false</span></span>, <span> <var>$raw</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>get the headers for the selected message</p>
@@ -1675,7 +1692,7 @@ search a field for a keyword</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start_message_stream">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1143-1171" title="Go to source code">start_message_stream</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1144-1172" title="Go to source code">start_message_stream</a>( <span>integer <var>$uid</var></span>, <span>string <var>$message_part</var></span> )</code>
 
 		<div class="description short">
 			<p>start streaming a message part. returns the number of characters in the message</p>
@@ -1716,7 +1733,7 @@ search a field for a keyword</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_read_stream_line">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1173-1201" title="Go to source code">read_stream_line</a>( <span>integer <var>$size</var> = <span class="php-num">1024</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1174-1202" title="Go to source code">read_stream_line</a>( <span>integer <var>$size</var> = <span class="php-num">1024</span></span> )</code>
 
 		<div class="description short">
 			<p>read a line from a message stream. Called until it returns
@@ -1761,7 +1778,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sort_by_fetch">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1203-1335" title="Go to source code">sort_by_fetch</a>( <span>string <var>$sort</var></span>, <span>boolean <var>$reverse</var></span>, <span>string <var>$filter</var></span>, <span>string <var>$uid_str</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1204-1336" title="Go to source code">sort_by_fetch</a>( <span>string <var>$sort</var></span>, <span>boolean <var>$reverse</var></span>, <span>string <var>$filter</var></span>, <span>string <var>$uid_str</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>use FETCH to sort a list of uids when SORT is not available</p>
@@ -1806,7 +1823,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_delete_mailbox">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1339-1364" title="Go to source code">delete_mailbox</a>( <span>string <var>$mailbox</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1340-1365" title="Go to source code">delete_mailbox</a>( <span>string <var>$mailbox</var></span> )</code>
 
 		<div class="description short">
 			<p>delete an existing mailbox</p>
@@ -1845,7 +1862,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rename_mailbox">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1366-1391" title="Go to source code">rename_mailbox</a>( <span>string <var>$mailbox</var></span>, <span>string <var>$new_mailbox</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1367-1392" title="Go to source code">rename_mailbox</a>( <span>string <var>$mailbox</var></span>, <span>string <var>$new_mailbox</var></span> )</code>
 
 		<div class="description short">
 			<p>rename and existing mailbox</p>
@@ -1886,7 +1903,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create_mailbox">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1393-1417" title="Go to source code">create_mailbox</a>( <span>string <var>$mailbox</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1394-1418" title="Go to source code">create_mailbox</a>( <span>string <var>$mailbox</var></span> )</code>
 
 		<div class="description short">
 			<p>create a new mailbox</p>
@@ -1925,7 +1942,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_message_action">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1419-1512" title="Go to source code">message_action</a>( <span>string <var>$action</var></span>, <span>mixed <var>$uids</var></span>, <span>string <var>$mailbox</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$keyword</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1420-1513" title="Go to source code">message_action</a>( <span>string <var>$action</var></span>, <span>mixed <var>$uids</var></span>, <span>string <var>$mailbox</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$keyword</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>perform an IMAP action on a message</p>
@@ -1967,7 +1984,7 @@ attachments</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_append_start">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1514-1539" title="Go to source code">append_start</a>( <span>string <var>$mailbox</var></span>, <span>integer <var>$size</var></span>, <span>boolean <var>$seen</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1515-1540" title="Go to source code">append_start</a>( <span>string <var>$mailbox</var></span>, <span>integer <var>$size</var></span>, <span>boolean <var>$seen</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>start writing a message to a folder with IMAP APPEND</p>
@@ -2007,7 +2024,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_append_feed">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1541-1548" title="Go to source code">append_feed</a>( <span>string <var>$string</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1542-1549" title="Go to source code">append_feed</a>( <span>string <var>$string</var></span> )</code>
 
 		<div class="description short">
 			<p>write a line to an active IMAP APPEND operation</p>
@@ -2046,7 +2063,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_append_end">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1550-1557" title="Go to source code">append_end</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1551-1558" title="Go to source code">append_end</a>( )</code>
 
 		<div class="description short">
 			<p>finish an IMAP APPEND operation</p>
@@ -2080,7 +2097,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_convert_sequence_to_array">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1561-1581" title="Go to source code">convert_sequence_to_array</a>( <span>string <var>$sequence</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1562-1582" title="Go to source code">convert_sequence_to_array</a>( <span>string <var>$sequence</var></span> )</code>
 
 		<div class="description short">
 			<p>convert a sequence string to an array</p>
@@ -2119,7 +2136,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_convert_array_to_sequence">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1583-1624" title="Go to source code">convert_array_to_sequence</a>( <span>array <var>$array</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1584-1625" title="Go to source code">convert_array_to_sequence</a>( <span>array <var>$array</var></span> )</code>
 
 		<div class="description short">
 			<p>convert an array into a sequence string</p>
@@ -2158,7 +2175,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_decode_fld">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1626-1649" title="Go to source code">decode_fld</a>( <span>string <var>$string</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1627-1634" title="Go to source code">decode_fld</a>( <span>string <var>$string</var></span> )</code>
 
 		<div class="description short">
 			<p>decode mail fields to human readable text</p>
@@ -2197,7 +2214,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_supported">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1651-1658" title="Go to source code">is_supported</a>( <span>string <var>$extension</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1636-1643" title="Go to source code">is_supported</a>( <span>string <var>$extension</var></span> )</code>
 
 		<div class="description short">
 			<p>check if an IMAP extension is supported by the server</p>
@@ -2236,7 +2253,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_state">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1660-1670" title="Go to source code">get_state</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1645-1655" title="Go to source code">get_state</a>( )</code>
 
 		<div class="description short">
 			<p>returns current IMAP state</p>
@@ -2274,7 +2291,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_show_debug">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1672-1687" title="Go to source code">show_debug</a>( <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1657-1672" title="Go to source code">show_debug</a>( <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>output IMAP session debug info</p>
@@ -2315,7 +2332,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_search_bodystructure">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1689-1698" title="Go to source code">search_bodystructure</a>( <span>array <var>$struct</var></span>, <span>string <var>$search_flds</var></span>, <span>array <var>$all</var> = <span class="php-keyword1">true</span></span>, <span> <var>$res</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1674-1683" title="Go to source code">search_bodystructure</a>( <span>array <var>$struct</var></span>, <span>string <var>$search_flds</var></span>, <span>array <var>$all</var> = <span class="php-keyword1">true</span></span>, <span> <var>$res</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>search a nested BODYSTRUCTURE response for a specific part</p>
@@ -2360,7 +2377,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_quota">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1702-1723" title="Go to source code">get_quota</a>( <span>string <var>$quota_root</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1687-1708" title="Go to source code">get_quota</a>( <span>string <var>$quota_root</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>use the IMAP GETQUOTA command to fetch quota information</p>
@@ -2399,7 +2416,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_quota_root">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1725-1746" title="Go to source code">get_quota_root</a>( <span>string <var>$mailbox</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1710-1731" title="Go to source code">get_quota_root</a>( <span>string <var>$mailbox</var></span> )</code>
 
 		<div class="description short">
 			<p>use the IMAP GETQUOTAROOT command to fetch quota information about a mailbox</p>
@@ -2438,7 +2455,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enable">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1748-1779" title="Go to source code">enable</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1733-1764" title="Go to source code">enable</a>( )</code>
 
 		<div class="description short">
 			<p>use the ENABLE extension to tell the IMAP server what extensions we support</p>
@@ -2472,7 +2489,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unselect_mailbox">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1781-1793" title="Go to source code">unselect_mailbox</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1766-1778" title="Go to source code">unselect_mailbox</a>( )</code>
 
 		<div class="description short">
 			<p>unselect the selected mailbox</p>
@@ -2506,7 +2523,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_id">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1795-1840" title="Go to source code">id</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1780-1825" title="Go to source code">id</a>( )</code>
 
 		<div class="description short">
 			<p>use the ID extension</p>
@@ -2540,7 +2557,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_message_sort_order">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1842-1904" title="Go to source code">get_message_sort_order</a>( <span>string <var>$sort</var> = <span class="php-quote">'ARRIVAL'</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">true</span></span>, <span>string <var>$filter</var> = <span class="php-quote">'ALL'</span></span>, <span> <var>$esort</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1827-1889" title="Go to source code">get_message_sort_order</a>( <span>string <var>$sort</var> = <span class="php-quote">'ARRIVAL'</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">true</span></span>, <span>string <var>$filter</var> = <span class="php-quote">'ALL'</span></span>, <span> <var>$esort</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>use the SORT extension to get a sorted UID list</p>
@@ -2585,7 +2602,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_google_search">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1906-1930" title="Go to source code">google_search</a>( <span>string <var>$search_str</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1891-1915" title="Go to source code">google_search</a>( <span>string <var>$search_str</var></span> )</code>
 
 		<div class="description short">
 			<p>search using the Google X-GM-RAW IMAP extension</p>
@@ -2624,7 +2641,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enable_compression">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1932-1947" title="Go to source code">enable_compression</a>( )</code>
+		<code><a href="source-class-Hm_IMAP.html#1917-1932" title="Go to source code">enable_compression</a>( )</code>
 
 		<div class="description short">
 			<p>attempt enable IMAP COMPRESS extension</p>
@@ -2658,7 +2675,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_first_message_part">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1951-1985" title="Go to source code">get_first_message_part</a>( <span>integer <var>$uid</var></span>, <span>string <var>$type</var></span>, <span>string <var>$subtype</var> = <span class="php-keyword1">false</span></span>, <span> <var>$struct</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1936-1970" title="Go to source code">get_first_message_part</a>( <span>integer <var>$uid</var></span>, <span>string <var>$type</var></span>, <span>string <var>$subtype</var> = <span class="php-keyword1">false</span></span>, <span> <var>$struct</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>return the formatted message content of the first part that matches the supplied MIME type</p>
@@ -2703,7 +2720,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_mailbox_page">#</a>
-		<code><a href="source-class-Hm_IMAP.html#1988-2031" title="Go to source code">get_mailbox_page</a>( <span>string <var>$mailbox</var></span>, <span>string <var>$sort</var></span>, <span>string <var>$rev</var></span>, <span>integer <var>$filter</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span> <var>$limit</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#1973-2016" title="Go to source code">get_mailbox_page</a>( <span>string <var>$mailbox</var></span>, <span>string <var>$sort</var></span>, <span>string <var>$rev</var></span>, <span>integer <var>$filter</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span> <var>$limit</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>return a list of headers and UIDs for a page of a mailbox</p>
@@ -2752,7 +2769,7 @@ $return bool true on success</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_folder_list_by_level">#</a>
-		<code><a href="source-class-Hm_IMAP.html#2033-2051" title="Go to source code">get_folder_list_by_level</a>( <span>string <var>$level</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP.html#2018-2036" title="Go to source code">get_folder_list_by_level</a>( <span>string <var>$level</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>return all the folders contained at a hierarchy level, and if possible, if they have sub-folders</p>

@@ -600,6 +600,23 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.pgp.html">
+						pgp<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.pgp.handler.html">
+						handler					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.pgp.output.html">
+						output					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.pop3.html">
 						pop3<span></span>
 					</a>
@@ -914,7 +931,7 @@ classes that extend this.</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Session.html#55-294" title="Go to source code">session_base.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Session.html#55-305" title="Go to source code">session_base.php</a>
 		<br>
 	</div>
 
@@ -1286,6 +1303,40 @@ overrides</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="dump" id="_dump">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dump">#</a>
+		<code><a href="source-class-Hm_Session.html#176-182" title="Go to source code">dump</a>( )</code>
+
+		<div class="description short">
+			<p>Dump current session contents</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Dump current session contents</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="just_started" id="_just_started">
 
 		<td class="attributes"><code>
@@ -1298,7 +1349,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_just_started">#</a>
-		<code><a href="source-class-Hm_Session.html#176-182" title="Go to source code">just_started</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#184-190" title="Go to source code">just_started</a>( )</code>
 
 		<div class="description short">
 			<p>Method called on a new login</p>
@@ -1328,7 +1379,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_record_unsaved">#</a>
-		<code><a href="source-class-Hm_Session.html#184-191" title="Go to source code">record_unsaved</a>( <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#192-199" title="Go to source code">record_unsaved</a>( <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Record session level changes not yet saved in persistant storage</p>
@@ -1363,7 +1414,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_active">#</a>
-		<code><a href="source-class-Hm_Session.html#193-199" title="Go to source code">is_active</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#201-207" title="Go to source code">is_active</a>( )</code>
 
 		<div class="description short">
 			<p>Returns bool true if the session is active</p>
@@ -1397,7 +1448,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_admin">#</a>
-		<code><a href="source-class-Hm_Session.html#201-218" title="Go to source code">is_admin</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#209-226" title="Go to source code">is_admin</a>( )</code>
 
 		<div class="description short">
 			<p>Returns bool true if the user is an admin</p>
@@ -1431,7 +1482,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ciphertext">#</a>
-		<code><a href="source-class-Hm_Session.html#220-227" title="Go to source code">ciphertext</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#228-235" title="Go to source code">ciphertext</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Encrypt session data</p>
@@ -1470,7 +1521,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_plaintext">#</a>
-		<code><a href="source-class-Hm_Session.html#229-236" title="Go to source code">plaintext</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#237-244" title="Go to source code">plaintext</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Decrypt session data</p>
@@ -1509,7 +1560,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_key">#</a>
-		<code><a href="source-class-Hm_Session.html#238-246" title="Go to source code">set_key</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#246-254" title="Go to source code">set_key</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the session level encryption key</p>
@@ -1544,7 +1595,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_key">#</a>
-		<code><a href="source-class-Hm_Session.html#248-260" title="Go to source code">get_key</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#256-268" title="Go to source code">get_key</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Fetch the current encryption key</p>
@@ -1579,7 +1630,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_secure_cookie">#</a>
-		<code><a href="source-class-Hm_Session.html#262-293" title="Go to source code">secure_cookie</a>( <span>object <var>$request</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>string <var>$lifetime</var> = <span class="php-num">0</span></span>, <span>string <var>$path</var> = <span class="php-quote">''</span></span>, <span>string <var>$domain</var> = <span class="php-quote">''</span></span>, <span>string <var>$html_only</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Hm_Session.html#270-304" title="Go to source code">secure_cookie</a>( <span>object <var>$request</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>string <var>$lifetime</var> = <span class="php-num">0</span></span>, <span>string <var>$path</var> = <span class="php-quote">''</span></span>, <span>string <var>$domain</var> = <span class="php-quote">''</span></span>, <span>string <var>$html_only</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Set a cookie, secure if possible</p>
@@ -1817,7 +1868,7 @@ overrides</p>
 	<tr data-order="cname" id="$cname">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			string
 		</code></td>
 
 		<td class="name">
@@ -1835,7 +1886,7 @@ overrides</p>
 		<td class="value">
 			<div>
 				<a href="#$cname" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code><span class="php-quote">'hm_session'</span></code>
 			</div>
 		</td>
 	</tr>
