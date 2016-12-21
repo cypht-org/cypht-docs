@@ -936,7 +936,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Memcached_Session.html#9-129" title="Go to source code">session_memcached.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Memcached_Session.html#9-126" title="Go to source code">session_memcached.php</a>
 		<br>
 	</div>
 
@@ -956,7 +956,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#27-45" title="Go to source code">start</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#24-42" title="Go to source code">start</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Start the session. This could be an existing session or a new login</p>
@@ -993,7 +993,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start_new">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#47-60" title="Go to source code">start_new</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#44-57" title="Go to source code">start_new</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Start a new session</p>
@@ -1028,7 +1028,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start_existing">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#62-75" title="Go to source code">start_existing</a>( <span>object <var>$request</var></span>, <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#59-72" title="Go to source code">start_existing</a>( <span>object <var>$request</var></span>, <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Continue an existing session</p>
@@ -1065,7 +1065,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save_data">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#77-83" title="Go to source code">save_data</a>( )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#74-80" title="Go to source code">save_data</a>( )</code>
 
 		<div class="description short">
 			<p>update memcache with current data</p>
@@ -1097,7 +1097,7 @@ use PHP session handlers at all and is a completely indenpendant session system.
 
 		<td class="name"><div>
 		<a class="anchor" href="#_end">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#85-96" title="Go to source code">end</a>( )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#82-93" title="Go to source code">end</a>( )</code>
 
 		<div class="description short">
 			<p>End a session after a page request is complete. This only closes the session and
@@ -1131,7 +1131,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_close_early">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#98-106" title="Go to source code">close_early</a>( )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#95-103" title="Go to source code">close_early</a>( )</code>
 
 		<div class="description short">
 			<p>Close a session early, but don't destroy it</p>
@@ -1163,7 +1163,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_destroy">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#108-124" title="Go to source code">destroy</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#105-121" title="Go to source code">destroy</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Destroy a session for good</p>
@@ -1200,7 +1200,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_Memcached_Session.html#126-128" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Hm_Memcached_Session.html#123-125" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			
@@ -1278,31 +1278,6 @@ does not destroy it</p>
 
 	<table class="summary properties" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="cname" id="$cname">
-		<td class="attributes"><code>
-			protected  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Hm_Memcached_Session.html#16" title="Go to source code"><var>$cname</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$cname" class="anchor">#</a>
-				<code><span class="php-quote">'hm_session'</span></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="session_key" id="$session_key">
 		<td class="attributes"><code>
 			public  
@@ -1310,7 +1285,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached_Session.html#19" title="Go to source code"><var>$session_key</var></a>
+				<a href="source-class-Hm_Memcached_Session.html#16" title="Go to source code"><var>$session_key</var></a>
 
 			<div class="description short">
 				
@@ -1335,7 +1310,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached_Session.html#22" title="Go to source code"><var>$conn</var></a>
+				<a href="source-class-Hm_Memcached_Session.html#19" title="Go to source code"><var>$conn</var></a>
 
 			<div class="description short">
 				
@@ -1360,7 +1335,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached_Session.html#25" title="Go to source code"><var>$lifetime</var></a>
+				<a href="source-class-Hm_Memcached_Session.html#22" title="Go to source code"><var>$lifetime</var></a>
 
 			<div class="description short">
 				
@@ -1387,6 +1362,7 @@ does not destroy it</p>
 			<a href="class-Hm_Session.html#$active"><var>$active</var></a>, 
 			<a href="class-Hm_Session.html#$auth_class"><var>$auth_class</var></a>, 
 			<a href="class-Hm_Session.html#$auth_mech"><var>$auth_mech</var></a>, 
+			<a href="class-Hm_Session.html#$cname"><var>$cname</var></a>, 
 			<a href="class-Hm_Session.html#$data"><var>$data</var></a>, 
 			<a href="class-Hm_Session.html#$enc_key"><var>$enc_key</var></a>, 
 			<a href="class-Hm_Session.html#$internal_users"><var>$internal_users</var></a>, 
