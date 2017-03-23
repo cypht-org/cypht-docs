@@ -662,6 +662,18 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.profiles.html">
+						profiles<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.profiles.lib.html">
+						lib					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.recaptcha.html">
 						recaptcha<span></span>
 					</a>
@@ -863,6 +875,7 @@
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
 				<li><a href="class-Hm_Crypt.html">Hm_Crypt</a></li>
+				<li><a href="class-Hm_Crypt_Base.html">Hm_Crypt_Base</a></li>
 				<li><a href="class-Hm_DB.html">Hm_DB</a></li>
 				<li><a href="class-Hm_DB_Session.html">Hm_DB_Session</a></li>
 				<li><a href="class-Hm_Debug.html">Hm_Debug</a></li>
@@ -880,6 +893,7 @@
 				<li><a href="class-Hm_Handler_.html">Hm_Handler_</a></li>
 				<li><a href="class-Hm_Handler_2fa_check.html">Hm_Handler_2fa_check</a></li>
 				<li><a href="class-Hm_Handler_add_feeds_to_page_data.html">Hm_Handler_add_feeds_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_add_folder_manage_link.html">Hm_Handler_add_folder_manage_link</a></li>
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
@@ -1402,6 +1416,7 @@
 				<li><a href="class-Hm_POP3_Base.html">Hm_POP3_Base</a></li>
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
+				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1557,6 +1572,7 @@
 				<li><a href="function-reply_to_address.html">reply_to_address</a></li>
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
+				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
 				<li><a href="function-restore_servers.html">restore_servers</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
@@ -1689,13 +1705,13 @@
 </span><span id="54" class="l"><a href="#54"> 54: </a>    }
 </span><span id="55" class="l"><a href="#55"> 55: </a>}
 </span><span id="56" class="l"><a href="#56"> 56: </a>
-</span><span id="57" class="l"><a href="#57"> 57: </a><span class="php-keyword1">class</span> Hm_Crypt {
+</span><span id="57" class="l"><a href="#57"> 57: </a><span class="php-keyword1">class</span> Hm_Crypt_Base {
 </span><span id="58" class="l"><a href="#58"> 58: </a>
-</span><span id="59" class="l"><a href="#59"> 59: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-var">$method</span> = <span class="php-quote">'aes-256-cbc'</span>;
-</span><span id="60" class="l"><a href="#60"> 60: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-var">$hmac</span> = <span class="php-quote">'sha512'</span>;
-</span><span id="61" class="l"><a href="#61"> 61: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-var">$password_rounds</span> = <span class="php-num">86000</span>;
-</span><span id="62" class="l"><a href="#62"> 62: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-var">$encryption_rounds</span> = <span class="php-num">100</span>;
-</span><span id="63" class="l"><a href="#63"> 63: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">private</span> <span class="php-var">$hmac_rounds</span> = <span class="php-num">101</span>;
+</span><span id="59" class="l"><a href="#59"> 59: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var">$method</span> = <span class="php-quote">'aes-256-cbc'</span>;
+</span><span id="60" class="l"><a href="#60"> 60: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var">$hmac</span> = <span class="php-quote">'sha512'</span>;
+</span><span id="61" class="l"><a href="#61"> 61: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var">$password_rounds</span> = <span class="php-num">86000</span>;
+</span><span id="62" class="l"><a href="#62"> 62: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var">$encryption_rounds</span> = <span class="php-num">100</span>;
+</span><span id="63" class="l"><a href="#63"> 63: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var">$hmac_rounds</span> = <span class="php-num">101</span>;
 </span><span id="64" class="l"><a href="#64"> 64: </a>
 </span><span id="65" class="l"><a href="#65"> 65: </a>    <span class="php-comment">/**
 </span></span><span id="66" class="l"><a href="#66"> 66: </a><span class="php-comment">     * Convert ciphertext to plaintext
@@ -1911,6 +1927,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?98cd48b228d06c4199faa6093d1c9e1a2f64535b"></script>
+<script src="elementlist.js?4cad5fd961998d42117fe6f99acdeb19c931401a"></script>
 </body>
 </html>

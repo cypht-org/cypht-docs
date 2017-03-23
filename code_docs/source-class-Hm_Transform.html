@@ -662,6 +662,18 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.profiles.html">
+						profiles<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.profiles.lib.html">
+						lib					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.recaptcha.html">
 						recaptcha<span></span>
 					</a>
@@ -863,6 +875,7 @@
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
 				<li><a href="class-Hm_Crypt.html">Hm_Crypt</a></li>
+				<li><a href="class-Hm_Crypt_Base.html">Hm_Crypt_Base</a></li>
 				<li><a href="class-Hm_DB.html">Hm_DB</a></li>
 				<li><a href="class-Hm_DB_Session.html">Hm_DB_Session</a></li>
 				<li><a href="class-Hm_Debug.html">Hm_Debug</a></li>
@@ -880,6 +893,7 @@
 				<li><a href="class-Hm_Handler_.html">Hm_Handler_</a></li>
 				<li><a href="class-Hm_Handler_2fa_check.html">Hm_Handler_2fa_check</a></li>
 				<li><a href="class-Hm_Handler_add_feeds_to_page_data.html">Hm_Handler_add_feeds_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_add_folder_manage_link.html">Hm_Handler_add_folder_manage_link</a></li>
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
@@ -1402,6 +1416,7 @@
 				<li><a href="class-Hm_POP3_Base.html">Hm_POP3_Base</a></li>
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
+				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1557,6 +1572,7 @@
 				<li><a href="function-reply_to_address.html">reply_to_address</a></li>
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
+				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
 				<li><a href="function-restore_servers.html">restore_servers</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
@@ -1686,7 +1702,7 @@
 </span><span id="51" class="l"><a href="#51"> 51: </a>        <span class="php-var">$output</span>[<span class="php-quote">'router_user_msgs'</span>] = Hm_Msgs::get();
 </span><span id="52" class="l"><a href="#52"> 52: </a>        <span class="php-var">$output</span> = <span class="php-var">$this</span>-&gt;filter_output(<span class="php-var">$output</span>, <span class="php-var">$allowed_output</span>);
 </span><span id="53" class="l"><a href="#53"> 53: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;config-&gt;get(<span class="php-quote">'encrypt_ajax_requests'</span>, <span class="php-keyword1">false</span>)) {
-</span><span id="54" class="l"><a href="#54"> 54: </a>            <span class="php-var">$output</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'payload'</span> =&gt; Hm_Crypt::ciphertext(<span class="php-keyword2">json_encode</span>(<span class="php-var">$output</span>, JSON_FORCE_OBJECT), Hm_Request_Key::generate()));
+</span><span id="54" class="l"><a href="#54"> 54: </a>            <span class="php-var">$output</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'payload'</span> =&gt; Hm_Crypt_Base::ciphertext(<span class="php-keyword2">json_encode</span>(<span class="php-var">$output</span>, JSON_FORCE_OBJECT), Hm_Request_Key::generate()));
 </span><span id="55" class="l"><a href="#55"> 55: </a>        }
 </span><span id="56" class="l"><a href="#56"> 56: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$output</span>, JSON_FORCE_OBJECT);
 </span><span id="57" class="l"><a href="#57"> 57: </a>    }
@@ -1818,6 +1834,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?98cd48b228d06c4199faa6093d1c9e1a2f64535b"></script>
+<script src="elementlist.js?4cad5fd961998d42117fe6f99acdeb19c931401a"></script>
 </body>
 </html>

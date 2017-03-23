@@ -662,6 +662,18 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.profiles.html">
+						profiles<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.profiles.lib.html">
+						lib					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.recaptcha.html">
 						recaptcha<span></span>
 					</a>
@@ -863,6 +875,7 @@
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
 				<li><a href="class-Hm_Crypt.html">Hm_Crypt</a></li>
+				<li><a href="class-Hm_Crypt_Base.html">Hm_Crypt_Base</a></li>
 				<li><a href="class-Hm_DB.html">Hm_DB</a></li>
 				<li><a href="class-Hm_DB_Session.html">Hm_DB_Session</a></li>
 				<li><a href="class-Hm_Debug.html">Hm_Debug</a></li>
@@ -880,6 +893,7 @@
 				<li><a href="class-Hm_Handler_.html">Hm_Handler_</a></li>
 				<li><a href="class-Hm_Handler_2fa_check.html">Hm_Handler_2fa_check</a></li>
 				<li><a href="class-Hm_Handler_add_feeds_to_page_data.html">Hm_Handler_add_feeds_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_add_folder_manage_link.html">Hm_Handler_add_folder_manage_link</a></li>
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
@@ -1402,6 +1416,7 @@
 				<li><a href="class-Hm_POP3_Base.html">Hm_POP3_Base</a></li>
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
+				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1557,6 +1572,7 @@
 				<li><a href="function-reply_to_address.html">reply_to_address</a></li>
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
+				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
 				<li><a href="function-restore_servers.html">restore_servers</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
@@ -1800,36 +1816,56 @@
 </span><span id="165" class="l"><a href="#165">165: </a>    }
 </span><span id="166" class="l"><a href="#166">166: </a>
 </span><span id="167" class="l"><a href="#167">167: </a>    <span class="php-comment">/**
-</span></span><span id="168" class="l"><a href="#168">168: </a><span class="php-comment">     * Try to disconnect cleanly
-</span></span><span id="169" class="l"><a href="#169">169: </a><span class="php-comment">     * @param int $id server id
-</span></span><span id="170" class="l"><a href="#170">170: </a><span class="php-comment">     * @return void
-</span></span><span id="171" class="l"><a href="#171">171: </a><span class="php-comment">     */</span>
-</span><span id="172" class="l"><a href="#172">172: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> clean_up(<span class="php-var">$id</span>=<span class="php-keyword1">false</span>) {
-</span><span id="173" class="l"><a href="#173">173: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$id</span> !== <span class="php-keyword1">false</span> &amp;&amp; <span class="php-keyword2">array_key_exists</span>(<span class="php-var">$id</span>, self::<span class="php-var">$server_list</span>)) {
-</span><span id="174" class="l"><a href="#174">174: </a>            self::disconnect(<span class="php-var">$id</span>);
-</span><span id="175" class="l"><a href="#175">175: </a>        }
-</span><span id="176" class="l"><a href="#176">176: </a>        <span class="php-keyword1">else</span> {
-</span><span id="177" class="l"><a href="#177">177: </a>            <span class="php-keyword1">foreach</span> (self::<span class="php-var">$server_list</span> <span class="php-keyword1">as</span> <span class="php-var">$index</span> =&gt; <span class="php-var">$server</span>) {
-</span><span id="178" class="l"><a href="#178">178: </a>                self::disconnect(<span class="php-var">$index</span>);
-</span><span id="179" class="l"><a href="#179">179: </a>            }
-</span><span id="180" class="l"><a href="#180">180: </a>        }
-</span><span id="181" class="l"><a href="#181">181: </a>    }
-</span><span id="182" class="l"><a href="#182">182: </a>
-</span><span id="183" class="l"><a href="#183">183: </a>    <span class="php-comment">/**
-</span></span><span id="184" class="l"><a href="#184">184: </a><span class="php-comment">     * Disconnect from a server
-</span></span><span id="185" class="l"><a href="#185">185: </a><span class="php-comment">     * @param int $id the server id to disconnect
-</span></span><span id="186" class="l"><a href="#186">186: </a><span class="php-comment">     * @return void
-</span></span><span id="187" class="l"><a href="#187">187: </a><span class="php-comment">     */</span>
-</span><span id="188" class="l"><a href="#188">188: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> disconnect(<span class="php-var">$id</span>) {
-</span><span id="189" class="l"><a href="#189">189: </a>        <span class="php-keyword1">if</span> (self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'connected'</span>] &amp;&amp; self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>]) {
-</span><span id="190" class="l"><a href="#190">190: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">method_exists</span>(self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>], <span class="php-quote">'disconnect'</span>)) {
-</span><span id="191" class="l"><a href="#191">191: </a>                self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>]-&gt;disconnect();
-</span><span id="192" class="l"><a href="#192">192: </a>            }
-</span><span id="193" class="l"><a href="#193">193: </a>            self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'connected'</span>] = <span class="php-keyword1">false</span>;
-</span><span id="194" class="l"><a href="#194">194: </a>        }
-</span><span id="195" class="l"><a href="#195">195: </a>    }
-</span><span id="196" class="l"><a href="#196">196: </a>}
-</span><span id="197" class="l"><a href="#197">197: </a></span></code></pre>
+</span></span><span id="168" class="l"><a href="#168">168: </a><span class="php-comment">     * Fetch a server by the username and servername
+</span></span><span id="169" class="l"><a href="#169">169: </a><span class="php-comment">     * @param string $username the user associated with the server
+</span></span><span id="170" class="l"><a href="#170">170: </a><span class="php-comment">     * @param string $servername the host associated with the server
+</span></span><span id="171" class="l"><a href="#171">171: </a><span class="php-comment">     * @return array, false on failure
+</span></span><span id="172" class="l"><a href="#172">172: </a><span class="php-comment">     */</span>
+</span><span id="173" class="l"><a href="#173">173: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> fetch(<span class="php-var">$username</span>, <span class="php-var">$servername</span>) {
+</span><span id="174" class="l"><a href="#174">174: </a>        <span class="php-keyword1">foreach</span> (self::<span class="php-var">$server_list</span> <span class="php-keyword1">as</span> <span class="php-var">$server</span>) {
+</span><span id="175" class="l"><a href="#175">175: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'user'</span>, <span class="php-var">$server</span>) &amp;&amp; <span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'server'</span>, <span class="php-var">$server</span>)) {
+</span><span id="176" class="l"><a href="#176">176: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$username</span> == <span class="php-var">$server</span>[<span class="php-quote">'user'</span>] &amp;&amp; <span class="php-var">$servername</span> == <span class="php-var">$server</span>[<span class="php-quote">'server'</span>]) {
+</span><span id="177" class="l"><a href="#177">177: </a>                    <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">'pass'</span>, <span class="php-var">$server</span>)) {
+</span><span id="178" class="l"><a href="#178">178: </a>                        <span class="php-keyword1">unset</span>(<span class="php-var">$server</span>[<span class="php-quote">'pass'</span>]);
+</span><span id="179" class="l"><a href="#179">179: </a>                        <span class="php-keyword1">return</span> <span class="php-var">$server</span>;
+</span><span id="180" class="l"><a href="#180">180: </a>                    }
+</span><span id="181" class="l"><a href="#181">181: </a>                }
+</span><span id="182" class="l"><a href="#182">182: </a>            }
+</span><span id="183" class="l"><a href="#183">183: </a>        }
+</span><span id="184" class="l"><a href="#184">184: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="185" class="l"><a href="#185">185: </a>    }
+</span><span id="186" class="l"><a href="#186">186: </a>
+</span><span id="187" class="l"><a href="#187">187: </a>    <span class="php-comment">/**
+</span></span><span id="188" class="l"><a href="#188">188: </a><span class="php-comment">     * Try to disconnect cleanly
+</span></span><span id="189" class="l"><a href="#189">189: </a><span class="php-comment">     * @param int $id server id
+</span></span><span id="190" class="l"><a href="#190">190: </a><span class="php-comment">     * @return void
+</span></span><span id="191" class="l"><a href="#191">191: </a><span class="php-comment">     */</span>
+</span><span id="192" class="l"><a href="#192">192: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> clean_up(<span class="php-var">$id</span>=<span class="php-keyword1">false</span>) {
+</span><span id="193" class="l"><a href="#193">193: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$id</span> !== <span class="php-keyword1">false</span> &amp;&amp; <span class="php-keyword2">array_key_exists</span>(<span class="php-var">$id</span>, self::<span class="php-var">$server_list</span>)) {
+</span><span id="194" class="l"><a href="#194">194: </a>            self::disconnect(<span class="php-var">$id</span>);
+</span><span id="195" class="l"><a href="#195">195: </a>        }
+</span><span id="196" class="l"><a href="#196">196: </a>        <span class="php-keyword1">else</span> {
+</span><span id="197" class="l"><a href="#197">197: </a>            <span class="php-keyword1">foreach</span> (self::<span class="php-var">$server_list</span> <span class="php-keyword1">as</span> <span class="php-var">$index</span> =&gt; <span class="php-var">$server</span>) {
+</span><span id="198" class="l"><a href="#198">198: </a>                self::disconnect(<span class="php-var">$index</span>);
+</span><span id="199" class="l"><a href="#199">199: </a>            }
+</span><span id="200" class="l"><a href="#200">200: </a>        }
+</span><span id="201" class="l"><a href="#201">201: </a>    }
+</span><span id="202" class="l"><a href="#202">202: </a>
+</span><span id="203" class="l"><a href="#203">203: </a>    <span class="php-comment">/**
+</span></span><span id="204" class="l"><a href="#204">204: </a><span class="php-comment">     * Disconnect from a server
+</span></span><span id="205" class="l"><a href="#205">205: </a><span class="php-comment">     * @param int $id the server id to disconnect
+</span></span><span id="206" class="l"><a href="#206">206: </a><span class="php-comment">     * @return void
+</span></span><span id="207" class="l"><a href="#207">207: </a><span class="php-comment">     */</span>
+</span><span id="208" class="l"><a href="#208">208: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> disconnect(<span class="php-var">$id</span>) {
+</span><span id="209" class="l"><a href="#209">209: </a>        <span class="php-keyword1">if</span> (self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'connected'</span>] &amp;&amp; self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>]) {
+</span><span id="210" class="l"><a href="#210">210: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">method_exists</span>(self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>], <span class="php-quote">'disconnect'</span>)) {
+</span><span id="211" class="l"><a href="#211">211: </a>                self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'object'</span>]-&gt;disconnect();
+</span><span id="212" class="l"><a href="#212">212: </a>            }
+</span><span id="213" class="l"><a href="#213">213: </a>            self::<span class="php-var">$server_list</span>[<span class="php-var">$id</span>][<span class="php-quote">'connected'</span>] = <span class="php-keyword1">false</span>;
+</span><span id="214" class="l"><a href="#214">214: </a>        }
+</span><span id="215" class="l"><a href="#215">215: </a>    }
+</span><span id="216" class="l"><a href="#216">216: </a>}
+</span><span id="217" class="l"><a href="#217">217: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -1837,6 +1873,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?98cd48b228d06c4199faa6093d1c9e1a2f64535b"></script>
+<script src="elementlist.js?4cad5fd961998d42117fe6f99acdeb19c931401a"></script>
 </body>
 </html>
