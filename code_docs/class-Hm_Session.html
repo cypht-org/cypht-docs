@@ -222,6 +222,18 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.desktop.html">
+						desktop<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.desktop.notifications.html">
+						notifications					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.developer.html">
 						developer<span></span>
 					</a>
@@ -250,6 +262,11 @@
 					</a>
 
 						<ul>
+				<li>
+					<a href="package-modules.dynamic.login.functions.html">
+						functions					</a>
+
+						</li>
 				<li>
 					<a href="package-modules.dynamic.login.handler.html">
 						handler					</a>
@@ -650,6 +667,11 @@
 
 						<ul>
 				<li>
+					<a href="package-modules.profile.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
 					<a href="package-modules.profile.handler.html">
 						handler					</a>
 
@@ -849,6 +871,11 @@
 
 						</li>
 							</ul></li></ul></li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
 			</ul>
 		</div>
 
@@ -946,6 +973,7 @@ classes that extend this.</p>
 
 	<div>
 		<h4>Indirect known subclasses</h4>
+			<a href="class-Custom_Session.html">Custom_Session</a>, 
 			<a href="class-Hm_DB_Session.html">Hm_DB_Session</a>, 
 			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>
 	</div>
@@ -960,7 +988,7 @@ classes that extend this.</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Session.html#59-312" title="Go to source code">session_base.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Session.html#59-318" title="Go to source code">session_base.php</a>
 		<br>
 	</div>
 
@@ -980,7 +1008,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check">#</a>
-		<code><a href="source-class-Hm_Session.html#101-106" title="Go to source code">check</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#104-109" title="Go to source code">check</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>check for an active session or an attempt to start one</p>
@@ -1019,7 +1047,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Hm_Session.html#108-113" title="Go to source code">start</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#111-116" title="Go to source code">start</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Start the session. This could be an existing session or a new login</p>
@@ -1054,7 +1082,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_auth">#</a>
-		<code><a href="source-class-Hm_Session.html#115-121" title="Go to source code">auth</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#118-124" title="Go to source code">auth</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Call the configured authentication method to check user credentials</p>
@@ -1095,7 +1123,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_Session.html#123-129" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Session.html#126-132" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return a session value, or a user settings value stored in the session</p>
@@ -1136,7 +1164,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Hm_Session.html#131-137" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#134-140" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Save a value in the session</p>
@@ -1173,7 +1201,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_del">#</a>
-		<code><a href="source-class-Hm_Session.html#139-144" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#142-147" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a value from the session</p>
@@ -1208,7 +1236,7 @@ classes that extend this.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_end">#</a>
-		<code><a href="source-class-Hm_Session.html#146-151" title="Go to source code">end</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#149-154" title="Go to source code">end</a>( )</code>
 
 		<div class="description short">
 			<p>End a session after a page request is complete. This only closes the session and
@@ -1240,7 +1268,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_destroy">#</a>
-		<code><a href="source-class-Hm_Session.html#153-158" title="Go to source code">destroy</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#156-161" title="Go to source code">destroy</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Destroy a session for good</p>
@@ -1275,7 +1303,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Session.html#160-170" title="Go to source code">__construct</a>( <span>object <var>$config</var></span>, <span>string <var>$auth_type</var> = <span class="php-quote">'Hm_Auth_DB'</span></span> )</code>
+		<code><a href="source-class-Hm_Session.html#163-173" title="Go to source code">__construct</a>( <span>object <var>$config</var></span>, <span>string <var>$auth_type</var> = <span class="php-quote">'Hm_Auth_DB'</span></span> )</code>
 
 		<div class="description short">
 			<p>Setup initial data</p>
@@ -1312,7 +1340,7 @@ does not destroy it</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load_auth_mech">#</a>
-		<code><a href="source-class-Hm_Session.html#172-181" title="Go to source code">load_auth_mech</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#175-184" title="Go to source code">load_auth_mech</a>( )</code>
 
 		<div class="description short">
 			<p>Lazy loader for the auth mech so modules can define their own
@@ -1344,7 +1372,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Hm_Session.html#183-189" title="Go to source code">dump</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#186-192" title="Go to source code">dump</a>( )</code>
 
 		<div class="description short">
 			<p>Dump current session contents</p>
@@ -1378,7 +1406,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_just_started">#</a>
-		<code><a href="source-class-Hm_Session.html#191-197" title="Go to source code">just_started</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#194-200" title="Go to source code">just_started</a>( )</code>
 
 		<div class="description short">
 			<p>Method called on a new login</p>
@@ -1408,7 +1436,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_record_unsaved">#</a>
-		<code><a href="source-class-Hm_Session.html#199-206" title="Go to source code">record_unsaved</a>( <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#202-209" title="Go to source code">record_unsaved</a>( <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Record session level changes not yet saved in persistant storage</p>
@@ -1443,7 +1471,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_active">#</a>
-		<code><a href="source-class-Hm_Session.html#208-214" title="Go to source code">is_active</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#211-217" title="Go to source code">is_active</a>( )</code>
 
 		<div class="description short">
 			<p>Returns bool true if the session is active</p>
@@ -1477,7 +1505,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_admin">#</a>
-		<code><a href="source-class-Hm_Session.html#216-233" title="Go to source code">is_admin</a>( )</code>
+		<code><a href="source-class-Hm_Session.html#219-236" title="Go to source code">is_admin</a>( )</code>
 
 		<div class="description short">
 			<p>Returns bool true if the user is an admin</p>
@@ -1511,7 +1539,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ciphertext">#</a>
-		<code><a href="source-class-Hm_Session.html#235-242" title="Go to source code">ciphertext</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#238-245" title="Go to source code">ciphertext</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Encrypt session data</p>
@@ -1550,7 +1578,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_plaintext">#</a>
-		<code><a href="source-class-Hm_Session.html#244-251" title="Go to source code">plaintext</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#247-254" title="Go to source code">plaintext</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Decrypt session data</p>
@@ -1589,7 +1617,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_key">#</a>
-		<code><a href="source-class-Hm_Session.html#253-261" title="Go to source code">set_key</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#256-264" title="Go to source code">set_key</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the session level encryption key</p>
@@ -1624,7 +1652,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_key">#</a>
-		<code><a href="source-class-Hm_Session.html#263-275" title="Go to source code">get_key</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session.html#266-278" title="Go to source code">get_key</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Fetch the current encryption key</p>
@@ -1659,7 +1687,7 @@ overrides</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_secure_cookie">#</a>
-		<code><a href="source-class-Hm_Session.html#277-311" title="Go to source code">secure_cookie</a>( <span>object <var>$request</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>string <var>$lifetime</var> = <span class="php-num">0</span></span>, <span>string <var>$path</var> = <span class="php-quote">''</span></span>, <span>string <var>$domain</var> = <span class="php-quote">''</span></span>, <span>string <var>$html_only</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Hm_Session.html#280-317" title="Go to source code">secure_cookie</a>( <span>object <var>$request</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>string <var>$lifetime</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$path</var> = <span class="php-quote">''</span></span>, <span>string <var>$domain</var> = <span class="php-quote">''</span></span>, <span>string <var>$html_only</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Set a cookie, secure if possible</p>
@@ -1991,6 +2019,31 @@ overrides</p>
 			<div>
 				<a href="#$session_key" class="anchor">#</a>
 				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="lifetime" id="$lifetime">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Session.html#102" title="Go to source code"><var>$lifetime</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$lifetime" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
 			</div>
 		</td>
 	</tr>

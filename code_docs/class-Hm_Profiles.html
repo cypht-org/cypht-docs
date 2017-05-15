@@ -222,6 +222,18 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.desktop.html">
+						desktop<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.desktop.notifications.html">
+						notifications					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="package-modules.developer.html">
 						developer<span></span>
 					</a>
@@ -250,6 +262,11 @@
 					</a>
 
 						<ul>
+				<li>
+					<a href="package-modules.dynamic.login.functions.html">
+						functions					</a>
+
+						</li>
 				<li>
 					<a href="package-modules.dynamic.login.handler.html">
 						handler					</a>
@@ -650,6 +667,11 @@
 
 						<ul>
 				<li>
+					<a href="package-modules.profile.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
 					<a href="package-modules.profile.handler.html">
 						handler					</a>
 
@@ -849,6 +871,11 @@
 
 						</li>
 							</ul></li></ul></li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
 			</ul>
 		</div>
 
@@ -927,7 +954,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.profiles.html">profiles</a>\<a href="package-modules.profiles.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Profiles.html#11-62" title="Go to source code">profiles/hm-profiles.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Profiles.html#11-95" title="Go to source code">profiles/hm-profiles.php</a>
 		<br>
 	</div>
 
@@ -947,7 +974,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Profiles.html#18-19" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Hm_Profiles.html#18-20" title="Go to source code">__construct</a>( <span> <var>$hmod</var></span> )</code>
 
 		<div class="description short">
 			
@@ -977,7 +1004,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Hm_Profiles.html#21-22" title="Go to source code">load</a>( <span> <var>$session</var></span> )</code>
+		<code><a href="source-class-Hm_Profiles.html#22-27" title="Go to source code">load</a>( <span> <var>$hmod</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1007,7 +1034,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Hm_Profiles.html#24-25" title="Go to source code">save</a>( <span> <var>$session</var></span> )</code>
+		<code><a href="source-class-Hm_Profiles.html#29-31" title="Go to source code">save</a>( <span> <var>$user_config</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1037,7 +1064,37 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Hm_Profiles.html#27-28" title="Go to source code">add</a>( <span> <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Profiles.html#33-35" title="Go to source code">add</a>( <span> <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_default" id="_set_default">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_default">#</a>
+		<code><a href="source-class-Hm_Profiles.html#37-48" title="Go to source code">set_default</a>( <span> <var>$id</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1067,7 +1124,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load_legacy">#</a>
-		<code><a href="source-class-Hm_Profiles.html#30-55" title="Go to source code">load_legacy</a>( <span> <var>$hmod</var></span> )</code>
+		<code><a href="source-class-Hm_Profiles.html#50-74" title="Go to source code">load_legacy</a>( <span> <var>$hmod</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1097,7 +1154,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_edit">#</a>
-		<code><a href="source-class-Hm_Profiles.html#57-58" title="Go to source code">edit</a>( <span> <var>$id</var></span>, <span> <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Profiles.html#76-82" title="Go to source code">edit</a>( <span> <var>$id</var></span>, <span> <var>$data</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1115,7 +1172,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="delete" id="_delete">
+	<tr data-order="del" id="_del">
 
 		<td class="attributes"><code>
 			 public 
@@ -1126,8 +1183,38 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_delete">#</a>
-		<code><a href="source-class-Hm_Profiles.html#60-61" title="Go to source code">delete</a>( <span> <var>$id</var></span> )</code>
+		<a class="anchor" href="#_del">#</a>
+		<code><a href="source-class-Hm_Profiles.html#84-91" title="Go to source code">del</a>( <span> <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="list_all" id="_list_all">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_list_all">#</a>
+		<code><a href="source-class-Hm_Profiles.html#92-94" title="Go to source code">list_all</a>( )</code>
 
 		<div class="description short">
 			
