@@ -255,7 +255,7 @@
      <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
      <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Setup&nbsp;curl&nbsp;options</span></td></tr>
-     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
+     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource|false&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
      <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;string&nbsp;$url&nbsp;url&nbsp;to&nbsp;fetch&nbsp;content&nbsp;from</span></td></tr>
      <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;array&nbsp;$headers&nbsp;HTTP&nbsp;headers</span></td></tr>
      <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;void</span></td></tr>
@@ -269,7 +269,7 @@
      <tr><td><div align="right"><a name="38"></a><a href="#38">38</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
      <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Setup&nbsp;optional&nbsp;post&nbsp;properties</span></td></tr>
-     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
+     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource|false&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
      <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;array&nbsp;$post&nbsp;post&nbsp;fields</span></td></tr>
      <tr><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;void</span></td></tr>
      <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
@@ -296,7 +296,7 @@
      <tr><td><div align="right"><a name="65"></a><a href="#65">65</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="66"></a><a href="#66">66</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
      <tr><td><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Process&nbsp;a&nbsp;curl&nbsp;request&nbsp;result</span></td></tr>
-     <tr><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
+     <tr><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;resource|false&nbsp;$ch&nbsp;curl&nbsp;connection</span></td></tr>
      <tr><td><div align="right"><a name="69"></a><a href="#69">69</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;array</span></td></tr>
      <tr><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
      <tr><td><div align="right"><a name="71"></a><a href="#71">71</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">private</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">curl_result</span><span class="keyword">(</span><span class="default">$ch</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">{</span></td></tr>
@@ -334,7 +334,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.7</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.18-3</a> with <a href="https://xdebug.org/">Xdebug 2.5.1</a> and <a href="https://phpunit.de/">PHPUnit 5.7.17</a> at Mon May 15 18:31:09 CDT 2017.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.7</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.18-3</a> with <a href="https://xdebug.org/">Xdebug 2.5.1</a> and <a href="https://phpunit.de/">PHPUnit 5.7.17</a> at Thu Jun 1 14:22:17 CDT 2017.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
    </footer>
