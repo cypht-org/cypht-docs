@@ -895,6 +895,7 @@
 			<ul>
 				<li class="active"><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_Modules.html">Hm_Modules</a></li>
+				<li><a href="class-Hm_Modules_Queue.html">Hm_Modules_Queue</a></li>
 				<li><a href="class-Hm_Output_Module_Exec.html">Hm_Output_Module_Exec</a></li>
 			</ul>
 
@@ -978,7 +979,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.modules.html">modules</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Handler_Module_Exec.html#82-153" title="Go to source code">modules_exec.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Handler_Module_Exec.html#121-204" title="Go to source code">modules_exec.php</a>
 		<br>
 	</div>
 
@@ -986,6 +987,36 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="default_language" id="_default_language">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_default_language">#</a>
+		<code><a href="source-class-Hm_Handler_Module_Exec.html#132-136" title="Go to source code">default_language</a>( )</code>
+
+		<div class="description short">
+			<p>Setup a default language translation</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Setup a default language translation</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="run_handler_modules" id="_run_handler_modules">
 
 		<td class="attributes"><code>
@@ -998,7 +1029,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run_handler_modules">#</a>
-		<code><a href="source-class-Hm_Handler_Module_Exec.html#87-108" title="Go to source code">run_handler_modules</a>( <span>object <var>$request</var></span>, <span>object <var>$session</var></span>, <span>string <var>$page</var></span> )</code>
+		<code><a href="source-class-Hm_Handler_Module_Exec.html#138-159" title="Go to source code">run_handler_modules</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>object <var>$session</var></span>, <span>string <var>$page</var></span> )</code>
 
 		<div class="description short">
 			<p>Run all the handler modules for a page and merge the results</p>
@@ -1037,7 +1068,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run_handler_module">#</a>
-		<code><a href="source-class-Hm_Handler_Module_Exec.html#110-132" title="Go to source code">run_handler_module</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span>, <span>string <var>$name</var></span>, <span>array <var>$args</var></span>, <span>object <var>$session</var></span> )</code>
+		<code><a href="source-class-Hm_Handler_Module_Exec.html#161-183" title="Go to source code">run_handler_module</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span>, <span>string <var>$name</var></span>, <span>array <var>$args</var></span>, <span>object <var>$session</var></span> )</code>
 
 		<div class="description short">
 			<p>Run a single handler and return the results</p>
@@ -1080,7 +1111,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge_response">#</a>
-		<code><a href="source-class-Hm_Handler_Module_Exec.html#134-152" title="Go to source code">merge_response</a>( <span>object <var>$request</var></span>, <span>object <var>$session</var></span>, <span>string <var>$page</var></span> )</code>
+		<code><a href="source-class-Hm_Handler_Module_Exec.html#185-203" title="Go to source code">merge_response</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>object <var>$session</var></span>, <span>string <var>$page</var></span> )</code>
 
 		<div class="description short">
 			<p>Merge the combined response from the handler modules with some default values</p>
@@ -1120,6 +1151,134 @@
 
 
 
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="request" id="$request">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Handler_Module_Exec.html#126" title="Go to source code"><var>$request</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$request" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="site_config" id="$site_config">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Handler_Module_Exec.html#127" title="Go to source code"><var>$site_config</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$site_config" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="handler_response" id="$handler_response">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Handler_Module_Exec.html#128" title="Go to source code"><var>$handler_response</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$handler_response" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="page" id="$page">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Handler_Module_Exec.html#129" title="Go to source code"><var>$page</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$page" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="session" id="$session">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Handler_Module_Exec.html#130" title="Go to source code"><var>$session</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$session" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
 
 
 

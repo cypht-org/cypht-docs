@@ -957,7 +957,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.setup.html">setup</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Functions.html#45-89" title="Go to source code">framework.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Functions.html#45-163" title="Go to source code">framework.php</a>
 		<br>
 	</div>
 
@@ -970,14 +970,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setcookie">#</a>
-		<code><a href="source-class-Hm_Functions.html#51-55" title="Go to source code">setcookie</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span>, <span> <var>$lifetime</var> = <span class="php-num">0</span></span>, <span> <var>$path</var> = <span class="php-quote">''</span></span>, <span> <var>$domain</var> = <span class="php-quote">''</span></span>, <span> <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span> <var>$html_only</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#52-61" title="Go to source code">setcookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span> <var>$lifetime</var> = <span class="php-num">0</span></span>, <span> <var>$path</var> = <span class="php-quote">''</span></span>, <span> <var>$domain</var> = <span class="php-quote">''</span></span>, <span> <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span> <var>$html_only</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -987,7 +987,28 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+					<dt><var>$lifetime</var></dt>
+					<dd></dd>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+					<dt><var>$domain</var></dt>
+					<dd></dd>
+					<dt><var>$secure</var></dt>
+					<dd></dd>
+					<dt><var>$html_only</var></dt>
+					<dd></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1000,14 +1021,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_header">#</a>
-		<code><a href="source-class-Hm_Functions.html#56-58" title="Go to source code">header</a>( <span> <var>$header</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#63-69" title="Go to source code">header</a>( <span>string <var>$header</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1017,7 +1038,16 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$header</var></dt>
+					<dd></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					null
+				</div>
 
 
 
@@ -1030,14 +1060,53 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cease">#</a>
-		<code><a href="source-class-Hm_Functions.html#59-61" title="Go to source code">cease</a>( <span> <var>$msg</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#71-77" title="Go to source code">cease</a>( <span>string <var>$msg</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="session_destroy" id="_session_destroy">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_session_destroy">#</a>
+		<code><a href="source-class-Hm_Functions.html#79-87" title="Go to source code">session_destroy</a>( )</code>
 
 		<div class="description short">
 			
@@ -1048,6 +1117,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1060,14 +1133,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_session_start">#</a>
-		<code><a href="source-class-Hm_Functions.html#62-64" title="Go to source code">session_start</a>( )</code>
+		<code><a href="source-class-Hm_Functions.html#89-94" title="Go to source code">session_start</a>( )</code>
 
 		<div class="description short">
 			
@@ -1078,6 +1151,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1090,14 +1167,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_error_log">#</a>
-		<code><a href="source-class-Hm_Functions.html#65-67" title="Go to source code">error_log</a>( <span> <var>$str</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#96-101" title="Go to source code">error_log</a>( <span> <var>$str</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1108,6 +1185,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1127,7 +1208,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_c_setopt">#</a>
-		<code><a href="source-class-Hm_Functions.html#68-70" title="Go to source code">c_setopt</a>( <span> <var>$handle</var></span>, <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#103-111" title="Go to source code">c_setopt</a>( <span>resource|false <var>$handle</var></span>, <span>integer <var>$name</var></span>, <span> <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1137,6 +1218,15 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handle</var></dt>
+					<dd></dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -1150,14 +1240,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			resource|false
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_c_init">#</a>
-		<code><a href="source-class-Hm_Functions.html#71-73" title="Go to source code">c_init</a>( )</code>
+		<code><a href="source-class-Hm_Functions.html#113-118" title="Go to source code">c_init</a>( )</code>
 
 		<div class="description short">
 			
@@ -1168,6 +1258,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					resource|false
+				</div>
 
 
 
@@ -1187,7 +1281,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_c_exec">#</a>
-		<code><a href="source-class-Hm_Functions.html#74-76" title="Go to source code">c_exec</a>( <span> <var>$handle</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#120-125" title="Go to source code">c_exec</a>( <span>resource|false <var>$handle</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1197,6 +1291,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$handle</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -1217,7 +1316,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_function_exists">#</a>
-		<code><a href="source-class-Hm_Functions.html#77-79" title="Go to source code">function_exists</a>( <span> <var>$func</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#127-132" title="Go to source code">function_exists</a>( <span>string <var>$func</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1227,6 +1326,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$func</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -1247,7 +1351,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_class_exists">#</a>
-		<code><a href="source-class-Hm_Functions.html#80-82" title="Go to source code">class_exists</a>( <span> <var>$class</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#134-139" title="Go to source code">class_exists</a>( <span>string <var>$class</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1257,6 +1361,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$class</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -1277,7 +1386,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_random_bytes">#</a>
-		<code><a href="source-class-Hm_Functions.html#83-85" title="Go to source code">random_bytes</a>( <span> <var>$size</var></span> )</code>
+		<code><a href="source-class-Hm_Functions.html#141-146" title="Go to source code">random_bytes</a>( <span>integer <var>$size</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1287,6 +1396,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$size</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -1300,14 +1414,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			
+			Memcached
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_memcached">#</a>
-		<code><a href="source-class-Hm_Functions.html#86-88" title="Go to source code">memcached</a>( )</code>
+		<code><a href="source-class-Hm_Functions.html#148-153" title="Go to source code">memcached</a>( )</code>
 
 		<div class="description short">
 			
@@ -1318,6 +1432,51 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					Memcached
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filter_input_array" id="_filter_input_array">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filter_input_array">#</a>
+		<code><a href="source-class-Hm_Functions.html#155-162" title="Go to source code">filter_input_array</a>( <span>string <var>$type</var></span>, <span>array <var>$filters</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd>input type</dd>
+					<dt><var>$filters</var></dt>
+					<dd>filter list</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>filtered list
+				</div>
 
 
 

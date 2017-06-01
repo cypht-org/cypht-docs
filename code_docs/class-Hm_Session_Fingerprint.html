@@ -901,6 +901,7 @@
 
 			<h3>Functions</h3>
 			<ul>
+				<li><a href="function-setup_auth.html">setup_auth</a></li>
 				<li><a href="function-setup_session.html">setup_session</a></li>
 			</ul>
 		</div>
@@ -979,7 +980,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Session_Fingerprint.html#9-57" title="Go to source code">session_base.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Session_Fingerprint.html#9-80" title="Go to source code">session_base.php</a>
 		<br>
 	</div>
 
@@ -987,6 +988,119 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#14-20" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Save a value in the session</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Save a value in the session</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>the name to save</dd>
+					<dt><var>$value</var></dt>
+					<dd>the value to save</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="destroy" id="_destroy">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_destroy">#</a>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#22-27" title="Go to source code">destroy</a>( <span>object <var>$request</var></span> )</code>
+
+		<div class="description short">
+			<p>Destroy a session for good</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Destroy a session for good</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd>request details</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#29-35" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Return a session value, or a user settings value stored in the session</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return a session value, or a user settings value stored in the session</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>session value name to return</dd>
+					<dt><var>$default</var></dt>
+					<dd>value to return if $name is not found</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>the value if found, otherwise $default
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="check_fingerprint" id="_check_fingerprint">
 
 		<td class="attributes"><code>
@@ -999,7 +1113,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_fingerprint">#</a>
-		<code><a href="source-class-Hm_Session_Fingerprint.html#14-30" title="Go to source code">check_fingerprint</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#37-53" title="Go to source code">check_fingerprint</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Check HTTP header "fingerprint" against the session value</p>
@@ -1034,7 +1148,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_build_fingerprint">#</a>
-		<code><a href="source-class-Hm_Session_Fingerprint.html#32-46" title="Go to source code">build_fingerprint</a>( <span>array <var>$env</var></span>, <span> <var>$input</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#55-69" title="Go to source code">build_fingerprint</a>( <span>array <var>$env</var></span>, <span> <var>$input</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Build HTTP header "fingerprint"</p>
@@ -1075,7 +1189,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_fingerprint">#</a>
-		<code><a href="source-class-Hm_Session_Fingerprint.html#48-56" title="Go to source code">set_fingerprint</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#71-79" title="Go to source code">set_fingerprint</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Save a fingerprint in the session</p>

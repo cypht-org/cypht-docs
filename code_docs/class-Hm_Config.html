@@ -1171,7 +1171,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_Config.html#75-83" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Config.html#75-83" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>false|string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return a config value if it exists</p>
@@ -1272,7 +1272,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_decode">#</a>
-		<code><a href="source-class-Hm_Config.html#107-124" title="Go to source code">decode</a>( <span>string <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Config.html#107-124" title="Go to source code">decode</a>( <span>string|false <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Decode user settings with json_decode or unserialize depending
@@ -1319,7 +1319,7 @@ on the format</p>
 	<tr data-order="source" id="$source">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			string
 		</code></td>
 
 		<td class="name">
@@ -1337,7 +1337,7 @@ on the format</p>
 		<td class="value">
 			<div>
 				<a href="#$source" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code><span class="php-quote">''</span></code>
 			</div>
 		</td>
 	</tr>
@@ -1394,7 +1394,7 @@ on the format</p>
 	<tr data-order="encrypted_str" id="$encrypted_str">
 		<td class="attributes"><code>
 			public  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
@@ -1412,7 +1412,7 @@ on the format</p>
 		<td class="value">
 			<div>
 				<a href="#$encrypted_str" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>

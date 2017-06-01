@@ -895,6 +895,7 @@
 			<ul>
 				<li><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_Modules.html">Hm_Modules</a></li>
+				<li><a href="class-Hm_Modules_Queue.html">Hm_Modules_Queue</a></li>
 				<li class="active"><a href="class-Hm_Output_Module_Exec.html">Hm_Output_Module_Exec</a></li>
 			</ul>
 
@@ -978,7 +979,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.modules.html">modules</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Output_Module_Exec.html#9-81" title="Go to source code">modules_exec.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Output_Module_Exec.html#9-120" title="Go to source code">modules_exec.php</a>
 		<br>
 	</div>
 
@@ -986,6 +987,68 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="get_current_language" id="_get_current_language">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_current_language">#</a>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#17-21" title="Go to source code">get_current_language</a>( )</code>
+
+		<div class="description short">
+			<p>Look for translation strings based on the current language setting
+return array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Look for translation strings based on the current language setting
+return array</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="default_language" id="_default_language">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_default_language">#</a>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#23-27" title="Go to source code">default_language</a>( )</code>
+
+		<div class="description short">
+			<p>Setup a default language translation</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Setup a default language translation</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="run_output_modules" id="_run_output_modules">
 
 		<td class="attributes"><code>
@@ -998,7 +1061,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run_output_modules">#</a>
-		<code><a href="source-class-Hm_Output_Module_Exec.html#14-43" title="Go to source code">run_output_modules</a>( <span>object <var>$request</var></span>, <span>boolean <var>$active_session</var></span>, <span> <var>$page</var></span> )</code>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#29-60" title="Go to source code">run_output_modules</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>boolean <var>$active_session</var></span>, <span>string <var>$page</var></span>, <span>array <var>$handler_response</var></span> )</code>
 
 		<div class="description short">
 			<p>Run all the handler modules for a page and merge the results</p>
@@ -1015,7 +1078,9 @@
 					<dt><var>$active_session</var></dt>
 					<dd>true if the session is active</dd>
 					<dt><var>$page</var></dt>
-					<dd></dd>
+					<dd>current page request</dd>
+					<dt><var>$handler_response</var></dt>
+					<dd>data from handler modules</dd>
 				</dl></div>
 
 
@@ -1030,14 +1095,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run_output_module">#</a>
-		<code><a href="source-class-Hm_Output_Module_Exec.html#45-79" title="Go to source code">run_output_module</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span>, <span>string <var>$name</var></span>, <span>array <var>$args</var></span>, <span>boolean <var>$active_session</var></span>, <span>string <var>$format</var></span>, <span>array <var>$lang_str</var></span> )</code>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#62-84" title="Go to source code">run_output_module</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span>, <span>string <var>$name</var></span>, <span>array <var>$args</var></span>, <span>boolean <var>$active_session</var></span>, <span>string <var>$format</var></span>, <span>array <var>$lang_str</var></span> )</code>
 
 		<div class="description short">
 			<p>Run a single output modules and return the results</p>
@@ -1065,6 +1130,98 @@
 					<dd>translation lookup array</dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="process_result" id="_process_result">
+
+		<td class="attributes"><code>
+			 private 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_process_result">#</a>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#86-105" title="Go to source code">process_result</a>( <span>object <var>$mod</var></span>, <span>string <var>$format</var></span>, <span>array <var>$lang_str</var></span>, <span>array <var>$protected</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mod</var></dt>
+					<dd>output module</dd>
+					<dt><var>$format</var></dt>
+					<dd>output format type</dd>
+					<dt><var>$lang_str</var></dt>
+					<dd>translation lookup array</dd>
+					<dt><var>$protected</var></dt>
+					<dd>output</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="output_result" id="_output_result">
+
+		<td class="attributes"><code>
+			 private 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_output_result">#</a>
+		<code><a href="source-class-Hm_Output_Module_Exec.html#107-118" title="Go to source code">output_result</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span>, <span>string|false <var>$mod_output</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd>module input</dd>
+					<dt><var>$protected</var></dt>
+					<dd>protected output</dd>
+					<dt><var>$mod_output</var></dt>
+					<dd>output module result</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
 
 
 
@@ -1085,6 +1242,59 @@
 
 
 
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="output_response" id="$output_response">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Output_Module_Exec.html#14" title="Go to source code"><var>$output_response</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$output_response" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="output_data" id="$output_data">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Output_Module_Exec.html#15" title="Go to source code"><var>$output_data</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$output_data" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	</table>
 
 
 

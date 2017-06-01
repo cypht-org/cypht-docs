@@ -889,7 +889,6 @@
 				<li><a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a></li>
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
-				<li><a href="class-Hm_Auth_None.html">Hm_Auth_None</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
 			</ul>
 
@@ -897,6 +896,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-get_auth_config.html">get_auth_config</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -957,7 +960,6 @@ and overriding the check_credentials method</p>
 			<a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a>, 
 			<a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a>, 
 			<a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a>, 
-			<a href="class-Hm_Auth_None.html">Hm_Auth_None</a>, 
 			<a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a>
 	</div>
 
@@ -977,7 +979,7 @@ and overriding the check_credentials method</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.auth.html">auth</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Auth.html#9-46" title="Go to source code">auth.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Auth.html#9-45" title="Go to source code">auth.php</a>
 		<br>
 	</div>
 
@@ -997,7 +999,7 @@ and overriding the check_credentials method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Auth.html#23-30" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
+		<code><a href="source-class-Hm_Auth.html#23-29" title="Go to source code">__construct</a>( <span>object <var>$config</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign site config</p>
@@ -1032,7 +1034,7 @@ and overriding the check_credentials method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_credentials">#</a>
-		<code><a href="source-class-Hm_Auth.html#32-38" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth.html#31-37" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>This is the method new auth mechs need to override.</p>
@@ -1073,7 +1075,7 @@ and overriding the check_credentials method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save_auth_detail">#</a>
-		<code><a href="source-class-Hm_Auth.html#40-45" title="Go to source code">save_auth_detail</a>( <span>object <var>$session</var></span> )</code>
+		<code><a href="source-class-Hm_Auth.html#39-44" title="Go to source code">save_auth_detail</a>( <span>object <var>$session</var></span> )</code>
 
 		<div class="description short">
 			<p>Optional method for auth mech to save login details</p>
@@ -1114,7 +1116,7 @@ and overriding the check_credentials method</p>
 	<tr data-order="site_config" id="$site_config">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
@@ -1132,7 +1134,7 @@ and overriding the check_credentials method</p>
 		<td class="value">
 			<div>
 				<a href="#$site_config" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>

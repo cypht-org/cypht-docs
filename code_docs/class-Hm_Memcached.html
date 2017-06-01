@@ -962,7 +962,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.cache.html">cache</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Memcached.html#202-290" title="Go to source code">cache.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Memcached.html#213-339" title="Go to source code">cache.php</a>
 		<br>
 	</div>
 
@@ -982,7 +982,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Memcached.html#215-220" title="Go to source code">__construct</a>( <span> <var>$config</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#226-234" title="Go to source code">__construct</a>( <span><code><a href="class-Hm_Config.html">Hm_Config</a></code> <var>$config</var></span> )</code>
 
 		<div class="description short">
 			
@@ -992,6 +992,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd>site config object</dd>
+				</dl></div>
 
 
 
@@ -1005,14 +1010,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_close">#</a>
-		<code><a href="source-class-Hm_Memcached.html#222-227" title="Go to source code">close</a>( )</code>
+		<code><a href="source-class-Hm_Memcached.html#236-244" title="Go to source code">close</a>( )</code>
 
 		<div class="description short">
 			
@@ -1023,6 +1028,10 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1042,7 +1051,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_del">#</a>
-		<code><a href="source-class-Hm_Memcached.html#228-233" title="Go to source code">del</a>( <span> <var>$key</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#246-254" title="Go to source code">del</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1052,6 +1061,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>cache key to delete</dd>
+				</dl></div>
 
 
 
@@ -1065,14 +1079,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Hm_Memcached.html#235-240" title="Go to source code">set</a>( <span> <var>$key</var></span>, <span> <var>$val</var></span>, <span> <var>$lifetime</var> = <span class="php-num">300</span></span>, <span> <var>$crypt_key</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#256-268" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>string|string <var>$val</var></span>, <span>integer <var>$lifetime</var> = <span class="php-num">300</span></span>, <span>string <var>$crypt_key</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -1082,7 +1096,22 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>key to set</dd>
+					<dt><var>$val</var></dt>
+					<dd>value to set</dd>
+					<dt><var>$lifetime</var></dt>
+					<dd>lifetime of the cache entry</dd>
+					<dt><var>$crypt_key</var></dt>
+					<dd>encryption key</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 
@@ -1095,14 +1124,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			false|array|string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_Memcached.html#242-247" title="Go to source code">get</a>( <span> <var>$key</var></span>, <span> <var>$crypt_key</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#270-280" title="Go to source code">get</a>( <span>string <var>$key</var></span>, <span>string <var>$crypt_key</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -1112,7 +1141,18 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>name of value to fetch</dd>
+					<dt><var>$crypt_key</var></dt>
+					<dd>encryption key</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					false|array|string
+				</div>
 
 
 
@@ -1125,14 +1165,14 @@
 		<td class="attributes"><code>
 			 private 
 
-			
+			string|array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_prep_in">#</a>
-		<code><a href="source-class-Hm_Memcached.html#249-254" title="Go to source code">prep_in</a>( <span> <var>$data</var></span>, <span> <var>$crypt_key</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#282-292" title="Go to source code">prep_in</a>( <span>array|string <var>$data</var></span>, <span>string <var>$crypt_key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1142,7 +1182,18 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>data to prep</dd>
+					<dt><var>$crypt_key</var></dt>
+					<dd>encryption key</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					string|array
+				</div>
 
 
 
@@ -1155,14 +1206,14 @@
 		<td class="attributes"><code>
 			 private 
 
-			
+			false|array|string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_prep_out">#</a>
-		<code><a href="source-class-Hm_Memcached.html#256-261" title="Go to source code">prep_out</a>( <span> <var>$data</var></span>, <span> <var>$crypt_key</var></span> )</code>
+		<code><a href="source-class-Hm_Memcached.html#294-304" title="Go to source code">prep_out</a>( <span>array <var>$data</var></span>, <span>string <var>$crypt_key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1172,7 +1223,18 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>data to prep</dd>
+					<dt><var>$crypt_key</var></dt>
+					<dd>encryption key</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					false|array|string
+				</div>
 
 
 
@@ -1192,7 +1254,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_Memcached.html#263-271" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Hm_Memcached.html#309-317" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			
@@ -1222,7 +1284,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_active">#</a>
-		<code><a href="source-class-Hm_Memcached.html#273-289" title="Go to source code">active</a>( )</code>
+		<code><a href="source-class-Hm_Memcached.html#322-338" title="Go to source code">active</a>( )</code>
 
 		<div class="description short">
 			
@@ -1262,7 +1324,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached.html#209" title="Go to source code"><var>$supported</var></a>
+				<a href="source-class-Hm_Memcached.html#220" title="Go to source code"><var>$supported</var></a>
 
 			<div class="description short">
 				
@@ -1287,7 +1349,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached.html#210" title="Go to source code"><var>$enabled</var></a>
+				<a href="source-class-Hm_Memcached.html#221" title="Go to source code"><var>$enabled</var></a>
 
 			<div class="description short">
 				
@@ -1312,7 +1374,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached.html#211" title="Go to source code"><var>$server</var></a>
+				<a href="source-class-Hm_Memcached.html#222" title="Go to source code"><var>$server</var></a>
 
 			<div class="description short">
 				
@@ -1337,7 +1399,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached.html#212" title="Go to source code"><var>$port</var></a>
+				<a href="source-class-Hm_Memcached.html#223" title="Go to source code"><var>$port</var></a>
 
 			<div class="description short">
 				
@@ -1362,7 +1424,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Memcached.html#213" title="Go to source code"><var>$cache_con</var></a>
+				<a href="source-class-Hm_Memcached.html#224" title="Go to source code"><var>$cache_con</var></a>
 
 			<div class="description short">
 				

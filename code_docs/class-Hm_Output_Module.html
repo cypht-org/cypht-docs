@@ -1244,7 +1244,7 @@ and string translation services to modules</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.module.html">module</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Output_Module.html#353-433" title="Go to source code">module.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Output_Module.html#379-455" title="Go to source code">module.php</a>
 		<br>
 	</div>
 
@@ -1264,7 +1264,7 @@ and string translation services to modules</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Output_Module.html#376-385" title="Go to source code">__construct</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span> )</code>
+		<code><a href="source-class-Hm_Output_Module.html#402-410" title="Go to source code">__construct</a>( <span>array <var>$input</var></span>, <span>array <var>$protected</var></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -1301,7 +1301,7 @@ and string translation services to modules</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_trans">#</a>
-		<code><a href="source-class-Hm_Output_Module.html#387-405" title="Go to source code">trans</a>( <span>string <var>$string</var></span> )</code>
+		<code><a href="source-class-Hm_Output_Module.html#412-430" title="Go to source code">trans</a>( <span>string <var>$string</var></span> )</code>
 
 		<div class="description short">
 			<p>Return a translated string if possible</p>
@@ -1333,14 +1333,14 @@ and string translation services to modules</p>
 		<td class="attributes"><code>
 			 public 
 
-			mixed
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_output_content">#</a>
-		<code><a href="source-class-Hm_Output_Module.html#407-425" title="Go to source code">output_content</a>( <span>string <var>$format</var></span>, <span>array <var>$lang_str</var></span>, <span> <var>$protected</var></span> )</code>
+		<code><a href="source-class-Hm_Output_Module.html#432-448" title="Go to source code">output_content</a>( <span>string <var>$format</var></span>, <span>array <var>$lang_str</var></span> )</code>
 
 		<div class="description short">
 			<p>Build output by calling module specific output functions</p>
@@ -1353,24 +1353,17 @@ and string translation services to modules</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$format</var></dt>
-					<dd>$formt output type, either HTML5 or AJAX</dd>
+					<dd>output type, either HTML5 or AJAX</dd>
 					<dt><var>$lang_str</var></dt>
 					<dd>list of language translation strings</dd>
-					<dt><var>$protected</var></dt>
-					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed<br><p>module output, a string for HTML5 format,
-              and an array for AJAX</p>
+					string
 				</div>
 
 
-				<h4>Todo</h4>
-				<div class="list">
-						remove or fix $protected arg<br>
-				</div>
 
 
 		</div>
@@ -1381,14 +1374,14 @@ and string translation services to modules</p>
 		<td class="attributes"><code>
 			abstract protected 
 
-			mixed
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_output">#</a>
-		<code><a href="source-class-Hm_Output_Module.html#427-432" title="Go to source code">output</a>( )</code>
+		<code><a href="source-class-Hm_Output_Module.html#450-454" title="Go to source code">output</a>( )</code>
 
 		<div class="description short">
 			<p>Output modules need to override this method to add to a page or AJAX response</p>
@@ -1401,8 +1394,7 @@ and string translation services to modules</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed<br><p>should output with $this->output() if $this->format == AJAX, or return an HTML5 formatted
-              string if set to HTML5</p>
+					string
 				</div>
 
 
@@ -1419,6 +1411,7 @@ and string translation services to modules</p>
 	<tr>
 		<td><code>
 			<a href="class-Hm_Module_Output.html#_append">append()</a>, 
+			<a href="class-Hm_Module_Output.html#_check_overwrite">check_overwrite()</a>, 
 			<a href="class-Hm_Module_Output.html#_concat">concat()</a>, 
 			<a href="class-Hm_Module_Output.html#_exists">exists()</a>, 
 			<a href="class-Hm_Module_Output.html#_get">get()</a>, 
@@ -1449,7 +1442,7 @@ and string translation services to modules</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Output_Module.html#365" title="Go to source code"><var>$lstr</var></a>
+				<a href="source-class-Hm_Output_Module.html#391" title="Go to source code"><var>$lstr</var></a>
 
 			<div class="description short">
 				
@@ -1474,7 +1467,7 @@ and string translation services to modules</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Output_Module.html#368" title="Go to source code"><var>$lang</var></a>
+				<a href="source-class-Hm_Output_Module.html#394" title="Go to source code"><var>$lang</var></a>
 
 			<div class="description short">
 				
@@ -1499,7 +1492,7 @@ and string translation services to modules</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Output_Module.html#371" title="Go to source code"><var>$dir</var></a>
+				<a href="source-class-Hm_Output_Module.html#397" title="Go to source code"><var>$dir</var></a>
 
 			<div class="description short">
 				
@@ -1520,11 +1513,11 @@ and string translation services to modules</p>
 	<tr data-order="format" id="$format">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Output_Module.html#374" title="Go to source code"><var>$format</var></a>
+				<a href="source-class-Hm_Output_Module.html#400" title="Go to source code"><var>$format</var></a>
 
 			<div class="description short">
 				
@@ -1538,7 +1531,7 @@ and string translation services to modules</p>
 		<td class="value">
 			<div>
 				<a href="#$format" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code><span class="php-quote">''</span></code>
 			</div>
 		</td>
 	</tr>

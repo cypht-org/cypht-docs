@@ -889,7 +889,6 @@
 				<li class="active"><a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a></li>
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
-				<li><a href="class-Hm_Auth_None.html">Hm_Auth_None</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
 			</ul>
 
@@ -897,6 +896,10 @@
 
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-get_auth_config.html">get_auth_config</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -980,7 +983,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.auth.html">auth</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Auth_DB.html#74-175" title="Go to source code">auth.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Auth_DB.html#47-150" title="Go to source code">auth.php</a>
 		<br>
 	</div>
 
@@ -1000,7 +1003,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_credentials">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#82-101" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#58-77" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Send the username and password to the configured DB for authentication</p>
@@ -1041,7 +1044,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_delete">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#103-116" title="Go to source code">delete</a>( <span>string <var>$user</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#79-92" title="Go to source code">delete</a>( <span>string <var>$user</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a user account from the db</p>
@@ -1080,7 +1083,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#118-129" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#94-105" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			<p>Create a new or re-use an existing DB connection</p>
@@ -1114,7 +1117,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_change_pass">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#131-146" title="Go to source code">change_pass</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#107-122" title="Go to source code">change_pass</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Change the password for a user in the DB</p>
@@ -1155,7 +1158,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#148-174" title="Go to source code">create</a>( <span>object <var>$user</var></span>, <span>string <var>$pass</var></span>, <span>string <var>$pass</var>,…</span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#124-149" title="Go to source code">create</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Create a new user in the DB</p>
@@ -1168,10 +1171,8 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$user</var></dt>
-					<dd>$request request details</dd>
+					<dd>username</dd>
 					<dt><var>$pass</var></dt>
-					<dd>$user username</dd>
-					<dt><var>$pass</var>,…</dt>
 					<dd>password</dd>
 				</dl></div>
 
@@ -1217,7 +1218,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Auth_DB.html#80" title="Go to source code"><var>$internal_users</var></a>
+				<a href="source-class-Hm_Auth_DB.html#53" title="Go to source code"><var>$internal_users</var></a>
 
 			<div class="description short">
 				
@@ -1232,6 +1233,31 @@
 			<div>
 				<a href="#$internal_users" class="anchor">#</a>
 				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="dbh" id="$dbh">
+		<td class="attributes"><code>
+			private  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Auth_DB.html#56" title="Go to source code"><var>$dbh</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$dbh" class="anchor">#</a>
+				<code></code>
 			</div>
 		</td>
 	</tr>

@@ -887,9 +887,15 @@
 			<ul>
 				<li><a href="class-Custom_Auth.html">Custom_Auth</a></li>
 				<li class="active"><a href="class-Custom_Session.html">Custom_Session</a></li>
+				<li><a href="class-Hm_Dispatch.html">Hm_Dispatch</a></li>
 			</ul>
 
 
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Hm_Server_List.html">Hm_Server_List</a></li>
+				<li><a href="class-Hm_Server_Modify.html">Hm_Server_Modify</a></li>
+			</ul>
 
 
 
@@ -1057,7 +1063,7 @@ defer to the PHP session class methods.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Custom_Session.html#33-40" title="Go to source code">start</a>( <span>object <var>$request</var></span>, <span> <var>$existing_session</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Custom_Session.html#33-40" title="Go to source code">start</a>( <span>object <var>$request</var></span>, <span>boolean <var>$existing_session</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Start the session. This could be an existing session or a new login</p>
@@ -1327,6 +1333,7 @@ does not destroy it</p>
 	<caption>Methods inherited from <a href="class-Hm_PHP_Session.html#methods">Hm_PHP_Session</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-Hm_PHP_Session.html#_authed">authed()</a>, 
 			<a href="class-Hm_PHP_Session.html#_change_pass">change_pass()</a>, 
 			<a href="class-Hm_PHP_Session.html#_close_early">close_early()</a>, 
 			<a href="class-Hm_PHP_Session.html#_create">create()</a>, 
@@ -1378,6 +1385,14 @@ does not destroy it</p>
 
 
 	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Hm_PHP_Session.html#properties">Hm_PHP_Session</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_PHP_Session.html#$conn"><var>$conn</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
 	<caption>Properties inherited from <a href="class-Hm_Session.html#properties">Hm_Session</a></caption>
 	<tr>
 		<td><code>
@@ -1388,7 +1403,6 @@ does not destroy it</p>
 			<a href="class-Hm_Session.html#$data"><var>$data</var></a>, 
 			<a href="class-Hm_Session.html#$enc_key"><var>$enc_key</var></a>, 
 			<a href="class-Hm_Session.html#$internal_users"><var>$internal_users</var></a>, 
-			<a href="class-Hm_Session.html#$lifetime"><var>$lifetime</var></a>, 
 			<a href="class-Hm_Session.html#$loaded"><var>$loaded</var></a>, 
 			<a href="class-Hm_Session.html#$session_closed"><var>$session_closed</var></a>, 
 			<a href="class-Hm_Session.html#$session_key"><var>$session_key</var></a>, 

@@ -991,7 +991,7 @@ backwards compatibility.</p>
 		<td class="attributes"><code>
 			 public static
 
-			string
+			string|false
 			
 			</code>
 		</td>
@@ -1018,7 +1018,7 @@ backwards compatibility.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					string<br>decrypted text
+					string|false<br>decrypted text
 				</div>
 
 
@@ -1173,9 +1173,9 @@ everything</p>
 	<tr data-order="keygen" id="_keygen">
 
 		<td class="attributes"><code>
-			 private static
+			 protected static
 
-			array
+			string[]
 			
 			</code>
 		</td>
@@ -1202,11 +1202,13 @@ everything</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					array
+					string[]
 				</div>
 
 
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Hm_Crypt_Base.html#_keygen">Hm_Crypt_Base::keygen()</a></code></div>
 
 		</div>
 		</div></td>

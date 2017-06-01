@@ -893,7 +893,6 @@
 				<li><a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a></li>
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
-				<li><a href="class-Hm_Auth_None.html">Hm_Auth_None</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
 				<li><a href="class-Hm_Cal_Data.html">Hm_Cal_Data</a></li>
 				<li><a href="class-Hm_Cal_Event.html">Hm_Cal_Event</a></li>
@@ -1470,12 +1469,16 @@
 
 			<h3>Traits</h3>
 			<ul>
+				<li><a href="class-Hm_Dispatch_Redirect.html">Hm_Dispatch_Redirect</a></li>
 				<li><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_List.html">Hm_List</a></li>
 				<li><a href="class-Hm_Module_Output.html">Hm_Module_Output</a></li>
 				<li><a href="class-Hm_Modules.html">Hm_Modules</a></li>
+				<li><a href="class-Hm_Modules_Queue.html">Hm_Modules_Queue</a></li>
 				<li><a href="class-Hm_Output_Module_Exec.html">Hm_Output_Module_Exec</a></li>
+				<li><a href="class-Hm_Server_Connect.html">Hm_Server_Connect</a></li>
 				<li><a href="class-Hm_Server_List.html">Hm_Server_List</a></li>
+				<li><a href="class-Hm_Server_Modify.html">Hm_Server_Modify</a></li>
 				<li><a href="class-Hm_Session_Fingerprint.html">Hm_Session_Fingerprint</a></li>
 				<li><a href="class-Hm_Uid_Cache.html">Hm_Uid_Cache</a></li>
 			</ul>
@@ -1540,6 +1543,7 @@
 				<li><a href="function-format_shortcuts.html">format_shortcuts</a></li>
 				<li><a href="function-generate_qr_code.html">generate_qr_code</a></li>
 				<li><a href="function-get_2fa_key.html">get_2fa_key</a></li>
+				<li><a href="function-get_auth_config.html">get_auth_config</a></li>
 				<li><a href="function-get_date_bounds.html">get_date_bounds</a></li>
 				<li><a href="function-get_draft.html">get_draft</a></li>
 				<li><a href="function-get_imap_mime_extension.html">get_imap_mime_extension</a></li>
@@ -1576,8 +1580,8 @@
 				<li><a href="function-in_server_list.html">in_server_list</a></li>
 				<li><a href="function-interface_langs.html">interface_langs</a></li>
 				<li><a href="function-is_authenticated.html">is_authenticated</a></li>
-				<li><a href="function-is_email.html">is_email</a></li>
-				<li><a href="function-is_feed.html">is_feed</a></li>
+				<li><a href="function-is_email_address.html">is_email_address</a></li>
+				<li><a href="function-is_news_feed.html">is_news_feed</a></li>
 				<li><a href="function-keycodes.html">keycodes</a></li>
 				<li><a href="function-lc_headers.html">lc_headers</a></li>
 				<li><a href="function-ldap_add_user_auth.html">ldap_add_user_auth</a></li>
@@ -1627,6 +1631,7 @@
 				<li><a href="function-search_for_feeds.html">search_for_feeds</a></li>
 				<li><a href="function-search_pop3_msg.html">search_pop3_msg</a></li>
 				<li><a href="function-server_from_compose_smtp_id.html">server_from_compose_smtp_id</a></li>
+				<li><a href="function-setup_auth.html">setup_auth</a></li>
 				<li><a href="function-setup_base_ajax_page.html">setup_base_ajax_page</a></li>
 				<li><a href="function-setup_base_page.html">setup_base_page</a></li>
 				<li><a href="function-setup_session.html">setup_session</a></li>
@@ -1757,13 +1762,6 @@
 				<td class="name"><code><a href="class-Hm_Output_message_start.html#_output">output()</a></code></td>
 				<td>
 								this is pretty ugly, clean it up and remove module specific stuff<br>
-				</td>
-			</tr>
-			<tr>
-				<td class="name"><a href="class-Hm_Output_Module.html">Hm_Output_Module</a></td>
-				<td class="name"><code><a href="class-Hm_Output_Module.html#_output_content">output_content()</a></code></td>
-				<td>
-								remove or fix $protected arg<br>
 				</td>
 			</tr>
 		</table>

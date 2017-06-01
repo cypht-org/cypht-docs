@@ -1235,7 +1235,7 @@ and see data from other modules with the get() method</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.module.html">module</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Handler_Module.html#173-351" title="Go to source code">module.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Handler_Module.html#185-377" title="Go to source code">module.php</a>
 		<br>
 	</div>
 
@@ -1255,7 +1255,7 @@ and see data from other modules with the get() method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#208-225" title="Go to source code">__construct</a>( <span>object <var>$parent</var></span>, <span>boolean <var>$logged_in</var></span>, <span>string <var>$page</var></span>, <span>array <var>$output</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$protected</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#220-235" title="Go to source code">__construct</a>( <span>object <var>$parent</var></span>, <span>string <var>$page</var></span>, <span>array <var>$output</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$protected</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Assign input and state sources</p>
@@ -1269,8 +1269,6 @@ and see data from other modules with the get() method</p>
 				<div class="list"><dl>
 					<dt><var>$parent</var></dt>
 					<dd>instance of the Hm_Request_Handler class</dd>
-					<dt><var>$logged_in</var></dt>
-					<dd>true if currently logged in</dd>
 					<dt><var>$page</var></dt>
 					<dd>page id</dd>
 					<dt><var>$output</var></dt>
@@ -1298,7 +1296,7 @@ and see data from other modules with the get() method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validate_method">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#227-240" title="Go to source code">validate_method</a>( )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#237-250" title="Go to source code">validate_method</a>( )</code>
 
 		<div class="description short">
 			<p>Validate HTTP request type, only GET and POST are allowed</p>
@@ -1312,6 +1310,40 @@ and see data from other modules with the get() method</p>
 				<h4>Returns</h4>
 				<div class="list">
 					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="source_and_target" id="_source_and_target">
+
+		<td class="attributes"><code>
+			 private 
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_source_and_target">#</a>
+		<code><a href="source-class-Hm_Handler_Module.html#252-274" title="Go to source code">source_and_target</a>( )</code>
+
+		<div class="description short">
+			<p>Find source and target values for validate_origin</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Find source and target values for validate_origin</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]
 				</div>
 
 
@@ -1332,7 +1364,7 @@ and see data from other modules with the get() method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validate_origin">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#242-281" title="Go to source code">validate_origin</a>( )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#276-297" title="Go to source code">validate_origin</a>( )</code>
 
 		<div class="description short">
 			<p>Validate that the request has matching source and target origins</p>
@@ -1354,19 +1386,87 @@ and see data from other modules with the get() method</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="invalid_ajax_key" id="_invalid_ajax_key">
+
+		<td class="attributes"><code>
+			 private 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_invalid_ajax_key">#</a>
+		<code><a href="source-class-Hm_Handler_Module.html#299-310" title="Go to source code">invalid_ajax_key</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="invalid_http_key" id="_invalid_http_key">
+
+		<td class="attributes"><code>
+			 private 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_invalid_http_key">#</a>
+		<code><a href="source-class-Hm_Handler_Module.html#312-322" title="Go to source code">invalid_http_key</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="process_key" id="_process_key">
 
 		<td class="attributes"><code>
 			 public 
 
-			
+			false|string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process_key">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#283-315" title="Go to source code">process_key</a>( )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#324-345" title="Go to source code">process_key</a>( )</code>
 
 		<div class="description short">
 			<p>Validate a form key. If this is a non-empty POST form from an
@@ -1381,6 +1481,10 @@ page if the page_key value is either not present or not valid</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					false|string
+				</div>
 
 
 
@@ -1400,7 +1504,7 @@ page if the page_key value is either not present or not valid</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process_form">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#317-336" title="Go to source code">process_form</a>( <span>array <var>$form</var></span> )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#347-362" title="Go to source code">process_form</a>( <span>array <var>$form</var></span> )</code>
 
 		<div class="description short">
 			<p>Process an HTTP POST form</p>
@@ -1439,7 +1543,7 @@ page if the page_key value is either not present or not valid</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_module_is_supported">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#338-345" title="Go to source code">module_is_supported</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#364-371" title="Go to source code">module_is_supported</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Determine if a module set is enabled</p>
@@ -1478,7 +1582,7 @@ page if the page_key value is either not present or not valid</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process">#</a>
-		<code><a href="source-class-Hm_Handler_Module.html#347-350" title="Go to source code">process</a>( )</code>
+		<code><a href="source-class-Hm_Handler_Module.html#373-376" title="Go to source code">process</a>( )</code>
 
 		<div class="description short">
 			<p>Handler modules need to override this method to do work</p>
@@ -1504,6 +1608,7 @@ page if the page_key value is either not present or not valid</p>
 	<tr>
 		<td><code>
 			<a href="class-Hm_Module_Output.html#_append">append()</a>, 
+			<a href="class-Hm_Module_Output.html#_check_overwrite">check_overwrite()</a>, 
 			<a href="class-Hm_Module_Output.html#_concat">concat()</a>, 
 			<a href="class-Hm_Module_Output.html#_exists">exists()</a>, 
 			<a href="class-Hm_Module_Output.html#_get">get()</a>, 
@@ -1530,11 +1635,11 @@ page if the page_key value is either not present or not valid</p>
 	<tr data-order="session" id="$session">
 		<td class="attributes"><code>
 			public  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Handler_Module.html#194" title="Go to source code"><var>$session</var></a>
+				<a href="source-class-Hm_Handler_Module.html#206" title="Go to source code"><var>$session</var></a>
 
 			<div class="description short">
 				
@@ -1548,18 +1653,18 @@ page if the page_key value is either not present or not valid</p>
 		<td class="value">
 			<div>
 				<a href="#$session" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>
 	<tr data-order="request" id="$request">
 		<td class="attributes"><code>
 			public  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Handler_Module.html#197" title="Go to source code"><var>$request</var></a>
+				<a href="source-class-Hm_Handler_Module.html#209" title="Go to source code"><var>$request</var></a>
 
 			<div class="description short">
 				
@@ -1573,18 +1678,18 @@ page if the page_key value is either not present or not valid</p>
 		<td class="value">
 			<div>
 				<a href="#$request" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>
 	<tr data-order="config" id="$config">
 		<td class="attributes"><code>
 			public  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Handler_Module.html#200" title="Go to source code"><var>$config</var></a>
+				<a href="source-class-Hm_Handler_Module.html#212" title="Go to source code"><var>$config</var></a>
 
 			<div class="description short">
 				
@@ -1598,18 +1703,18 @@ page if the page_key value is either not present or not valid</p>
 		<td class="value">
 			<div>
 				<a href="#$config" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>
 	<tr data-order="page" id="$page">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Handler_Module.html#203" title="Go to source code"><var>$page</var></a>
+				<a href="source-class-Hm_Handler_Module.html#215" title="Go to source code"><var>$page</var></a>
 
 			<div class="description short">
 				
@@ -1623,18 +1728,18 @@ page if the page_key value is either not present or not valid</p>
 		<td class="value">
 			<div>
 				<a href="#$page" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code><span class="php-quote">''</span></code>
 			</div>
 		</td>
 	</tr>
 	<tr data-order="user_config" id="$user_config">
 		<td class="attributes"><code>
 			public  
-			boolean
+			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Handler_Module.html#206" title="Go to source code"><var>$user_config</var></a>
+				<a href="source-class-Hm_Handler_Module.html#218" title="Go to source code"><var>$user_config</var></a>
 
 			<div class="description short">
 				
@@ -1648,7 +1753,7 @@ page if the page_key value is either not present or not valid</p>
 		<td class="value">
 			<div>
 				<a href="#$user_config" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code></code>
 			</div>
 		</td>
 	</tr>
