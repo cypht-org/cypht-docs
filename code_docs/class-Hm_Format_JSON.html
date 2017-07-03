@@ -974,7 +974,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.format.html">format</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Format_JSON.html#36-84" title="Go to source code">format.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Format_JSON.html#36-97" title="Go to source code">format.php</a>
 		<br>
 	</div>
 
@@ -1023,7 +1023,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="filter_output" id="_filter_output">
+	<tr data-order="filter_all_output" id="_filter_all_output">
 
 		<td class="attributes"><code>
 			 public 
@@ -1034,8 +1034,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_filter_output">#</a>
-		<code><a href="source-class-Hm_Format_JSON.html#56-83" title="Go to source code">filter_output</a>( <span>array <var>$data</var></span>, <span>array <var>$allowed</var></span> )</code>
+		<a class="anchor" href="#_filter_all_output">#</a>
+		<code><a href="source-class-Hm_Format_JSON.html#56-76" title="Go to source code">filter_all_output</a>( <span>array <var>$data</var></span>, <span>array <var>$allowed</var></span> )</code>
 
 		<div class="description short">
 			<p>Filter data against module set white lists before sending it to the browser</p>
@@ -1056,6 +1056,49 @@
 				<h4>Returns</h4>
 				<div class="list">
 					array<br>filtered data
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filter_output" id="_filter_output">
+
+		<td class="attributes"><code>
+			 private 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filter_output">#</a>
+		<code><a href="source-class-Hm_Format_JSON.html#78-96" title="Go to source code">filter_output</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$allowed</var></span> )</code>
+
+		<div class="description short">
+			<p>Filter a single output value</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Filter a single output value</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+					<dt><var>$allowed</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
 				</div>
 
 

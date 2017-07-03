@@ -957,7 +957,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.db.html">db</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_DB.html#9-102" title="Go to source code">db.php</a>
+			<b>Located at</b> <a href="source-class-Hm_DB.html#9-137" title="Go to source code">db.php</a>
 		<br>
 	</div>
 
@@ -1068,6 +1068,90 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean|integer|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Hm_DB.html#76-94" title="Go to source code">execute</a>( <span>object|false <var>$dbh</var></span>, <span>string <var>$sql</var></span>, <span>array <var>$args</var></span>, <span> <var>$type</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dbh</var></dt>
+					<dd>PDO connection object</dd>
+					<dt><var>$sql</var></dt>
+					<dd>sql with placeholders to execute</dd>
+					<dt><var>$args</var></dt>
+					<dd>values to insert into the sql</dd>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|integer|array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute_type" id="_execute_type">
+
+		<td class="attributes"><code>
+			 private static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute_type">#</a>
+		<code><a href="source-class-Hm_DB.html#96-110" title="Go to source code">execute_type</a>( <span>string <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>query string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="connect" id="_connect">
 
 		<td class="attributes"><code>
@@ -1080,7 +1164,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_DB.html#76-101" title="Go to source code">connect</a>( <span>object <var>$site_config</var></span> )</code>
+		<code><a href="source-class-Hm_DB.html#112-136" title="Go to source code">connect</a>( <span>object <var>$site_config</var></span> )</code>
 
 		<div class="description short">
 			<p>Connect to a DB server</p>

@@ -888,6 +888,8 @@
 				<li><a href="class-Custom_Auth.html">Custom_Auth</a></li>
 				<li><a href="class-Custom_Session.html">Custom_Session</a></li>
 				<li><a href="class-Hm_Dispatch.html">Hm_Dispatch</a></li>
+				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
+				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
 			</ul>
 
 
@@ -982,7 +984,7 @@
 		
 		
 
-			<b>Located at</b> <a href="source-class-Hm_Server_List.html#162-246" title="Go to source code">servers.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Server_List.html#162-281" title="Go to source code">servers.php</a>
 		<br>
 	</div>
 
@@ -1078,7 +1080,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Hm_Server_List.html#200-224" title="Go to source code">dump</a>( <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#200-218" title="Go to source code">dump</a>( <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return all server details</p>
@@ -1107,6 +1109,77 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Hm_Server_List.html#220-234" title="Go to source code">get</a>( <span>integer <var>$id</var></span>, <span>boolean <var>$full</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>server id to fetch</dd>
+					<dt><var>$full</var></dt>
+					<dd>true to return passwords for server connections. CAREFUL!</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clean" id="_clean">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clean">#</a>
+		<code><a href="source-class-Hm_Server_List.html#240-246" title="Go to source code">clean</a>( <span> <var>$server</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="fetch" id="_fetch">
 
 		<td class="attributes"><code>
@@ -1119,7 +1192,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_fetch">#</a>
-		<code><a href="source-class-Hm_Server_List.html#226-245" title="Go to source code">fetch</a>( <span>string <var>$username</var></span>, <span>string <var>$servername</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#248-265" title="Go to source code">fetch</a>( <span>string <var>$username</var></span>, <span>string <var>$servername</var></span> )</code>
 
 		<div class="description short">
 			<p>Fetch a server by the username and servername</p>
@@ -1140,6 +1213,49 @@
 				<h4>Returns</h4>
 				<div class="list">
 					array|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="match" id="_match">
+
+		<td class="attributes"><code>
+			 private static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_match">#</a>
+		<code><a href="source-class-Hm_Server_List.html#267-280" title="Go to source code">match</a>( <span>array <var>$server</var></span>, <span>string <var>$user</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd>server details</dd>
+					<dt><var>$user</var></dt>
+					<dd>username</dd>
+					<dt><var>$name</var></dt>
+					<dd>server name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
 				</div>
 
 

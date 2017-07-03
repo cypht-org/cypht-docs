@@ -887,23 +887,19 @@
 			<ul>
 				<li><a href="class-Hm_DB_Session.html">Hm_DB_Session</a></li>
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
-				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_Session.html">Hm_Session</a></li>
+				<li><a href="class-Hm_Session_Setup.html">Hm_Session_Setup</a></li>
 			</ul>
 
 
 			<h3>Traits</h3>
 			<ul>
+				<li><a href="class-Hm_Session_Auth.html">Hm_Session_Auth</a></li>
 				<li class="active"><a href="class-Hm_Session_Fingerprint.html">Hm_Session_Fingerprint</a></li>
 			</ul>
 
 
 
-			<h3>Functions</h3>
-			<ul>
-				<li><a href="function-setup_auth.html">setup_auth</a></li>
-				<li><a href="function-setup_session.html">setup_session</a></li>
-			</ul>
 		</div>
 	</div>
 </div>
@@ -971,7 +967,8 @@
 			<a href="class-Custom_Session.html">Custom_Session</a>, 
 			<a href="class-Hm_DB_Session.html">Hm_DB_Session</a>, 
 			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>, 
-			<a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a>
+			<a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a>, 
+			<a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a>
 	</div>
 
 	<div class="info">
@@ -980,7 +977,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Session_Fingerprint.html#9-80" title="Go to source code">session_base.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Session_Fingerprint.html#9-90" title="Go to source code">session_base.php</a>
 		<br>
 	</div>
 
@@ -1136,6 +1133,40 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="fingerprint_flds" id="_fingerprint_flds">
+
+		<td class="attributes"><code>
+			 private 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fingerprint_flds">#</a>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#55-66" title="Go to source code">fingerprint_flds</a>( )</code>
+
+		<div class="description short">
+			<p>Browser request properties to build a fingerprint with</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Browser request properties to build a fingerprint with</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="build_fingerprint" id="_build_fingerprint">
 
 		<td class="attributes"><code>
@@ -1148,7 +1179,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_build_fingerprint">#</a>
-		<code><a href="source-class-Hm_Session_Fingerprint.html#55-69" title="Go to source code">build_fingerprint</a>( <span>array <var>$env</var></span>, <span> <var>$input</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#68-79" title="Go to source code">build_fingerprint</a>( <span>array <var>$env</var></span>, <span> <var>$input</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Build HTTP header "fingerprint"</p>
@@ -1189,7 +1220,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_fingerprint">#</a>
-		<code><a href="source-class-Hm_Session_Fingerprint.html#71-79" title="Go to source code">set_fingerprint</a>( <span>object <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Session_Fingerprint.html#81-89" title="Go to source code">set_fingerprint</a>( <span>object <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Save a fingerprint in the session</p>

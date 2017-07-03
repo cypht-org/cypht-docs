@@ -887,6 +887,7 @@
 			<ul>
 				<li><a href="class-Hm_Auth.html">Hm_Auth</a></li>
 				<li class="active"><a href="class-Hm_Auth_DB.html">Hm_Auth_DB</a></li>
+				<li><a href="class-Hm_Auth_Dynamic.html">Hm_Auth_Dynamic</a></li>
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
@@ -983,7 +984,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.auth.html">auth</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Auth_DB.html#47-150" title="Go to source code">auth.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Auth_DB.html#55-145" title="Go to source code">auth.php</a>
 		<br>
 	</div>
 
@@ -1003,7 +1004,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_credentials">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#58-77" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#66-81" title="Go to source code">check_credentials</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Send the username and password to the configured DB for authentication</p>
@@ -1044,7 +1045,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_delete">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#79-92" title="Go to source code">delete</a>( <span>string <var>$user</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#83-94" title="Go to source code">delete</a>( <span>string <var>$user</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a user account from the db</p>
@@ -1083,7 +1084,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#94-105" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#96-107" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			<p>Create a new or re-use an existing DB connection</p>
@@ -1117,7 +1118,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_change_pass">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#107-122" title="Go to source code">change_pass</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#109-122" title="Go to source code">change_pass</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Change the password for a user in the DB</p>
@@ -1151,14 +1152,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			boolean
+			integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_create">#</a>
-		<code><a href="source-class-Hm_Auth_DB.html#124-149" title="Go to source code">create</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
+		<code><a href="source-class-Hm_Auth_DB.html#124-144" title="Go to source code">create</a>( <span>string <var>$user</var></span>, <span>string <var>$pass</var></span> )</code>
 
 		<div class="description short">
 			<p>Create a new user in the DB</p>
@@ -1178,7 +1179,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean
+					integer
 				</div>
 
 
@@ -1218,7 +1219,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Auth_DB.html#53" title="Go to source code"><var>$internal_users</var></a>
+				<a href="source-class-Hm_Auth_DB.html#61" title="Go to source code"><var>$internal_users</var></a>
 
 			<div class="description short">
 				
@@ -1238,12 +1239,12 @@
 	</tr>
 	<tr data-order="dbh" id="$dbh">
 		<td class="attributes"><code>
-			private  
+			public  
 			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_Auth_DB.html#56" title="Go to source code"><var>$dbh</var></a>
+				<a href="source-class-Hm_Auth_DB.html#64" title="Go to source code"><var>$dbh</var></a>
 
 			<div class="description short">
 				

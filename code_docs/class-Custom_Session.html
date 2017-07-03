@@ -888,6 +888,8 @@
 				<li><a href="class-Custom_Auth.html">Custom_Auth</a></li>
 				<li class="active"><a href="class-Custom_Session.html">Custom_Session</a></li>
 				<li><a href="class-Hm_Dispatch.html">Hm_Dispatch</a></li>
+				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
+				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
 			</ul>
 
 
@@ -970,12 +972,21 @@ defer to the PHP session class methods.</p>
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-			<a href="class-Hm_PHP_Session.html"><span>Hm_PHP_Session</span></a>
+			<a href="class-Hm_PHP_Session_Data.html"><span>Hm_PHP_Session_Data</span></a>
 			
 			
 			
 		</dd>
 		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Hm_PHP_Session.html"><span>Hm_PHP_Session</span></a>
+			
+			
+			 uses 
+					<a href="class-Hm_Session_Auth.html"><span>Hm_Session_Auth</span></a>
+			
+		</dd>
+		<dd style="padding-left:90px">
 			<img src="resources/inherit.png" alt="Extended by">
 <b><span>Custom_Session</span></b>			
 			
@@ -1173,7 +1184,7 @@ defer to the PHP session class methods.</p>
 
 
 				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Hm_PHP_Session.html#_get">Hm_PHP_Session::get()</a></code></div>
+				<div class="list"><code><a href="class-Hm_PHP_Session_Data.html#_get">Hm_PHP_Session_Data::get()</a></code></div>
 
 		</div>
 		</div></td>
@@ -1214,7 +1225,7 @@ defer to the PHP session class methods.</p>
 
 
 				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Hm_PHP_Session.html#_set">Hm_PHP_Session::set()</a></code></div>
+				<div class="list"><code><a href="class-Hm_PHP_Session_Data.html#_set">Hm_PHP_Session_Data::set()</a></code></div>
 
 		</div>
 		</div></td>
@@ -1251,7 +1262,7 @@ defer to the PHP session class methods.</p>
 
 
 				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Hm_PHP_Session.html#_del">Hm_PHP_Session::del()</a></code></div>
+				<div class="list"><code><a href="class-Hm_PHP_Session_Data.html#_del">Hm_PHP_Session_Data::del()</a></code></div>
 
 		</div>
 		</div></td>
@@ -1334,12 +1345,18 @@ does not destroy it</p>
 	<tr>
 		<td><code>
 			<a href="class-Hm_PHP_Session.html#_authed">authed()</a>, 
-			<a href="class-Hm_PHP_Session.html#_change_pass">change_pass()</a>, 
 			<a href="class-Hm_PHP_Session.html#_close_early">close_early()</a>, 
-			<a href="class-Hm_PHP_Session.html#_create">create()</a>, 
-			<a href="class-Hm_PHP_Session.html#_save_auth_detail">save_auth_detail()</a>, 
-			<a href="class-Hm_PHP_Session.html#_save_data">save_data()</a>, 
 			<a href="class-Hm_PHP_Session.html#_set_session_params">set_session_params()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Hm_PHP_Session_Data.html#methods">Hm_PHP_Session_Data</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_PHP_Session_Data.html#_save_data">save_data()</a>, 
+			<a href="class-Hm_PHP_Session_Data.html#_start_session_data">start_session_data()</a>, 
+			<a href="class-Hm_PHP_Session_Data.html#_validate_session_data">validate_session_data()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -1349,6 +1366,7 @@ does not destroy it</p>
 		<td><code>
 			<a href="class-Hm_Session.html#___construct">__construct()</a>, 
 			<a href="class-Hm_Session.html#_ciphertext">ciphertext()</a>, 
+			<a href="class-Hm_Session.html#_delete_cookie">delete_cookie()</a>, 
 			<a href="class-Hm_Session.html#_dump">dump()</a>, 
 			<a href="class-Hm_Session.html#_get_key">get_key()</a>, 
 			<a href="class-Hm_Session.html#_is_active">is_active()</a>, 
@@ -1364,11 +1382,23 @@ does not destroy it</p>
 	</table>
 
 	<table class="summary used">
+	<caption>Methods used from <a href="class-Hm_Session_Auth.html#methods">Hm_Session_Auth</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Session_Auth.html#_change_pass">change_pass()</a>, 
+			<a href="class-Hm_Session_Auth.html#_create">create()</a>, 
+			<a href="class-Hm_Session_Auth.html#_load_auth_mech">load_auth_mech()</a>, 
+			<a href="class-Hm_Session_Auth.html#_save_auth_detail">save_auth_detail()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
 	<caption>Methods used from <a href="class-Hm_Session_Fingerprint.html#methods">Hm_Session_Fingerprint</a></caption>
 	<tr>
 		<td><code>
 			<a href="class-Hm_Session_Fingerprint.html#_build_fingerprint">build_fingerprint()</a>, 
 			<a href="class-Hm_Session_Fingerprint.html#_check_fingerprint">check_fingerprint()</a>, 
+			<a href="class-Hm_Session_Fingerprint.html#_fingerprint_flds">fingerprint_flds()</a>, 
 			<a href="class-Hm_Session_Fingerprint.html#_set_fingerprint">set_fingerprint()</a>
 		</code></td>
 	</tr>
@@ -1388,6 +1418,7 @@ does not destroy it</p>
 	<caption>Properties inherited from <a href="class-Hm_PHP_Session.html#properties">Hm_PHP_Session</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-Hm_PHP_Session.html#$auth_failed"><var>$auth_failed</var></a>, 
 			<a href="class-Hm_PHP_Session.html#$conn"><var>$conn</var></a>
 		</code></td>
 	</tr>
@@ -1403,6 +1434,7 @@ does not destroy it</p>
 			<a href="class-Hm_Session.html#$data"><var>$data</var></a>, 
 			<a href="class-Hm_Session.html#$enc_key"><var>$enc_key</var></a>, 
 			<a href="class-Hm_Session.html#$internal_users"><var>$internal_users</var></a>, 
+			<a href="class-Hm_Session.html#$lifetime"><var>$lifetime</var></a>, 
 			<a href="class-Hm_Session.html#$loaded"><var>$loaded</var></a>, 
 			<a href="class-Hm_Session.html#$session_closed"><var>$session_closed</var></a>, 
 			<a href="class-Hm_Session.html#$session_key"><var>$session_key</var></a>, 
