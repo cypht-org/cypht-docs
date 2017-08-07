@@ -151,6 +151,29 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.api.html">
+						api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.html">
+						login<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.api.login.handler.html">
+						handler					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
 					<a href="package-modules.calendar.html">
 						calendar<span></span>
 					</a>
@@ -890,6 +913,8 @@
 				<li class="active"><a href="class-Hm_Dispatch.html">Hm_Dispatch</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
+				<li><a href="class-Hm_Sodium_Compat.html" class="invalid">Hm_Sodium_Compat</a></li>
+				<li><a href="class-Hm_Sodium_PHP.html">Hm_Sodium_PHP</a></li>
 			</ul>
 
 
@@ -975,7 +1000,7 @@
 		
 		
 
-			<b>Located at</b> <a href="source-class-Hm_Dispatch.html#144-296" title="Go to source code">dispatch.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Dispatch.html#144-311" title="Go to source code">dispatch.php</a>
 		<br>
 	</div>
 
@@ -1030,7 +1055,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process_request">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#180-207" title="Go to source code">process_request</a>( )</code>
+		<code><a href="source-class-Hm_Dispatch.html#180-210" title="Go to source code">process_request</a>( )</code>
 
 		<div class="description short">
 			<p>Process a request</p>
@@ -1038,6 +1063,36 @@
 
 		<div class="description detailed hidden">
 			<p>Process a request</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close_connections" id="_close_connections">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close_connections">#</a>
+		<code><a href="source-class-Hm_Dispatch.html#212-222" title="Go to source code">close_connections</a>( )</code>
+
+		<div class="description short">
+			<p>Close network connections if they exist</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Close network connections if they exist</p>
 
 
 
@@ -1060,7 +1115,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save_session">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#209-218" title="Go to source code">save_session</a>( )</code>
+		<code><a href="source-class-Hm_Dispatch.html#224-233" title="Go to source code">save_session</a>( )</code>
 
 		<div class="description short">
 			<p>Close and save the session</p>
@@ -1094,7 +1149,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_render_output">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#220-229" title="Go to source code">render_output</a>( )</code>
+		<code><a href="source-class-Hm_Dispatch.html#235-244" title="Go to source code">render_output</a>( )</code>
 
 		<div class="description short">
 			<p>Format and send the request output to the browser</p>
@@ -1124,7 +1179,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_pages">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#231-242" title="Go to source code">get_pages</a>( <span>array <var>$filters</var></span> )</code>
+		<code><a href="source-class-Hm_Dispatch.html#246-257" title="Go to source code">get_pages</a>( <span>array <var>$filters</var></span> )</code>
 
 		<div class="description short">
 			<p>Get a list of valid pages</p>
@@ -1159,7 +1214,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validate_ajax_request">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#244-260" title="Go to source code">validate_ajax_request</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>array <var>$filters</var></span> )</code>
+		<code><a href="source-class-Hm_Dispatch.html#259-275" title="Go to source code">validate_ajax_request</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>array <var>$filters</var></span> )</code>
 
 		<div class="description short">
 			<p>Check for a valid ajax request</p>
@@ -1200,7 +1255,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_page">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#262-281" title="Go to source code">get_page</a>( <span>array <var>$filters</var></span>, <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_Dispatch.html#277-296" title="Go to source code">get_page</a>( <span>array <var>$filters</var></span>, <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Determine the page id</p>
@@ -1237,7 +1292,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_php_setup">#</a>
-		<code><a href="source-class-Hm_Dispatch.html#283-295" title="Go to source code">is_php_setup</a>( )</code>
+		<code><a href="source-class-Hm_Dispatch.html#298-310" title="Go to source code">is_php_setup</a>( )</code>
 
 		<div class="description short">
 			<p>Check to see if PHP is configured properly</p>

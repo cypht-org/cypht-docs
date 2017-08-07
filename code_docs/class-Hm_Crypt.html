@@ -151,6 +151,29 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.api.html">
+						api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.html">
+						login<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.api.login.handler.html">
+						handler					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
 					<a href="package-modules.calendar.html">
 						calendar<span></span>
 					</a>
@@ -888,6 +911,7 @@
 				<li class="active"><a href="class-Hm_Crypt.html">Hm_Crypt</a></li>
 				<li><a href="class-Hm_Crypt_Base.html">Hm_Crypt_Base</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
+				<li><a href="class-Hm_Sodium_PECL.html">Hm_Sodium_PECL</a></li>
 			</ul>
 
 
@@ -978,7 +1002,7 @@ backwards compatibility.</p>
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.crypt.html">crypt</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Crypt.html#4-108" title="Go to source code">crypt_sodium.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Crypt.html#4-105" title="Go to source code">crypt_sodium.php</a>
 		<br>
 	</div>
 
@@ -1084,7 +1108,7 @@ backwards compatibility.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hash_password">#</a>
-		<code><a href="source-class-Hm_Crypt.html#61-75" title="Go to source code">hash_password</a>( <span>string <var>$password</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$count</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$algo</var> = <span class="php-quote">'sha512'</span></span>, <span>string <var>$type</var> = <span class="php-quote">'php'</span></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#61-72" title="Go to source code">hash_password</a>( <span>string <var>$password</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$count</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$algo</var> = <span class="php-quote">'sha512'</span></span>, <span>string <var>$type</var> = <span class="php-quote">'php'</span></span> )</code>
 
 		<div class="description short">
 			<p>Hash a password using libsodium. Args not defined here are for backwards
@@ -1135,7 +1159,7 @@ compat usage with our built in crypto</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check_password">#</a>
-		<code><a href="source-class-Hm_Crypt.html#77-93" title="Go to source code">check_password</a>( <span>string <var>$password</var></span>, <span>string <var>$hash</var></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#74-90" title="Go to source code">check_password</a>( <span>string <var>$password</var></span>, <span>string <var>$hash</var></span> )</code>
 
 		<div class="description short">
 			<p>Check a password against it's stored hash using libsodium. If that
@@ -1182,7 +1206,7 @@ everything</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_keygen">#</a>
-		<code><a href="source-class-Hm_Crypt.html#95-106" title="Go to source code">keygen</a>( <span>string <var>$key</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Crypt.html#92-103" title="Go to source code">keygen</a>( <span>string <var>$key</var></span>, <span>string <var>$salt</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>stretch (or shrink) a key for libsodium</p>

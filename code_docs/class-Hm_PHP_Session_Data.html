@@ -151,6 +151,29 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="package-modules.api.html">
+						api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.html">
+						login<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.api.login.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.api.login.handler.html">
+						handler					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
 					<a href="package-modules.calendar.html">
 						calendar<span></span>
 					</a>
@@ -890,6 +913,8 @@
 				<li><a href="class-Hm_Dispatch.html">Hm_Dispatch</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li class="active"><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
+				<li><a href="class-Hm_Sodium_Compat.html" class="invalid">Hm_Sodium_Compat</a></li>
+				<li><a href="class-Hm_Sodium_PHP.html">Hm_Sodium_PHP</a></li>
 			</ul>
 
 
@@ -992,7 +1017,7 @@
 		
 		
 
-			<b>Located at</b> <a href="source-class-Hm_PHP_Session_Data.html#60-149" title="Go to source code">session_php.php</a>
+			<b>Located at</b> <a href="source-class-Hm_PHP_Session_Data.html#60-148" title="Go to source code">session_php.php</a>
 		<br>
 	</div>
 
@@ -1012,7 +1037,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validate_session_data">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#65-77" title="Go to source code">validate_session_data</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>boolean <var>$existing_session</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#65-76" title="Go to source code">validate_session_data</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1026,8 +1051,6 @@
 				<div class="list"><dl>
 					<dt><var>$request</var></dt>
 					<dd>request details</dd>
-					<dt><var>$existing_session</var></dt>
-					<dd></dd>
 				</dl></div>
 
 
@@ -1049,7 +1072,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start_session_data">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#79-94" title="Go to source code">start_session_data</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#78-93" title="Go to source code">start_session_data</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1084,7 +1107,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#96-110" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$user</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#95-109" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$user</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return a session value, or a user settings value stored in the session</p>
@@ -1127,7 +1150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#112-126" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$user</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#111-125" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$user</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Save a value in the session</p>
@@ -1166,7 +1189,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_del">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#128-137" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#127-136" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a value from the session</p>
@@ -1201,7 +1224,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save_data">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#139-148" title="Go to source code">save_data</a>( )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#138-147" title="Go to source code">save_data</a>( )</code>
 
 		<div class="description short">
 			<p>Save session data</p>
