@@ -894,7 +894,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.config.html">config</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Config.html#9-119" title="Go to source code">config.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Config.html#9-173" title="Go to source code">config.php</a>
 		<br>
 	</div>
 
@@ -1218,6 +1218,79 @@ on the format</p>
 				<div class="list">
 					mixed<br>array, or false on failure
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filter_servers" id="_filter_servers">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filter_servers">#</a>
+		<code><a href="source-class-Hm_Config.html#120-154" title="Go to source code">filter_servers</a>( )</code>
+
+		<div class="description short">
+			<p>Filter out default auth and SMTP servers so they don't get saved
+to the permanent user config. These are dynamically reloaded on
+login</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Filter out default auth and SMTP servers so they don't get saved
+to the permanent user config. These are dynamically reloaded on
+login</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>of items removed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="restore_servers" id="_restore_servers">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_restore_servers">#</a>
+		<code><a href="source-class-Hm_Config.html#156-172" title="Go to source code">restore_servers</a>( <span>array <var>$removed</var></span> )</code>
+
+		<div class="description short">
+			<p>Restore server definitions removed before saving</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Restore server definitions removed before saving</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$removed</var></dt>
+					<dd>server info to restore</dd>
+				</dl></div>
+
 
 
 

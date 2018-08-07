@@ -1465,10 +1465,10 @@
 				<li><a href="function-fetch_gmail_contacts.html">fetch_gmail_contacts</a></li>
 				<li><a href="function-fetch_ldap_contacts.html">fetch_ldap_contacts</a></li>
 				<li><a href="function-filter_message_part.html">filter_message_part</a></li>
-				<li><a href="function-filter_servers.html">filter_servers</a></li>
 				<li><a href="function-format_attachment_row.html">format_attachment_row</a></li>
 				<li><a href="function-format_data_sources.html">format_data_sources</a></li>
 				<li><a href="function-format_imap_folder_section.html">format_imap_folder_section</a></li>
+				<li><a href="function-format_imap_from_fld.html">format_imap_from_fld</a></li>
 				<li><a href="function-format_imap_message_list.html">format_imap_message_list</a></li>
 				<li><a href="function-format_msg_html.html">format_msg_html</a></li>
 				<li><a href="function-format_msg_image.html">format_msg_image</a></li>
@@ -1545,6 +1545,7 @@
 				<li><a href="function-outbound_address_check.html">outbound_address_check</a></li>
 				<li><a href="function-output_source.html">output_source</a></li>
 				<li><a href="function-parse_contact_xml.html">parse_contact_xml</a></li>
+				<li><a href="function-parse_mailto.html">parse_mailto</a></li>
 				<li><a href="function-payload_search.html">payload_search</a></li>
 				<li><a href="function-pop3_authed.html">pop3_authed</a></li>
 				<li><a href="function-prep_folder_name.html">prep_folder_name</a></li>
@@ -1566,7 +1567,6 @@
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
 				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
-				<li><a href="function-restore_servers.html">restore_servers</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
 				<li><a href="function-save_uploaded_file.html">save_uploaded_file</a></li>
@@ -1709,7 +1709,7 @@
 </span><span id="62" class="l"><a href="#62"> 62: </a>            <span class="php-var">$contacts</span> = <span class="php-var">$this</span>-&gt;get(<span class="php-quote">'contact_store'</span>);
 </span><span id="63" class="l"><a href="#63"> 63: </a>            <span class="php-var">$contact</span> = <span class="php-var">$contacts</span>-&gt;get(<span class="php-var">$this</span>-&gt;request-&gt;get[<span class="php-quote">'contact_id'</span>]);
 </span><span id="64" class="l"><a href="#64"> 64: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$contact</span>) {
-</span><span id="65" class="l"><a href="#65"> 65: </a>                <span class="php-var">$to</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&quot;%s&quot; &lt;%s&gt;'</span>, <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'display_name'</span>), <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'email_address'</span>));
+</span><span id="65" class="l"><a href="#65"> 65: </a>                <span class="php-var">$to</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'%s &lt;%s&gt;'</span>, <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'display_name'</span>), <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'email_address'</span>));
 </span><span id="66" class="l"><a href="#66"> 66: </a>                <span class="php-var">$this</span>-&gt;out(<span class="php-quote">'compose_draft'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'draft_to'</span> =&gt; <span class="php-var">$to</span>, <span class="php-quote">'draft_subject'</span> =&gt; <span class="php-quote">''</span>, <span class="php-quote">'draft_body'</span> =&gt; <span class="php-quote">''</span>));
 </span><span id="67" class="l"><a href="#67"> 67: </a>            }
 </span><span id="68" class="l"><a href="#68"> 68: </a>        }
@@ -1864,7 +1864,7 @@
 </span><span id="217" class="l"><a href="#217">217: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;get(<span class="php-quote">'contact_suggestions'</span>, <span class="php-keyword1">array</span>()) <span class="php-keyword1">as</span> <span class="php-var">$contact</span>) {
 </span><span id="218" class="l"><a href="#218">218: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">trim</span>(<span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'display_name'</span>))) {
 </span><span id="219" class="l"><a href="#219">219: </a>                <span class="php-var">$suggestions</span>[] = <span class="php-var">$this</span>-&gt;html_safe(<span class="php-keyword2">sprintf</span>(
-</span><span id="220" class="l"><a href="#220">220: </a>                    <span class="php-quote">'&quot;%s&quot; %s'</span>, <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'display_name'</span>), <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'email_address'</span>)
+</span><span id="220" class="l"><a href="#220">220: </a>                    <span class="php-quote">'%s %s'</span>, <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'display_name'</span>), <span class="php-var">$contact</span>-&gt;value(<span class="php-quote">'email_address'</span>)
 </span><span id="221" class="l"><a href="#221">221: </a>                ));
 </span><span id="222" class="l"><a href="#222">222: </a>            }
 </span><span id="223" class="l"><a href="#223">223: </a>            <span class="php-keyword1">else</span> {
@@ -1955,6 +1955,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?221b0ad968fdc0e8d6a0f93f8c03900682125b44"></script>
+<script src="elementlist.js?25908941c066d002bb6f43b178768c1e78851970"></script>
 </body>
 </html>
