@@ -104,6 +104,11 @@
 						setup					</a>
 
 						</li>
+				<li>
+					<a href="package-framework.webdav.html">
+						webdav					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="package-modules.html">
@@ -190,6 +195,29 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.carddav.html">
+						carddav<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.carddav.contacts.html">
+						contacts<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.carddav.contacts.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.contacts.html">
 						contacts<span></span>
@@ -376,6 +404,11 @@
 					</a>
 
 						<ul>
+				<li>
+					<a href="package-modules.history.handler.html">
+						handler					</a>
+
+						</li>
 				<li>
 					<a href="package-modules.history.output.html">
 						output					</a>
@@ -882,7 +915,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.feeds.html">feeds</a>\<a href="package-modules.feeds.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Feed.html#52-388" title="Go to source code">feeds/hm-feed.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Feed.html#52-395" title="Go to source code">feeds/hm-feed.php</a>
 		<br>
 	</div>
 
@@ -902,7 +935,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_Feed.html#75-96" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Hm_Feed.html#75-97" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Setup defaults</p>
@@ -932,7 +965,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_feed_data">#</a>
-		<code><a href="source-class-Hm_Feed.html#98-131" title="Go to source code">get_feed_data</a>( <span>string <var>$url</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#99-137" title="Go to source code">get_feed_data</a>( <span>string <var>$url</var></span> )</code>
 
 		<div class="description short">
 			<p>Get data from a feed url</p>
@@ -971,7 +1004,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sort_by_time">#</a>
-		<code><a href="source-class-Hm_Feed.html#133-162" title="Go to source code">sort_by_time</a>( <span>array <var>$a</var></span>, <span>array <var>$b</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#139-168" title="Go to source code">sort_by_time</a>( <span>array <var>$a</var></span>, <span>array <var>$b</var></span> )</code>
 
 		<div class="description short">
 			<p>Sort feed items by date</p>
@@ -1009,7 +1042,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sort_parsed_data">#</a>
-		<code><a href="source-class-Hm_Feed.html#164-181" title="Go to source code">sort_parsed_data</a>( )</code>
+		<code><a href="source-class-Hm_Feed.html#170-187" title="Go to source code">sort_parsed_data</a>( )</code>
 
 		<div class="description short">
 			<p>Sort a list using sort_by_time</p>
@@ -1039,7 +1072,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse_feed">#</a>
-		<code><a href="source-class-Hm_Feed.html#183-216" title="Go to source code">parse_feed</a>( <span>string <var>$url</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#189-223" title="Go to source code">parse_feed</a>( <span>string <var>$url</var></span> )</code>
 
 		<div class="description short">
 			<p>Parse feed content</p>
@@ -1078,7 +1111,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_atom_start_element">#</a>
-		<code><a href="source-class-Hm_Feed.html#218-276" title="Go to source code">atom_start_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span>, <span>array <var>$attrs</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#225-283" title="Go to source code">atom_start_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span>, <span>array <var>$attrs</var></span> )</code>
 
 		<div class="description short">
 			<p>ATOM specific parsing</p>
@@ -1117,7 +1150,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_atom_end_element">#</a>
-		<code><a href="source-class-Hm_Feed.html#278-289" title="Go to source code">atom_end_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#285-296" title="Go to source code">atom_end_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span> )</code>
 
 		<div class="description short">
 			<p>ATOM end tag check</p>
@@ -1154,7 +1187,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_atom_character_data">#</a>
-		<code><a href="source-class-Hm_Feed.html#291-311" title="Go to source code">atom_character_data</a>( <span>object <var>$parser</var></span>, <span>string <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#298-318" title="Go to source code">atom_character_data</a>( <span>object <var>$parser</var></span>, <span>string <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Collect atom character data</p>
@@ -1191,7 +1224,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rss_start_element">#</a>
-		<code><a href="source-class-Hm_Feed.html#312-354" title="Go to source code">rss_start_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span>, <span>array <var>$attrs</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#319-361" title="Go to source code">rss_start_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span>, <span>array <var>$attrs</var></span> )</code>
 
 		<div class="description short">
 			<p>Parse an RSS feed element</p>
@@ -1230,7 +1263,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rss_end_element">#</a>
-		<code><a href="source-class-Hm_Feed.html#356-367" title="Go to source code">rss_end_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#363-374" title="Go to source code">rss_end_element</a>( <span>object <var>$parser</var></span>, <span>string <var>$tagname</var></span> )</code>
 
 		<div class="description short">
 			<p>RSS end tag check</p>
@@ -1267,7 +1300,7 @@ return int</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rss_character_data">#</a>
-		<code><a href="source-class-Hm_Feed.html#369-387" title="Go to source code">rss_character_data</a>( <span>object <var>$parser</var></span>, <span>string <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_Feed.html#376-394" title="Go to source code">rss_character_data</a>( <span>object <var>$parser</var></span>, <span>string <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Collect RSS character data</p>

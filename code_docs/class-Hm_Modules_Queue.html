@@ -104,6 +104,11 @@
 						setup					</a>
 
 						</li>
+				<li>
+					<a href="package-framework.webdav.html">
+						webdav					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="package-modules.html">
@@ -190,6 +195,29 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.carddav.html">
+						carddav<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.carddav.contacts.html">
+						contacts<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.carddav.contacts.functions.html">
+						functions					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.contacts.html">
 						contacts<span></span>
@@ -376,6 +404,11 @@
 					</a>
 
 						<ul>
+				<li>
+					<a href="package-modules.history.handler.html">
+						handler					</a>
+
+						</li>
 				<li>
 					<a href="package-modules.history.output.html">
 						output					</a>
@@ -902,7 +935,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.modules.html">modules</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Modules_Queue.html#10-95" title="Go to source code">modules.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Modules_Queue.html#10-119" title="Go to source code">modules.php</a>
 		<br>
 	</div>
 
@@ -922,7 +955,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_queue_module_for_all_pages">#</a>
-		<code><a href="source-class-Hm_Modules_Queue.html#33-44" title="Go to source code">queue_module_for_all_pages</a>( <span>string <var>$module</var></span>, <span>boolean <var>$logged_in</var></span>, <span>string <var>$marker</var></span>, <span>string <var>$placement</var></span>, <span>string <var>$source</var></span> )</code>
+		<code><a href="source-class-Hm_Modules_Queue.html#36-47" title="Go to source code">queue_module_for_all_pages</a>( <span>string <var>$module</var></span>, <span>boolean <var>$logged_in</var></span>, <span>string <var>$marker</var></span>, <span>string <var>$placement</var></span>, <span>string <var>$source</var></span> )</code>
 
 		<div class="description short">
 			<p>Queue a module to be added to all defined pages</p>
@@ -966,7 +999,7 @@ return void</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process_all_page_queue">#</a>
-		<code><a href="source-class-Hm_Modules_Queue.html#46-54" title="Go to source code">process_all_page_queue</a>( )</code>
+		<code><a href="source-class-Hm_Modules_Queue.html#49-57" title="Go to source code">process_all_page_queue</a>( )</code>
 
 		<div class="description short">
 			<p>Process queued modules and add them to all pages</p>
@@ -996,7 +1029,7 @@ return void</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_queue_module">#</a>
-		<code><a href="source-class-Hm_Modules_Queue.html#56-75" title="Go to source code">queue_module</a>( <span>boolean <var>$queue</var></span>, <span>string <var>$page</var></span>, <span>string <var>$module</var></span>, <span>boolean <var>$logged_in</var></span>, <span>string|false <var>$marker</var></span>, <span>string <var>$placement</var></span>, <span>string <var>$source</var></span> )</code>
+		<code><a href="source-class-Hm_Modules_Queue.html#59-78" title="Go to source code">queue_module</a>( <span>boolean <var>$queue</var></span>, <span>string <var>$page</var></span>, <span>string <var>$module</var></span>, <span>boolean <var>$logged_in</var></span>, <span>string|false <var>$marker</var></span>, <span>string <var>$placement</var></span>, <span>string <var>$source</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1035,6 +1068,75 @@ return void</p></dd>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="queue_replacement_module" id="_queue_replacement_module">
+
+		<td class="attributes"><code>
+			 private static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_queue_replacement_module">#</a>
+		<code><a href="source-class-Hm_Modules_Queue.html#80-89" title="Go to source code">queue_replacement_module</a>( <span>string <var>$target</var></span>, <span>string <var>$replacement</var></span>, <span>string <var>$page</var></span> )</code>
+
+		<div class="description short">
+			<p>Queue a module replacement for retry</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Queue a module replacement for retry</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$target</var></dt>
+					<dd>the module to replace</dd>
+					<dt><var>$replacement</var></dt>
+					<dd>the module to replace the target with</dd>
+					<dt><var>$page</var></dt>
+					<dd>the page to do the replacement for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="process_replace_queue" id="_process_replace_queue">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_process_replace_queue">#</a>
+		<code><a href="source-class-Hm_Modules_Queue.html#91-99" title="Go to source code">process_replace_queue</a>( )</code>
+
+		<div class="description short">
+			<p>Process the replacement queue and try to replace modules</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Process the replacement queue and try to replace modules</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="try_queued_modules" id="_try_queued_modules">
 
 		<td class="attributes"><code>
@@ -1047,7 +1149,7 @@ return void</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_try_queued_modules">#</a>
-		<code><a href="source-class-Hm_Modules_Queue.html#77-94" title="Go to source code">try_queued_modules</a>( )</code>
+		<code><a href="source-class-Hm_Modules_Queue.html#101-118" title="Go to source code">try_queued_modules</a>( )</code>
 
 		<div class="description short">
 			<p>Attempt to insert modules that initially failed</p>
@@ -1226,6 +1328,31 @@ return void</p></dd>
 		<td class="value">
 			<div>
 				<a href="#$all_page_queue" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="replace_queue" id="$replace_queue">
+		<td class="attributes"><code>
+			private static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_Modules_Queue.html#34" title="Go to source code"><var>$replace_queue</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$replace_queue" class="anchor">#</a>
 				<code><span class="php-keyword1">array</span>()</code>
 			</div>
 		</td>
