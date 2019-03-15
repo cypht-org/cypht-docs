@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -847,6 +853,7 @@
 				<li class="active"><a href="class-Hm_IMAP_List.html">Hm_IMAP_List</a></li>
 				<li><a href="class-Hm_IMAP_Parser.html">Hm_IMAP_Parser</a></li>
 				<li><a href="class-Hm_IMAP_Struct.html">Hm_IMAP_Struct</a></li>
+				<li><a href="class-Hm_JMAP.html">Hm_JMAP</a></li>
 			</ul>
 
 
@@ -927,7 +934,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.imap.html">imap</a>\<a href="package-modules.imap.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_IMAP_List.html#14-54" title="Go to source code">imap/hm-imap.php</a>
+			<b>Located at</b> <a href="source-class-Hm_IMAP_List.html#15-57" title="Go to source code">imap/hm-imap.php</a>
 		<br>
 	</div>
 
@@ -947,7 +954,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_service_connect">#</a>
-		<code><a href="source-class-Hm_IMAP_List.html#24-41" title="Go to source code">service_connect</a>( <span> <var>$id</var></span>, <span> <var>$server</var></span>, <span> <var>$user</var></span>, <span> <var>$pass</var></span>, <span> <var>$cache</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP_List.html#25-48" title="Go to source code">service_connect</a>( <span> <var>$id</var></span>, <span> <var>$server</var></span>, <span> <var>$user</var></span>, <span> <var>$pass</var></span>, <span> <var>$cache</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -977,7 +984,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_cache">#</a>
-		<code><a href="source-class-Hm_IMAP_List.html#42-53" title="Go to source code">get_cache</a>( <span> <var>$session</var></span>, <span> <var>$config</var></span>, <span> <var>$id</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP_List.html#50-56" title="Go to source code">get_cache</a>( <span> <var>$hm_cache</var></span>, <span> <var>$id</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1013,6 +1020,16 @@
 	</tr>
 	</table>
 	<table class="summary used">
+	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
+			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
+			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
 	<caption>Methods used from <a href="class-Hm_Server_Connect.html#methods">Hm_Server_Connect</a></caption>
 	<tr>
 		<td><code>
@@ -1021,16 +1038,6 @@
 			<a href="class-Hm_Server_Connect.html#_disconnect">disconnect()</a>, 
 			<a href="class-Hm_Server_Connect.html#_enable_server">enable_server()</a>, 
 			<a href="class-Hm_Server_Connect.html#_user_and_pass">user_and_pass()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary used">
-	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
-			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
-			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -1053,7 +1060,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_IMAP_List.html#22" title="Go to source code"><var>$use_cache</var></a>
+				<a href="source-class-Hm_IMAP_List.html#23" title="Go to source code"><var>$use_cache</var></a>
 
 			<div class="description short">
 				

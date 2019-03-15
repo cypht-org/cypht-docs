@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -847,6 +853,7 @@
 				<li><a href="class-Hm_IMAP_List.html">Hm_IMAP_List</a></li>
 				<li><a href="class-Hm_IMAP_Parser.html">Hm_IMAP_Parser</a></li>
 				<li class="active"><a href="class-Hm_IMAP_Struct.html">Hm_IMAP_Struct</a></li>
+				<li><a href="class-Hm_JMAP.html">Hm_JMAP</a></li>
 			</ul>
 
 
@@ -919,7 +926,7 @@ BODYSTRUCTURE command</p>
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.imap.html">imap</a>\<a href="package-modules.imap.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_IMAP_Struct.html#9-435" title="Go to source code">imap/hm-imap-bodystructure.php</a>
+			<b>Located at</b> <a href="source-class-Hm_IMAP_Struct.html#9-441" title="Go to source code">imap/hm-imap-bodystructure.php</a>
 		<br>
 	</div>
 
@@ -1486,7 +1493,7 @@ BODYSTRUCTURE command</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_recursive_search">#</a>
-		<code><a href="source-class-Hm_IMAP_Struct.html#379-416" title="Go to source code">recursive_search</a>( <span>array <var>$struct</var></span>, <span>array <var>$flds</var></span>, <span>boolean <var>$all</var></span>, <span>array <var>$res</var></span> )</code>
+		<code><a href="source-class-Hm_IMAP_Struct.html#379-422" title="Go to source code">recursive_search</a>( <span>array <var>$struct</var></span>, <span>array <var>$flds</var></span>, <span>boolean <var>$all</var></span>, <span>array <var>$res</var></span>, <span> <var>$parent</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Search a parsed BODYSTRUCTURE response</p>
@@ -1506,6 +1513,8 @@ BODYSTRUCTURE command</p>
 					<dd>true to return all matching parts</dd>
 					<dt><var>$res</var></dt>
 					<dd>holds results during recursive iterations</dd>
+					<dt><var>$parent</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -1531,7 +1540,7 @@ BODYSTRUCTURE command</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_data">#</a>
-		<code><a href="source-class-Hm_IMAP_Struct.html#418-424" title="Go to source code">data</a>( )</code>
+		<code><a href="source-class-Hm_IMAP_Struct.html#424-430" title="Go to source code">data</a>( )</code>
 
 		<div class="description short">
 			<p>Return structure</p>
@@ -1565,7 +1574,7 @@ BODYSTRUCTURE command</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_search">#</a>
-		<code><a href="source-class-Hm_IMAP_Struct.html#426-434" title="Go to source code">search</a>( <span>array <var>$flds</var></span>, <span>boolean <var>$all</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Hm_IMAP_Struct.html#432-440" title="Go to source code">search</a>( <span>array <var>$flds</var></span>, <span>boolean <var>$all</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Public search function, returns a list of matching parts</p>

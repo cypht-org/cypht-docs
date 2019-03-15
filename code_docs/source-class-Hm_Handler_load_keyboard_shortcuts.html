@@ -118,23 +118,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -151,6 +134,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -209,13 +210,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -852,11 +858,13 @@
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
+				<li><a href="class-Hm_Cache.html">Hm_Cache</a></li>
 				<li><a href="class-Hm_Cal_Data.html">Hm_Cal_Data</a></li>
 				<li><a href="class-Hm_Cal_Event.html">Hm_Cal_Event</a></li>
 				<li><a href="class-Hm_Cal_Event_Store.html">Hm_Cal_Event_Store</a></li>
 				<li><a href="class-Hm_Cal_Output.html">Hm_Cal_Output</a></li>
 				<li><a href="class-Hm_Card_Parse.html">Hm_Card_Parse</a></li>
+				<li><a href="class-Hm_Carddav.html">Hm_Carddav</a></li>
 				<li><a href="class-Hm_Config.html">Hm_Config</a></li>
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
@@ -885,6 +893,7 @@
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_advanced_search_prepare.html">Hm_Handler_advanced_search_prepare</a></li>
 				<li><a href="class-Hm_Handler_api_login_step_two.html">Hm_Handler_api_login_step_two</a></li>
 				<li><a href="class-Hm_Handler_autocomplete_contact.html">Hm_Handler_autocomplete_contact</a></li>
 				<li><a href="class-Hm_Handler_check_folder_icon_setting.html">Hm_Handler_check_folder_icon_setting</a></li>
@@ -959,7 +968,9 @@
 				<li><a href="class-Hm_Handler_imap_unread.html">Hm_Handler_imap_unread</a></li>
 				<li><a href="class-Hm_Handler_language.html">Hm_Handler_language</a></li>
 				<li><a href="class-Hm_Handler_load_carddav_contacts.html">Hm_Handler_load_carddav_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_carddav_settings.html">Hm_Handler_load_carddav_settings</a></li>
 				<li><a href="class-Hm_Handler_load_contacts.html">Hm_Handler_load_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_edit_carddav_contact.html">Hm_Handler_load_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_contact.html">Hm_Handler_load_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_id.html">Hm_Handler_load_edit_id</a></li>
 				<li><a href="class-Hm_Handler_load_edit_ldap_contact.html">Hm_Handler_load_edit_ldap_contact</a></li>
@@ -1015,17 +1026,20 @@
 				<li><a href="class-Hm_Handler_process_add_event.html">Hm_Handler_process_add_event</a></li>
 				<li><a href="class-Hm_Handler_process_add_feed.html">Hm_Handler_process_add_feed</a></li>
 				<li><a href="class-Hm_Handler_process_add_imap_server.html">Hm_Handler_process_add_imap_server</a></li>
+				<li><a href="class-Hm_Handler_process_add_jmap_server.html">Hm_Handler_process_add_jmap_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact.html">Hm_Handler_process_add_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact_from_message.html">Hm_Handler_process_add_ldap_contact_from_message</a></li>
 				<li><a href="class-Hm_Handler_process_add_pop3_server.html">Hm_Handler_process_add_pop3_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_smtp_server.html">Hm_Handler_process_add_smtp_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_to_ldap_server.html">Hm_Handler_process_add_to_ldap_server</a></li>
+				<li><a href="class-Hm_Handler_process_adv_search_request.html">Hm_Handler_process_adv_search_request</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_since_setting.html">Hm_Handler_process_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_source_max_setting.html">Hm_Handler_process_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_since_setting.html">Hm_Handler_process_all_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_source_max_setting.html">Hm_Handler_process_all_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_api_login.html">Hm_Handler_process_api_login</a></li>
 				<li><a href="class-Hm_Handler_process_auto_bcc.html">Hm_Handler_process_auto_bcc</a></li>
+				<li><a href="class-Hm_Handler_process_carddav_auth_settings.html">Hm_Handler_process_carddav_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_change_password.html">Hm_Handler_process_change_password</a></li>
 				<li><a href="class-Hm_Handler_process_clear_special_folder.html">Hm_Handler_process_clear_special_folder</a></li>
 				<li><a href="class-Hm_Handler_process_compose_form_submit.html">Hm_Handler_process_compose_form_submit</a></li>
@@ -1038,6 +1052,7 @@
 				<li><a href="class-Hm_Handler_process_delete_ldap_contact.html">Hm_Handler_process_delete_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_delete_prompt_setting.html">Hm_Handler_process_delete_prompt_setting</a></li>
 				<li><a href="class-Hm_Handler_process_dynamic_login.html">Hm_Handler_process_dynamic_login</a></li>
+				<li><a href="class-Hm_Handler_process_edit_carddav_contact.html">Hm_Handler_process_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_contact.html">Hm_Handler_process_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_shortcut.html">Hm_Handler_process_edit_shortcut</a></li>
 				<li><a href="class-Hm_Handler_process_enable_2fa.html">Hm_Handler_process_enable_2fa</a></li>
@@ -1063,6 +1078,7 @@
 				<li><a href="class-Hm_Handler_process_ldap_auth_settings.html">Hm_Handler_process_ldap_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_ldap_fields.html">Hm_Handler_process_ldap_fields</a></li>
 				<li><a href="class-Hm_Handler_process_list_style_setting.html">Hm_Handler_process_list_style_setting</a></li>
+				<li><a href="class-Hm_Handler_process_mailto_handler_setting.html">Hm_Handler_process_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Handler_process_msg_part_icons.html">Hm_Handler_process_msg_part_icons</a></li>
 				<li><a href="class-Hm_Handler_process_nasa_connection.html">Hm_Handler_process_nasa_connection</a></li>
 				<li><a href="class-Hm_Handler_process_no_password_setting.html">Hm_Handler_process_no_password_setting</a></li>
@@ -1144,12 +1160,14 @@
 				<li><a href="class-Hm_IMAP_List.html">Hm_IMAP_List</a></li>
 				<li><a href="class-Hm_IMAP_Parser.html">Hm_IMAP_Parser</a></li>
 				<li><a href="class-Hm_IMAP_Struct.html">Hm_IMAP_Struct</a></li>
+				<li><a href="class-Hm_JMAP.html">Hm_JMAP</a></li>
 				<li><a href="class-Hm_LDAP_Contacts.html">Hm_LDAP_Contacts</a></li>
 				<li><a href="class-Hm_Memcached.html">Hm_Memcached</a></li>
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
 				<li><a href="class-Hm_MIME_Msg.html">Hm_MIME_Msg</a></li>
 				<li><a href="class-Hm_Module_Exec.html">Hm_Module_Exec</a></li>
 				<li><a href="class-Hm_Msgs.html">Hm_Msgs</a></li>
+				<li><a href="class-Hm_Noop_Cache.html">Hm_Noop_Cache</a></li>
 				<li><a href="class-Hm_Oauth2.html">Hm_Oauth2</a></li>
 				<li><a href="class-Hm_Output.html">Hm_Output</a></li>
 				<li><a href="class-Hm_Output_.html">Hm_Output_</a></li>
@@ -1157,9 +1175,17 @@
 				<li><a href="class-Hm_Output_add_cal_event_form.html">Hm_Output_add_cal_event_form</a></li>
 				<li><a href="class-Hm_Output_add_feed_dialog.html">Hm_Output_add_feed_dialog</a></li>
 				<li><a href="class-Hm_Output_add_imap_server_dialog.html">Hm_Output_add_imap_server_dialog</a></li>
+				<li><a href="class-Hm_Output_add_jmap_server_dialog.html">Hm_Output_add_jmap_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_message_contacts.html">Hm_Output_add_message_contacts</a></li>
 				<li><a href="class-Hm_Output_add_pop3_server_dialog.html">Hm_Output_add_pop3_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_smtp_server_dialog.html">Hm_Output_add_smtp_server_dialog</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_end.html">Hm_Output_advanced_search_content_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_start.html">Hm_Output_advanced_search_content_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_content.html">Hm_Output_advanced_search_form_content</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_end.html">Hm_Output_advanced_search_form_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_start.html">Hm_Output_advanced_search_form_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_link.html">Hm_Output_advanced_search_link</a></li>
+				<li><a href="class-Hm_Output_advanced_search_results_table_end.html">Hm_Output_advanced_search_results_table_end</a></li>
 				<li><a href="class-Hm_Output_all_email_since_setting.html">Hm_Output_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Output_all_email_source_max_setting.html">Hm_Output_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Output_all_since_setting.html">Hm_Output_all_since_setting</a></li>
@@ -1168,6 +1194,8 @@
 				<li><a href="class-Hm_Output_auto_bcc_setting.html">Hm_Output_auto_bcc_setting</a></li>
 				<li><a href="class-Hm_Output_calendar_content.html">Hm_Output_calendar_content</a></li>
 				<li><a href="class-Hm_Output_calendar_page_link.html">Hm_Output_calendar_page_link</a></li>
+				<li><a href="class-Hm_Output_carddav_auth_settings.html">Hm_Output_carddav_auth_settings</a></li>
+				<li><a href="class-Hm_Output_carddav_contacts_form.html">Hm_Output_carddav_contacts_form</a></li>
 				<li><a href="class-Hm_Output_change_password.html">Hm_Output_change_password</a></li>
 				<li><a href="class-Hm_Output_change_password_link.html">Hm_Output_change_password_link</a></li>
 				<li><a href="class-Hm_Output_compose_form_attach.html">Hm_Output_compose_form_attach</a></li>
@@ -1198,6 +1226,7 @@
 				<li><a href="class-Hm_Output_developer_doc_link.html">Hm_Output_developer_doc_link</a></li>
 				<li><a href="class-Hm_Output_display_configured_feeds.html">Hm_Output_display_configured_feeds</a></li>
 				<li><a href="class-Hm_Output_display_configured_imap_servers.html">Hm_Output_display_configured_imap_servers</a></li>
+				<li><a href="class-Hm_Output_display_configured_jmap_servers.html">Hm_Output_display_configured_jmap_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_pop3_servers.html">Hm_Output_display_configured_pop3_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_smtp_servers.html">Hm_Output_display_configured_smtp_servers</a></li>
 				<li><a href="class-Hm_Output_display_feeds_status.html">Hm_Output_display_feeds_status</a></li>
@@ -1225,6 +1254,7 @@
 				<li><a href="class-Hm_Output_filter_github_data.html">Hm_Output_filter_github_data</a></li>
 				<li><a href="class-Hm_Output_filter_github_event_detail.html">Hm_Output_filter_github_event_detail</a></li>
 				<li><a href="class-Hm_Output_filter_github_status.html">Hm_Output_filter_github_status</a></li>
+				<li><a href="class-Hm_Output_filter_imap_advanced_search.html">Hm_Output_filter_imap_advanced_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_folders.html">Hm_Output_filter_imap_folders</a></li>
 				<li><a href="class-Hm_Output_filter_imap_search.html">Hm_Output_filter_imap_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_status_data.html">Hm_Output_filter_imap_status_data</a></li>
@@ -1323,6 +1353,7 @@
 				<li><a href="class-Hm_Output_login_end.html">Hm_Output_login_end</a></li>
 				<li><a href="class-Hm_Output_login_start.html">Hm_Output_login_start</a></li>
 				<li><a href="class-Hm_Output_logout_menu_item.html">Hm_Output_logout_menu_item</a></li>
+				<li><a href="class-Hm_Output_mailto_handler_setting.html">Hm_Output_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Output_main_menu_content.html">Hm_Output_main_menu_content</a></li>
 				<li><a href="class-Hm_Output_main_menu_end.html">Hm_Output_main_menu_end</a></li>
 				<li><a href="class-Hm_Output_main_menu_start.html">Hm_Output_main_menu_start</a></li>
@@ -1423,7 +1454,6 @@
 				<li><a href="class-Hm_Output_wordpress_connect_section.html">Hm_Output_wordpress_connect_section</a></li>
 				<li><a href="class-Hm_Output_wordpress_folders.html">Hm_Output_wordpress_folders</a></li>
 				<li><a href="class-Hm_Output_wordpress_since_setting.html">Hm_Output_wordpress_since_setting</a></li>
-				<li><a href="class-Hm_Page_Cache.html">Hm_Page_Cache</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
 				<li><a href="class-Hm_POP3.html">Hm_POP3</a></li>
@@ -1431,6 +1461,8 @@
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
 				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
+				<li><a href="class-Hm_Redis.html">Hm_Redis</a></li>
+				<li><a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1453,6 +1485,7 @@
 
 			<h3>Traits</h3>
 			<ul>
+				<li><a href="class-Hm_Cache_Base.html">Hm_Cache_Base</a></li>
 				<li><a href="class-Hm_Dispatch_Redirect.html">Hm_Dispatch_Redirect</a></li>
 				<li><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_Handler_Validate.html">Hm_Handler_Validate</a></li>
@@ -1490,6 +1523,7 @@
 				<li><a href="function-check_recaptcha.html">check_recaptcha</a></li>
 				<li><a href="function-checkbox_callback.html">checkbox_callback</a></li>
 				<li><a href="function-clear_existing_reply_details.html">clear_existing_reply_details</a></li>
+				<li><a href="function-combined_sort_dialog.html">combined_sort_dialog</a></li>
 				<li><a href="function-convert_html_to_text.html">convert_html_to_text</a></li>
 				<li><a href="function-create_secret.html">create_secret</a></li>
 				<li><a href="function-credentials_form.html">credentials_form</a></li>
@@ -1516,9 +1550,12 @@
 				<li><a href="function-filter_message_part.html">filter_message_part</a></li>
 				<li><a href="function-format_attachment_row.html">format_attachment_row</a></li>
 				<li><a href="function-format_data_sources.html">format_data_sources</a></li>
+				<li><a href="function-format_imap_envelope.html">format_imap_envelope</a></li>
 				<li><a href="function-format_imap_folder_section.html">format_imap_folder_section</a></li>
 				<li><a href="function-format_imap_from_fld.html">format_imap_from_fld</a></li>
 				<li><a href="function-format_imap_message_list.html">format_imap_message_list</a></li>
+				<li><a href="function-format_keyboard_action.html">format_keyboard_action</a></li>
+				<li><a href="function-format_list_headers.html">format_list_headers</a></li>
 				<li><a href="function-format_msg_html.html">format_msg_html</a></li>
 				<li><a href="function-format_msg_image.html">format_msg_image</a></li>
 				<li><a href="function-format_msg_part_row.html">format_msg_part_row</a></li>
@@ -1542,6 +1579,7 @@
 				<li><a href="function-get_imap_size.html">get_imap_size</a></li>
 				<li><a href="function-get_ini.html">get_ini</a></li>
 				<li><a href="function-get_ldap_value.html">get_ldap_value</a></li>
+				<li><a href="function-get_list_headers.html">get_list_headers</a></li>
 				<li><a href="function-get_message_list_settings.html">get_message_list_settings</a></li>
 				<li><a href="function-get_oauth2_data.html">get_oauth2_data</a></li>
 				<li><a href="function-get_outbound_msg_detail.html">get_outbound_msg_detail</a></li>
@@ -1572,6 +1610,7 @@
 				<li><a href="function-imap_move_same_server.html">imap_move_same_server</a></li>
 				<li><a href="function-imap_refresh_oauth2_token.html">imap_refresh_oauth2_token</a></li>
 				<li><a href="function-imap_sent_sources.html">imap_sent_sources</a></li>
+				<li><a href="function-imap_server_type.html">imap_server_type</a></li>
 				<li><a href="function-in_server_list.html">in_server_list</a></li>
 				<li><a href="function-interface_langs.html">interface_langs</a></li>
 				<li><a href="function-is_email_address.html">is_email_address</a></li>
@@ -1603,6 +1642,7 @@
 				<li><a href="function-prepare_imap_message_list.html">prepare_imap_message_list</a></li>
 				<li><a href="function-process_address_fld.html">process_address_fld</a></li>
 				<li><a href="function-process_imap_message_ids.html">process_imap_message_ids</a></li>
+				<li><a href="function-process_list_fld.html">process_list_fld</a></li>
 				<li><a href="function-process_move_to_arguments.html">process_move_to_arguments</a></li>
 				<li><a href="function-process_since_argument.html">process_since_argument</a></li>
 				<li><a href="function-process_site_setting.html">process_site_setting</a></li>
@@ -1611,7 +1651,6 @@
 				<li><a href="function-profile_from_compose_smtp_id.html">profile_from_compose_smtp_id</a></li>
 				<li><a href="function-profiles_by_smtp_id.html">profiles_by_smtp_id</a></li>
 				<li><a href="function-prompt_for_passhrase.html">prompt_for_passhrase</a></li>
-				<li><a href="function-propfind.html">propfind</a></li>
 				<li><a href="function-recaptcha_config.html">recaptcha_config</a></li>
 				<li><a href="function-replace_module.html">replace_module</a></li>
 				<li><a href="function-reply_format_body.html">reply_format_body</a></li>
@@ -1620,7 +1659,6 @@
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
 				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
-				<li><a href="function-report.html">report</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
 				<li><a href="function-save_uploaded_file.html">save_uploaded_file</a></li>
@@ -1934,7 +1972,7 @@
 </span><span id="232" class="l"><a href="#232">232: </a>            }
 </span><span id="233" class="l"><a href="#233">233: </a>            <span class="php-var">$char</span> = <span class="php-keyword2">array_search</span>(<span class="php-var">$vals</span>[<span class="php-quote">'char'</span>], <span class="php-var">$codes</span>);
 </span><span id="234" class="l"><a href="#234">234: </a>            <span class="php-var">$res</span> .= <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;tr&gt;&lt;th class=&quot;keys&quot;&gt;%s %s&lt;/th&gt;&lt;th&gt;%s&lt;/th&gt;'</span>.
-</span><span id="235" class="l"><a href="#235">235: </a>                <span class="php-quote">'&lt;td&gt;&lt;a href=&quot;?page=shortcuts&amp;edit_id=%s&quot;&gt;&lt;img alt=&quot;'</span>.
+</span><span id="235" class="l"><a href="#235">235: </a>                <span class="php-quote">'&lt;td&gt;&lt;a href=&quot;?page=shortcuts&amp;edit_id=%s&quot;&gt;&lt;img width=&quot;16&quot; height=&quot;16&quot; alt=&quot;'</span>.
 </span><span id="236" class="l"><a href="#236">236: </a>                <span class="php-var">$output_mod</span>-&gt;trans(<span class="php-quote">'Update'</span>).<span class="php-quote">'&quot; class=&quot;kbd_config&quot; src=&quot;%s&quot; /&gt;&lt;a&gt;&lt;/td&gt;&lt;/tr&gt;'</span>,
 </span><span id="237" class="l"><a href="#237">237: </a>                <span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$c_keys</span>), <span class="php-var">$output_mod</span>-&gt;html_safe(<span class="php-var">$char</span>),
 </span><span id="238" class="l"><a href="#238">238: </a>                <span class="php-var">$output_mod</span>-&gt;trans(<span class="php-var">$vals</span>[<span class="php-quote">'label'</span>]), <span class="php-var">$index</span>, Hm_Image_Sources::<span class="php-var">$cog</span>);
@@ -1950,7 +1988,7 @@
 </span><span id="248" class="l"><a href="#248">248: </a><span class="php-keyword1">function</span> shortcut_defaults(<span class="php-var">$user_config</span>=<span class="php-keyword1">false</span>) {
 </span><span id="249" class="l"><a href="#249">249: </a>    <span class="php-var">$res</span> = <span class="php-keyword1">array</span>(
 </span><span id="250" class="l"><a href="#250">250: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Unfocus all input elements'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(), <span class="php-quote">'char'</span> =&gt; <span class="php-num">27</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'Keyboard_Shortcuts.unfocus'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'false'</span>),
-</span><span id="251" class="l"><a href="#251">251: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Jump to the &quot;Everything&quot; page'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'meta'</span>), <span class="php-quote">'char'</span> =&gt; <span class="php-num">69</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'ks_redirect'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'?page=message_list&amp;list_path=combined_inbox'</span>),
+</span><span id="251" class="l"><a href="#251">251: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Jump to the &quot;Everything&quot; page'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(), <span class="php-quote">'char'</span> =&gt; <span class="php-num">69</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'ks_redirect'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'?page=message_list&amp;list_path=combined_inbox'</span>),
 </span><span id="252" class="l"><a href="#252">252: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Jump to the &quot;Unread&quot; page'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'meta'</span>), <span class="php-quote">'char'</span> =&gt; <span class="php-num">85</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'ks_redirect'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'?page=message_list&amp;list_path=unread'</span>),
 </span><span id="253" class="l"><a href="#253">253: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Jump to the &quot;Flagged&quot; page'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'meta'</span>), <span class="php-quote">'char'</span> =&gt; <span class="php-num">70</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'ks_redirect'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'?page=message_list&amp;list_path=flagged'</span>),
 </span><span id="254" class="l"><a href="#254">254: </a>        <span class="php-keyword1">array</span>(<span class="php-quote">'label'</span> =&gt; <span class="php-quote">'Jump to History'</span>, <span class="php-quote">'group'</span> =&gt; <span class="php-quote">'general'</span>, <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'*'</span>, <span class="php-quote">'control_chars'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'meta'</span>), <span class="php-quote">'char'</span> =&gt; <span class="php-num">72</span>, <span class="php-quote">'action'</span> =&gt; <span class="php-quote">'ks_redirect'</span>, <span class="php-quote">'target'</span> =&gt; <span class="php-quote">'?page=history'</span>),
@@ -1992,38 +2030,58 @@
 </span><span id="290" class="l"><a href="#290">290: </a><span class="php-comment">/**
 </span></span><span id="291" class="l"><a href="#291">291: </a><span class="php-comment"> * @subpackage keyboard_shortcuts/functions
 </span></span><span id="292" class="l"><a href="#292">292: </a><span class="php-comment"> */</span>
-</span><span id="293" class="l"><a href="#293">293: </a><span class="php-keyword1">if</span> (!hm_exists(<span class="php-quote">'format_shortcuts'</span>)) {
-</span><span id="294" class="l"><a href="#294">294: </a><span class="php-keyword1">function</span> format_shortcuts(<span class="php-var">$data</span>) {
-</span><span id="295" class="l"><a href="#295">295: </a>    <span class="php-var">$res</span> = <span class="php-quote">&quot;var shortcuts = [\n&quot;</span>;
-</span><span id="296" class="l"><a href="#296">296: </a>    <span class="php-keyword1">foreach</span> (<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$vals</span>) {
-</span><span id="297" class="l"><a href="#297">297: </a>        <span class="php-var">$c_chars</span> = <span class="php-keyword2">implode</span>(<span class="php-quote">','</span>, <span class="php-keyword2">array_map</span>(<span class="php-keyword1">function</span>(<span class="php-var">$v</span>) { <span class="php-keyword1">return</span> <span class="php-quote">&quot;'&quot;</span>.<span class="php-var">$v</span>.<span class="php-quote">&quot;'&quot;</span>; }, <span class="php-var">$vals</span>[<span class="php-quote">'control_chars'</span>]));
-</span><span id="298" class="l"><a href="#298">298: </a>        <span class="php-var">$res</span> .= <span class="php-keyword2">sprintf</span>(<span class="php-quote">&quot;{'page': '%s', 'control_chars': [%s], 'char': %s, 'action': %s, 'target': '%s'},\n&quot;</span>,
-</span><span id="299" class="l"><a href="#299">299: </a>            <span class="php-var">$vals</span>[<span class="php-quote">'page'</span>], <span class="php-var">$c_chars</span>, <span class="php-var">$vals</span>[<span class="php-quote">'char'</span>], <span class="php-var">$vals</span>[<span class="php-quote">'action'</span>], <span class="php-var">$vals</span>[<span class="php-quote">'target'</span>]);
-</span><span id="300" class="l"><a href="#300">300: </a>    }
-</span><span id="301" class="l"><a href="#301">301: </a>    <span class="php-var">$res</span> .= <span class="php-quote">&quot;];\n&quot;</span>;
-</span><span id="302" class="l"><a href="#302">302: </a>    <span class="php-keyword1">return</span> <span class="php-var">$res</span>;
-</span><span id="303" class="l"><a href="#303">303: </a>}}
-</span><span id="304" class="l"><a href="#304">304: </a>
-</span><span id="305" class="l"><a href="#305">305: </a><span class="php-comment">/**
-</span></span><span id="306" class="l"><a href="#306">306: </a><span class="php-comment"> * @subpackage keyboard_shortcuts/functions
-</span></span><span id="307" class="l"><a href="#307">307: </a><span class="php-comment"> */</span>
-</span><span id="308" class="l"><a href="#308">308: </a><span class="php-keyword1">if</span> (!hm_exists(<span class="php-quote">'keycodes'</span>)) {
-</span><span id="309" class="l"><a href="#309">309: </a><span class="php-keyword1">function</span> keycodes() {
-</span><span id="310" class="l"><a href="#310">310: </a>    <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
-</span><span id="311" class="l"><a href="#311">311: </a>        <span class="php-quote">'backspace'</span> =&gt; <span class="php-num">8</span>, <span class="php-quote">'enter'</span> =&gt; <span class="php-num">13</span>, <span class="php-quote">'pause/break'</span> =&gt; <span class="php-num">19</span>, <span class="php-quote">'escape'</span> =&gt; <span class="php-num">27</span>, <span class="php-quote">'page up'</span> =&gt; <span class="php-num">33</span>, <span class="php-quote">'page down'</span> =&gt; <span class="php-num">34</span>,
-</span><span id="312" class="l"><a href="#312">312: </a>        <span class="php-quote">'end'</span> =&gt; <span class="php-num">35</span>, <span class="php-quote">'home'</span> =&gt; <span class="php-num">36</span>, <span class="php-quote">'left arrow'</span> =&gt; <span class="php-num">37</span>, <span class="php-quote">'up arrow'</span> =&gt; <span class="php-num">38</span>, <span class="php-quote">'right arrow'</span> =&gt; <span class="php-num">39</span>, <span class="php-quote">'down arrow'</span> =&gt; <span class="php-num">40</span>, <span class="php-quote">'insert'</span> =&gt; <span class="php-num">45</span>, <span class="php-quote">'delete'</span> =&gt; <span class="php-num">46</span>,
-</span><span id="313" class="l"><a href="#313">313: </a>        <span class="php-quote">'0'</span> =&gt; <span class="php-num">48</span>, <span class="php-quote">'1'</span> =&gt; <span class="php-num">49</span>, <span class="php-quote">'2'</span> =&gt; <span class="php-num">50</span>, <span class="php-quote">'3'</span> =&gt; <span class="php-num">51</span>, <span class="php-quote">'4'</span> =&gt; <span class="php-num">52</span>, <span class="php-quote">'5'</span> =&gt; <span class="php-num">53</span>, <span class="php-quote">'6'</span> =&gt; <span class="php-num">54</span>, <span class="php-quote">'7'</span> =&gt; <span class="php-num">55</span>, <span class="php-quote">'8'</span> =&gt; <span class="php-num">56</span>, <span class="php-quote">'9'</span> =&gt; <span class="php-num">57</span>, <span class="php-quote">'a'</span> =&gt; <span class="php-num">65</span>, <span class="php-quote">'b'</span> =&gt; <span class="php-num">66</span>, <span class="php-quote">'c'</span> =&gt; <span class="php-num">67</span>,
-</span><span id="314" class="l"><a href="#314">314: </a>        <span class="php-quote">'d'</span> =&gt; <span class="php-num">68</span>, <span class="php-quote">'e'</span> =&gt; <span class="php-num">69</span>, <span class="php-quote">'f'</span> =&gt; <span class="php-num">70</span>, <span class="php-quote">'g'</span> =&gt; <span class="php-num">71</span>, <span class="php-quote">'h'</span> =&gt; <span class="php-num">72</span>, <span class="php-quote">'i'</span> =&gt; <span class="php-num">73</span>, <span class="php-quote">'j'</span> =&gt; <span class="php-num">74</span>, <span class="php-quote">'k'</span> =&gt; <span class="php-num">75</span>, <span class="php-quote">'l'</span> =&gt; <span class="php-num">76</span>, <span class="php-quote">'m'</span> =&gt; <span class="php-num">77</span>, <span class="php-quote">'n'</span> =&gt; <span class="php-num">78</span>, <span class="php-quote">'o'</span> =&gt; <span class="php-num">79</span>, <span class="php-quote">'p'</span> =&gt; <span class="php-num">80</span>,
-</span><span id="315" class="l"><a href="#315">315: </a>        <span class="php-quote">'q'</span> =&gt; <span class="php-num">81</span>, <span class="php-quote">'r'</span> =&gt; <span class="php-num">82</span>, <span class="php-quote">'s'</span> =&gt; <span class="php-num">83</span>, <span class="php-quote">'t'</span> =&gt; <span class="php-num">84</span>, <span class="php-quote">'u'</span> =&gt; <span class="php-num">85</span>, <span class="php-quote">'v'</span> =&gt; <span class="php-num">86</span>, <span class="php-quote">'w'</span> =&gt; <span class="php-num">87</span>, <span class="php-quote">'x'</span> =&gt; <span class="php-num">88</span>, <span class="php-quote">'y'</span> =&gt; <span class="php-num">89</span>, <span class="php-quote">'z'</span> =&gt; <span class="php-num">90</span>, <span class="php-quote">'numpad 0'</span> =&gt; <span class="php-num">96</span>, <span class="php-quote">'numpad 1'</span> =&gt; <span class="php-num">97</span>,
-</span><span id="316" class="l"><a href="#316">316: </a>        <span class="php-quote">'numpad 2'</span> =&gt; <span class="php-num">98</span>, <span class="php-quote">'numpad 3'</span> =&gt; <span class="php-num">99</span>, <span class="php-quote">'numpad 4'</span> =&gt; <span class="php-num">100</span>, <span class="php-quote">'numpad 5'</span> =&gt; <span class="php-num">101</span>, <span class="php-quote">'numpad 6'</span> =&gt; <span class="php-num">102</span>, <span class="php-quote">'numpad 7'</span> =&gt; <span class="php-num">103</span>, <span class="php-quote">'numpad 8'</span> =&gt; <span class="php-num">104</span>, <span class="php-quote">'numpad 9'</span> =&gt; <span class="php-num">105</span>,
-</span><span id="317" class="l"><a href="#317">317: </a>        <span class="php-quote">'multiply'</span> =&gt; <span class="php-num">106</span>, <span class="php-quote">'add'</span> =&gt; <span class="php-num">107</span>, <span class="php-quote">'subtract'</span> =&gt; <span class="php-num">109</span>, <span class="php-quote">'decimal point'</span> =&gt; <span class="php-num">110</span>, <span class="php-quote">'divide'</span> =&gt; <span class="php-num">111</span>, <span class="php-quote">'f1'</span> =&gt; <span class="php-num">112</span>, <span class="php-quote">'f2'</span> =&gt; <span class="php-num">113</span>, <span class="php-quote">'f3'</span> =&gt; <span class="php-num">114</span>, <span class="php-quote">'f4'</span> =&gt; <span class="php-num">115</span>,
-</span><span id="318" class="l"><a href="#318">318: </a>        <span class="php-quote">'f5'</span> =&gt; <span class="php-num">116</span>, <span class="php-quote">'f6'</span> =&gt; <span class="php-num">117</span>, <span class="php-quote">'f7'</span> =&gt; <span class="php-num">118</span>, <span class="php-quote">'f8'</span> =&gt; <span class="php-num">119</span>, <span class="php-quote">'f9'</span> =&gt; <span class="php-num">120</span>, <span class="php-quote">'f10'</span> =&gt; <span class="php-num">121</span>, <span class="php-quote">'f11'</span> =&gt; <span class="php-num">122</span>, <span class="php-quote">'f12'</span> =&gt; <span class="php-num">123</span>,
-</span><span id="319" class="l"><a href="#319">319: </a>        <span class="php-quote">'semi-colon'</span> =&gt; <span class="php-num">186</span>, <span class="php-quote">'equal sign'</span> =&gt; <span class="php-num">187</span>, <span class="php-quote">'comma'</span> =&gt; <span class="php-num">188</span>, <span class="php-quote">'dash'</span> =&gt; <span class="php-num">189</span>, <span class="php-quote">'period'</span> =&gt; <span class="php-num">190</span>, <span class="php-quote">'forward slash'</span> =&gt; <span class="php-num">191</span>, <span class="php-quote">'grave accent'</span> =&gt; <span class="php-num">192</span>,
-</span><span id="320" class="l"><a href="#320">320: </a>        <span class="php-quote">'open bracket'</span> =&gt; <span class="php-num">219</span>, <span class="php-quote">'back slash'</span> =&gt; <span class="php-num">220</span>, <span class="php-quote">'close bracket'</span> =&gt; <span class="php-num">221</span>, <span class="php-quote">'single quote'</span> =&gt; <span class="php-num">222</span>
-</span><span id="321" class="l"><a href="#321">321: </a>    );
-</span><span id="322" class="l"><a href="#322">322: </a>}}
-</span><span id="323" class="l"><a href="#323">323: </a>
-</span><span id="324" class="l"><a href="#324">324: </a></span></code></pre>
+</span><span id="293" class="l"><a href="#293">293: </a><span class="php-keyword1">if</span> (!hm_exists(<span class="php-quote">'fromat_keyboard_action'</span>)) {
+</span><span id="294" class="l"><a href="#294">294: </a><span class="php-keyword1">function</span> format_keyboard_action(<span class="php-var">$action</span>) {
+</span><span id="295" class="l"><a href="#295">295: </a>    <span class="php-var">$actions</span> = <span class="php-keyword1">Array</span>(
+</span><span id="296" class="l"><a href="#296">296: </a>        <span class="php-quote">'Keyboard_Shortcuts.unfocus'</span> =&gt; <span class="php-quote">'unfocus'</span>,
+</span><span id="297" class="l"><a href="#297">297: </a>        <span class="php-quote">'Hm_Folders.toggle_folder_list'</span> =&gt; <span class="php-quote">'toggle'</span>,
+</span><span id="298" class="l"><a href="#298">298: </a>        <span class="php-quote">'ks_redirect'</span> =&gt; <span class="php-quote">'redirect'</span>,
+</span><span id="299" class="l"><a href="#299">299: </a>        <span class="php-quote">'ks_next_msg_list'</span> =&gt; <span class="php-quote">'next'</span>,
+</span><span id="300" class="l"><a href="#300">300: </a>        <span class="php-quote">'ks_prev_msg_list'</span> =&gt; <span class="php-quote">'prev'</span>,
+</span><span id="301" class="l"><a href="#301">301: </a>        <span class="php-quote">'ks_load_msg'</span> =&gt; <span class="php-quote">'load'</span>,
+</span><span id="302" class="l"><a href="#302">302: </a>        <span class="php-quote">'ks_select_msg'</span> =&gt; <span class="php-quote">'select'</span>,
+</span><span id="303" class="l"><a href="#303">303: </a>        <span class="php-quote">'ks_select_all'</span> =&gt; <span class="php-quote">'select_all'</span>,
+</span><span id="304" class="l"><a href="#304">304: </a>        <span class="php-quote">'ks_click_button'</span> =&gt; <span class="php-quote">'click'</span>,
+</span><span id="305" class="l"><a href="#305">305: </a>        <span class="php-quote">'ks_follow_link'</span> =&gt; <span class="php-quote">'link'</span>
+</span><span id="306" class="l"><a href="#306">306: </a>    );
+</span><span id="307" class="l"><a href="#307">307: </a>    <span class="php-keyword1">return</span> <span class="php-var">$actions</span>[<span class="php-var">$action</span>];
+</span><span id="308" class="l"><a href="#308">308: </a>}}
+</span><span id="309" class="l"><a href="#309">309: </a>
+</span><span id="310" class="l"><a href="#310">310: </a><span class="php-comment">/**
+</span></span><span id="311" class="l"><a href="#311">311: </a><span class="php-comment"> * @subpackage keyboard_shortcuts/functions
+</span></span><span id="312" class="l"><a href="#312">312: </a><span class="php-comment"> */</span>
+</span><span id="313" class="l"><a href="#313">313: </a><span class="php-keyword1">if</span> (!hm_exists(<span class="php-quote">'format_shortcuts'</span>)) {
+</span><span id="314" class="l"><a href="#314">314: </a><span class="php-keyword1">function</span> format_shortcuts(<span class="php-var">$data</span>) {
+</span><span id="315" class="l"><a href="#315">315: </a>    <span class="php-var">$res</span> = <span class="php-quote">&quot;var shortcuts = [\n&quot;</span>;
+</span><span id="316" class="l"><a href="#316">316: </a>    <span class="php-keyword1">foreach</span> (<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$vals</span>) {
+</span><span id="317" class="l"><a href="#317">317: </a>        <span class="php-var">$c_chars</span> = <span class="php-keyword2">implode</span>(<span class="php-quote">','</span>, <span class="php-keyword2">array_map</span>(<span class="php-keyword1">function</span>(<span class="php-var">$v</span>) { <span class="php-keyword1">return</span> <span class="php-quote">&quot;'&quot;</span>.<span class="php-var">$v</span>.<span class="php-quote">&quot;'&quot;</span>; }, <span class="php-var">$vals</span>[<span class="php-quote">'control_chars'</span>]));
+</span><span id="318" class="l"><a href="#318">318: </a>        <span class="php-var">$res</span> .= <span class="php-keyword2">sprintf</span>(<span class="php-quote">&quot;{'page': '%s', 'control_chars': [%s], 'char': %s, 'action': '%s', 'target': '%s'},\n&quot;</span>,
+</span><span id="319" class="l"><a href="#319">319: </a>            <span class="php-var">$vals</span>[<span class="php-quote">'page'</span>], <span class="php-var">$c_chars</span>, <span class="php-var">$vals</span>[<span class="php-quote">'char'</span>], format_keyboard_action(<span class="php-var">$vals</span>[<span class="php-quote">'action'</span>]), <span class="php-var">$vals</span>[<span class="php-quote">'target'</span>]);
+</span><span id="320" class="l"><a href="#320">320: </a>    }
+</span><span id="321" class="l"><a href="#321">321: </a>    <span class="php-var">$res</span> .= <span class="php-quote">&quot;];\n&quot;</span>;
+</span><span id="322" class="l"><a href="#322">322: </a>    <span class="php-keyword1">return</span> <span class="php-var">$res</span>;
+</span><span id="323" class="l"><a href="#323">323: </a>}}
+</span><span id="324" class="l"><a href="#324">324: </a>
+</span><span id="325" class="l"><a href="#325">325: </a><span class="php-comment">/**
+</span></span><span id="326" class="l"><a href="#326">326: </a><span class="php-comment"> * @subpackage keyboard_shortcuts/functions
+</span></span><span id="327" class="l"><a href="#327">327: </a><span class="php-comment"> */</span>
+</span><span id="328" class="l"><a href="#328">328: </a><span class="php-keyword1">if</span> (!hm_exists(<span class="php-quote">'keycodes'</span>)) {
+</span><span id="329" class="l"><a href="#329">329: </a><span class="php-keyword1">function</span> keycodes() {
+</span><span id="330" class="l"><a href="#330">330: </a>    <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(
+</span><span id="331" class="l"><a href="#331">331: </a>        <span class="php-quote">'backspace'</span> =&gt; <span class="php-num">8</span>, <span class="php-quote">'enter'</span> =&gt; <span class="php-num">13</span>, <span class="php-quote">'pause/break'</span> =&gt; <span class="php-num">19</span>, <span class="php-quote">'escape'</span> =&gt; <span class="php-num">27</span>, <span class="php-quote">'page up'</span> =&gt; <span class="php-num">33</span>, <span class="php-quote">'page down'</span> =&gt; <span class="php-num">34</span>,
+</span><span id="332" class="l"><a href="#332">332: </a>        <span class="php-quote">'end'</span> =&gt; <span class="php-num">35</span>, <span class="php-quote">'home'</span> =&gt; <span class="php-num">36</span>, <span class="php-quote">'left arrow'</span> =&gt; <span class="php-num">37</span>, <span class="php-quote">'up arrow'</span> =&gt; <span class="php-num">38</span>, <span class="php-quote">'right arrow'</span> =&gt; <span class="php-num">39</span>, <span class="php-quote">'down arrow'</span> =&gt; <span class="php-num">40</span>, <span class="php-quote">'insert'</span> =&gt; <span class="php-num">45</span>, <span class="php-quote">'delete'</span> =&gt; <span class="php-num">46</span>,
+</span><span id="333" class="l"><a href="#333">333: </a>        <span class="php-quote">'0'</span> =&gt; <span class="php-num">48</span>, <span class="php-quote">'1'</span> =&gt; <span class="php-num">49</span>, <span class="php-quote">'2'</span> =&gt; <span class="php-num">50</span>, <span class="php-quote">'3'</span> =&gt; <span class="php-num">51</span>, <span class="php-quote">'4'</span> =&gt; <span class="php-num">52</span>, <span class="php-quote">'5'</span> =&gt; <span class="php-num">53</span>, <span class="php-quote">'6'</span> =&gt; <span class="php-num">54</span>, <span class="php-quote">'7'</span> =&gt; <span class="php-num">55</span>, <span class="php-quote">'8'</span> =&gt; <span class="php-num">56</span>, <span class="php-quote">'9'</span> =&gt; <span class="php-num">57</span>, <span class="php-quote">'a'</span> =&gt; <span class="php-num">65</span>, <span class="php-quote">'b'</span> =&gt; <span class="php-num">66</span>, <span class="php-quote">'c'</span> =&gt; <span class="php-num">67</span>,
+</span><span id="334" class="l"><a href="#334">334: </a>        <span class="php-quote">'d'</span> =&gt; <span class="php-num">68</span>, <span class="php-quote">'e'</span> =&gt; <span class="php-num">69</span>, <span class="php-quote">'f'</span> =&gt; <span class="php-num">70</span>, <span class="php-quote">'g'</span> =&gt; <span class="php-num">71</span>, <span class="php-quote">'h'</span> =&gt; <span class="php-num">72</span>, <span class="php-quote">'i'</span> =&gt; <span class="php-num">73</span>, <span class="php-quote">'j'</span> =&gt; <span class="php-num">74</span>, <span class="php-quote">'k'</span> =&gt; <span class="php-num">75</span>, <span class="php-quote">'l'</span> =&gt; <span class="php-num">76</span>, <span class="php-quote">'m'</span> =&gt; <span class="php-num">77</span>, <span class="php-quote">'n'</span> =&gt; <span class="php-num">78</span>, <span class="php-quote">'o'</span> =&gt; <span class="php-num">79</span>, <span class="php-quote">'p'</span> =&gt; <span class="php-num">80</span>,
+</span><span id="335" class="l"><a href="#335">335: </a>        <span class="php-quote">'q'</span> =&gt; <span class="php-num">81</span>, <span class="php-quote">'r'</span> =&gt; <span class="php-num">82</span>, <span class="php-quote">'s'</span> =&gt; <span class="php-num">83</span>, <span class="php-quote">'t'</span> =&gt; <span class="php-num">84</span>, <span class="php-quote">'u'</span> =&gt; <span class="php-num">85</span>, <span class="php-quote">'v'</span> =&gt; <span class="php-num">86</span>, <span class="php-quote">'w'</span> =&gt; <span class="php-num">87</span>, <span class="php-quote">'x'</span> =&gt; <span class="php-num">88</span>, <span class="php-quote">'y'</span> =&gt; <span class="php-num">89</span>, <span class="php-quote">'z'</span> =&gt; <span class="php-num">90</span>, <span class="php-quote">'numpad 0'</span> =&gt; <span class="php-num">96</span>, <span class="php-quote">'numpad 1'</span> =&gt; <span class="php-num">97</span>,
+</span><span id="336" class="l"><a href="#336">336: </a>        <span class="php-quote">'numpad 2'</span> =&gt; <span class="php-num">98</span>, <span class="php-quote">'numpad 3'</span> =&gt; <span class="php-num">99</span>, <span class="php-quote">'numpad 4'</span> =&gt; <span class="php-num">100</span>, <span class="php-quote">'numpad 5'</span> =&gt; <span class="php-num">101</span>, <span class="php-quote">'numpad 6'</span> =&gt; <span class="php-num">102</span>, <span class="php-quote">'numpad 7'</span> =&gt; <span class="php-num">103</span>, <span class="php-quote">'numpad 8'</span> =&gt; <span class="php-num">104</span>, <span class="php-quote">'numpad 9'</span> =&gt; <span class="php-num">105</span>,
+</span><span id="337" class="l"><a href="#337">337: </a>        <span class="php-quote">'multiply'</span> =&gt; <span class="php-num">106</span>, <span class="php-quote">'add'</span> =&gt; <span class="php-num">107</span>, <span class="php-quote">'subtract'</span> =&gt; <span class="php-num">109</span>, <span class="php-quote">'decimal point'</span> =&gt; <span class="php-num">110</span>, <span class="php-quote">'divide'</span> =&gt; <span class="php-num">111</span>, <span class="php-quote">'f1'</span> =&gt; <span class="php-num">112</span>, <span class="php-quote">'f2'</span> =&gt; <span class="php-num">113</span>, <span class="php-quote">'f3'</span> =&gt; <span class="php-num">114</span>, <span class="php-quote">'f4'</span> =&gt; <span class="php-num">115</span>,
+</span><span id="338" class="l"><a href="#338">338: </a>        <span class="php-quote">'f5'</span> =&gt; <span class="php-num">116</span>, <span class="php-quote">'f6'</span> =&gt; <span class="php-num">117</span>, <span class="php-quote">'f7'</span> =&gt; <span class="php-num">118</span>, <span class="php-quote">'f8'</span> =&gt; <span class="php-num">119</span>, <span class="php-quote">'f9'</span> =&gt; <span class="php-num">120</span>, <span class="php-quote">'f10'</span> =&gt; <span class="php-num">121</span>, <span class="php-quote">'f11'</span> =&gt; <span class="php-num">122</span>, <span class="php-quote">'f12'</span> =&gt; <span class="php-num">123</span>,
+</span><span id="339" class="l"><a href="#339">339: </a>        <span class="php-quote">'semi-colon'</span> =&gt; <span class="php-num">186</span>, <span class="php-quote">'equal sign'</span> =&gt; <span class="php-num">187</span>, <span class="php-quote">'comma'</span> =&gt; <span class="php-num">188</span>, <span class="php-quote">'dash'</span> =&gt; <span class="php-num">189</span>, <span class="php-quote">'period'</span> =&gt; <span class="php-num">190</span>, <span class="php-quote">'forward slash'</span> =&gt; <span class="php-num">191</span>, <span class="php-quote">'grave accent'</span> =&gt; <span class="php-num">192</span>,
+</span><span id="340" class="l"><a href="#340">340: </a>        <span class="php-quote">'open bracket'</span> =&gt; <span class="php-num">219</span>, <span class="php-quote">'back slash'</span> =&gt; <span class="php-num">220</span>, <span class="php-quote">'close bracket'</span> =&gt; <span class="php-num">221</span>, <span class="php-quote">'single quote'</span> =&gt; <span class="php-num">222</span>
+</span><span id="341" class="l"><a href="#341">341: </a>    );
+</span><span id="342" class="l"><a href="#342">342: </a>}}
+</span><span id="343" class="l"><a href="#343">343: </a>
+</span><span id="344" class="l"><a href="#344">344: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -2031,6 +2089,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?5ffb293c84eac40a2f427d44726f886b6ec2db0e"></script>
+<script src="elementlist.js?fb449a184f7b10227b019439792a4b96da0013a8"></script>
 </body>
 </html>

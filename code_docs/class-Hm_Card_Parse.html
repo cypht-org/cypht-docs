@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -920,7 +926,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.webdav.html">webdav</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Card_Parse.html#9-282" title="Go to source code">webdav_formats.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Card_Parse.html#9-391" title="Go to source code">webdav_formats.php</a>
 		<br>
 	</div>
 
@@ -997,7 +1003,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="parsed_data" id="_parsed_data">
+	<tr data-order="raw_data" id="_raw_data">
 
 		<td class="attributes"><code>
 			 public 
@@ -1008,8 +1014,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_parsed_data">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#50-56" title="Go to source code">parsed_data</a>( )</code>
+		<a class="anchor" href="#_raw_data">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#50-56" title="Go to source code">raw_data</a>( )</code>
 
 		<div class="description short">
 			<p>Return parsed data for an input</p>
@@ -1031,6 +1037,100 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="build_card" id="_build_card">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build_card">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#58-78" title="Go to source code">build_card</a>( )</code>
+
+		<div class="description short">
+			<p>Format as vcard</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Format as vcard</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parsed_data" id="_parsed_data">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parsed_data">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#80-86" title="Go to source code">parsed_data</a>( )</code>
+
+		<div class="description short">
+			<p>Return parsed data for an input</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return parsed data for an input</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fld_val" id="_fld_val">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fld_val">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#88-113" title="Go to source code">fld_val</a>( <span> <var>$name</var></span>, <span> <var>$type</var> = <span class="php-keyword1">false</span></span>, <span> <var>$default</var> = <span class="php-keyword1">false</span></span>, <span> <var>$all</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Get the value for a field</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the value for a field</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="split_value" id="_split_value">
 
 		<td class="attributes"><code>
@@ -1043,7 +1143,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_split_value">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#58-67" title="Go to source code">split_value</a>( <span>string <var>$line</var></span>, <span>string <var>$delim</var></span>, <span>integer <var>$limit</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#115-125" title="Go to source code">split_value</a>( <span>string <var>$line</var></span>, <span>string <var>$delim</var></span>, <span>integer <var>$limit</var></span> )</code>
 
 		<div class="description short">
 			<p>Split a value skipping escaped characters</p>
@@ -1074,6 +1174,36 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="is_type" id="_is_type">
+
+		<td class="attributes"><code>
+			 private 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_is_type">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#127-144" title="Go to source code">is_type</a>( <span> <var>$type</var></span>, <span> <var>$vals</var></span> )</code>
+
+		<div class="description short">
+			<p>Look for a sepcific type</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Look for a sepcific type</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="standard_eol" id="_standard_eol">
 
 		<td class="attributes"><code>
@@ -1086,7 +1216,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_standard_eol">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#69-77" title="Go to source code">standard_eol</a>( <span>string <var>$str</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#146-153" title="Go to source code">standard_eol</a>( <span>string <var>$str</var></span> )</code>
 
 		<div class="description short">
 			<p>Normalize End-Of-Line chars</p>
@@ -1125,7 +1255,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unfold">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#79-86" title="Go to source code">unfold</a>( <span>string <var>$str</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#155-162" title="Go to source code">unfold</a>( <span>string <var>$str</var></span> )</code>
 
 		<div class="description short">
 			<p>Unfold values that span > 1 line</p>
@@ -1157,14 +1287,14 @@
 		<td class="attributes"><code>
 			 private 
 
-			array|string
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_flatten">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#88-98" title="Go to source code">flatten</a>( <span>array <var>$arr</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#164-174" title="Go to source code">flatten</a>( <span>array <var>$arr</var></span> )</code>
 
 		<div class="description short">
 			<p>Flatten a list with 1 value to a scaler</p>
@@ -1182,7 +1312,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					array|string
+					array
 				</div>
 
 
@@ -1203,7 +1333,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_process_value">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#100-112" title="Go to source code">process_value</a>( <span>string <var>$value</var></span>, <span>string <var>$type</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#176-188" title="Go to source code">process_value</a>( <span>string <var>$value</var></span>, <span>string <var>$type</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Process the value portion of an input line</p>
@@ -1244,7 +1374,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#114-139" title="Go to source code">parse</a>( <span>array <var>$lines</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#190-215" title="Go to source code">parse</a>( <span>array <var>$lines</var></span> )</code>
 
 		<div class="description short">
 			<p>Parse input file</p>
@@ -1283,7 +1413,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_invalid_prop">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#141-157" title="Go to source code">invalid_prop</a>( <span>string <var>$prop</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#217-233" title="Go to source code">invalid_prop</a>( <span>string <var>$prop</var></span> )</code>
 
 		<div class="description short">
 			<p>Validate a property</p>
@@ -1322,7 +1452,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_invalid_param">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#159-173" title="Go to source code">invalid_param</a>( <span>string <var>$param</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#235-249" title="Go to source code">invalid_param</a>( <span>string <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Validate a paramater</p>
@@ -1361,7 +1491,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse_prop">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#175-190" title="Go to source code">parse_prop</a>( <span>string <var>$prop</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#251-266" title="Go to source code">parse_prop</a>( <span>string <var>$prop</var></span> )</code>
 
 		<div class="description short">
 			<p>Parse a property value</p>
@@ -1400,7 +1530,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse_prop_params">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#192-211" title="Go to source code">parse_prop_params</a>( <span>array <var>$vals</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#268-287" title="Go to source code">parse_prop_params</a>( <span>array <var>$vals</var></span> )</code>
 
 		<div class="description short">
 			<p>Parse parameters in a property field</p>
@@ -1427,66 +1557,6 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="unnest" id="_unnest">
-
-		<td class="attributes"><code>
-			 private 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_unnest">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#212-223" title="Go to source code">unnest</a>( <span> <var>$vals</var></span> )</code>
-
-		<div class="description short">
-			<p>Unnest an array</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Unnest an array</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="flatten_all" id="_flatten_all">
-
-		<td class="attributes"><code>
-			 private 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_flatten_all">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#225-238" title="Go to source code">flatten_all</a>( )</code>
-
-		<div class="description short">
-			<p>Replace single element lists with scaler values</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Replace single element lists with scaler values</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="is_valid" id="_is_valid">
 
 		<td class="attributes"><code>
@@ -1499,7 +1569,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_is_valid">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#240-268" title="Go to source code">is_valid</a>( <span>array <var>$lines</var></span> )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#289-317" title="Go to source code">is_valid</a>( <span>array <var>$lines</var></span> )</code>
 
 		<div class="description short">
 			<p>Top level validation of input data</p>
@@ -1538,7 +1608,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse_values">#</a>
-		<code><a href="source-class-Hm_Card_Parse.html#270-281" title="Go to source code">parse_values</a>( )</code>
+		<code><a href="source-class-Hm_Card_Parse.html#319-330" title="Go to source code">parse_values</a>( )</code>
 
 		<div class="description short">
 			<p>Parse values that require it</p>
@@ -1549,6 +1619,164 @@
 
 
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="format_vcard_generic" id="_format_vcard_generic">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_format_vcard_generic">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#332-352" title="Go to source code">format_vcard_generic</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Catch-all for formatting vcard fields  that don't need specific formatting</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Catch-all for formatting vcard fields  that don't need specific formatting</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>the field name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="build_vcard_params" id="_build_vcard_params">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build_vcard_params">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#354-368" title="Go to source code">build_vcard_params</a>( <span>array <var>$fld_val</var></span> )</code>
+
+		<div class="description short">
+			<p>Build the vcard entry paramater string</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Build the vcard entry paramater string</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fld_val</var></dt>
+					<dd>values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="combine" id="_combine">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_combine">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#370-380" title="Go to source code">combine</a>( <span>mixed <var>$val</var></span> )</code>
+
+		<div class="description short">
+			<p>Combine an array value if needed, return formatted value</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Combine an array value if needed, return formatted value</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd>the value to combine</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="vcard_format" id="_vcard_format">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_vcard_format">#</a>
+		<code><a href="source-class-Hm_Card_Parse.html#382-390" title="Go to source code">vcard_format</a>( <span>string <var>$val</var></span> )</code>
+
+		<div class="description short">
+			<p>Clean a vcard value
+TODO: make escaping more robust</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clean a vcard value
+TODO: make escaping more robust</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd>the value to format</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
 
 
 

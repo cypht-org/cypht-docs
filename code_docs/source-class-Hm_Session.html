@@ -118,23 +118,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -151,6 +134,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -209,13 +210,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -852,11 +858,13 @@
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
+				<li><a href="class-Hm_Cache.html">Hm_Cache</a></li>
 				<li><a href="class-Hm_Cal_Data.html">Hm_Cal_Data</a></li>
 				<li><a href="class-Hm_Cal_Event.html">Hm_Cal_Event</a></li>
 				<li><a href="class-Hm_Cal_Event_Store.html">Hm_Cal_Event_Store</a></li>
 				<li><a href="class-Hm_Cal_Output.html">Hm_Cal_Output</a></li>
 				<li><a href="class-Hm_Card_Parse.html">Hm_Card_Parse</a></li>
+				<li><a href="class-Hm_Carddav.html">Hm_Carddav</a></li>
 				<li><a href="class-Hm_Config.html">Hm_Config</a></li>
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
@@ -885,6 +893,7 @@
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_advanced_search_prepare.html">Hm_Handler_advanced_search_prepare</a></li>
 				<li><a href="class-Hm_Handler_api_login_step_two.html">Hm_Handler_api_login_step_two</a></li>
 				<li><a href="class-Hm_Handler_autocomplete_contact.html">Hm_Handler_autocomplete_contact</a></li>
 				<li><a href="class-Hm_Handler_check_folder_icon_setting.html">Hm_Handler_check_folder_icon_setting</a></li>
@@ -959,7 +968,9 @@
 				<li><a href="class-Hm_Handler_imap_unread.html">Hm_Handler_imap_unread</a></li>
 				<li><a href="class-Hm_Handler_language.html">Hm_Handler_language</a></li>
 				<li><a href="class-Hm_Handler_load_carddav_contacts.html">Hm_Handler_load_carddav_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_carddav_settings.html">Hm_Handler_load_carddav_settings</a></li>
 				<li><a href="class-Hm_Handler_load_contacts.html">Hm_Handler_load_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_edit_carddav_contact.html">Hm_Handler_load_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_contact.html">Hm_Handler_load_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_id.html">Hm_Handler_load_edit_id</a></li>
 				<li><a href="class-Hm_Handler_load_edit_ldap_contact.html">Hm_Handler_load_edit_ldap_contact</a></li>
@@ -1015,17 +1026,20 @@
 				<li><a href="class-Hm_Handler_process_add_event.html">Hm_Handler_process_add_event</a></li>
 				<li><a href="class-Hm_Handler_process_add_feed.html">Hm_Handler_process_add_feed</a></li>
 				<li><a href="class-Hm_Handler_process_add_imap_server.html">Hm_Handler_process_add_imap_server</a></li>
+				<li><a href="class-Hm_Handler_process_add_jmap_server.html">Hm_Handler_process_add_jmap_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact.html">Hm_Handler_process_add_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact_from_message.html">Hm_Handler_process_add_ldap_contact_from_message</a></li>
 				<li><a href="class-Hm_Handler_process_add_pop3_server.html">Hm_Handler_process_add_pop3_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_smtp_server.html">Hm_Handler_process_add_smtp_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_to_ldap_server.html">Hm_Handler_process_add_to_ldap_server</a></li>
+				<li><a href="class-Hm_Handler_process_adv_search_request.html">Hm_Handler_process_adv_search_request</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_since_setting.html">Hm_Handler_process_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_source_max_setting.html">Hm_Handler_process_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_since_setting.html">Hm_Handler_process_all_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_source_max_setting.html">Hm_Handler_process_all_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_api_login.html">Hm_Handler_process_api_login</a></li>
 				<li><a href="class-Hm_Handler_process_auto_bcc.html">Hm_Handler_process_auto_bcc</a></li>
+				<li><a href="class-Hm_Handler_process_carddav_auth_settings.html">Hm_Handler_process_carddav_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_change_password.html">Hm_Handler_process_change_password</a></li>
 				<li><a href="class-Hm_Handler_process_clear_special_folder.html">Hm_Handler_process_clear_special_folder</a></li>
 				<li><a href="class-Hm_Handler_process_compose_form_submit.html">Hm_Handler_process_compose_form_submit</a></li>
@@ -1038,6 +1052,7 @@
 				<li><a href="class-Hm_Handler_process_delete_ldap_contact.html">Hm_Handler_process_delete_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_delete_prompt_setting.html">Hm_Handler_process_delete_prompt_setting</a></li>
 				<li><a href="class-Hm_Handler_process_dynamic_login.html">Hm_Handler_process_dynamic_login</a></li>
+				<li><a href="class-Hm_Handler_process_edit_carddav_contact.html">Hm_Handler_process_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_contact.html">Hm_Handler_process_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_shortcut.html">Hm_Handler_process_edit_shortcut</a></li>
 				<li><a href="class-Hm_Handler_process_enable_2fa.html">Hm_Handler_process_enable_2fa</a></li>
@@ -1063,6 +1078,7 @@
 				<li><a href="class-Hm_Handler_process_ldap_auth_settings.html">Hm_Handler_process_ldap_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_ldap_fields.html">Hm_Handler_process_ldap_fields</a></li>
 				<li><a href="class-Hm_Handler_process_list_style_setting.html">Hm_Handler_process_list_style_setting</a></li>
+				<li><a href="class-Hm_Handler_process_mailto_handler_setting.html">Hm_Handler_process_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Handler_process_msg_part_icons.html">Hm_Handler_process_msg_part_icons</a></li>
 				<li><a href="class-Hm_Handler_process_nasa_connection.html">Hm_Handler_process_nasa_connection</a></li>
 				<li><a href="class-Hm_Handler_process_no_password_setting.html">Hm_Handler_process_no_password_setting</a></li>
@@ -1144,12 +1160,14 @@
 				<li><a href="class-Hm_IMAP_List.html">Hm_IMAP_List</a></li>
 				<li><a href="class-Hm_IMAP_Parser.html">Hm_IMAP_Parser</a></li>
 				<li><a href="class-Hm_IMAP_Struct.html">Hm_IMAP_Struct</a></li>
+				<li><a href="class-Hm_JMAP.html">Hm_JMAP</a></li>
 				<li><a href="class-Hm_LDAP_Contacts.html">Hm_LDAP_Contacts</a></li>
 				<li><a href="class-Hm_Memcached.html">Hm_Memcached</a></li>
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
 				<li><a href="class-Hm_MIME_Msg.html">Hm_MIME_Msg</a></li>
 				<li><a href="class-Hm_Module_Exec.html">Hm_Module_Exec</a></li>
 				<li><a href="class-Hm_Msgs.html">Hm_Msgs</a></li>
+				<li><a href="class-Hm_Noop_Cache.html">Hm_Noop_Cache</a></li>
 				<li><a href="class-Hm_Oauth2.html">Hm_Oauth2</a></li>
 				<li><a href="class-Hm_Output.html">Hm_Output</a></li>
 				<li><a href="class-Hm_Output_.html">Hm_Output_</a></li>
@@ -1157,9 +1175,17 @@
 				<li><a href="class-Hm_Output_add_cal_event_form.html">Hm_Output_add_cal_event_form</a></li>
 				<li><a href="class-Hm_Output_add_feed_dialog.html">Hm_Output_add_feed_dialog</a></li>
 				<li><a href="class-Hm_Output_add_imap_server_dialog.html">Hm_Output_add_imap_server_dialog</a></li>
+				<li><a href="class-Hm_Output_add_jmap_server_dialog.html">Hm_Output_add_jmap_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_message_contacts.html">Hm_Output_add_message_contacts</a></li>
 				<li><a href="class-Hm_Output_add_pop3_server_dialog.html">Hm_Output_add_pop3_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_smtp_server_dialog.html">Hm_Output_add_smtp_server_dialog</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_end.html">Hm_Output_advanced_search_content_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_start.html">Hm_Output_advanced_search_content_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_content.html">Hm_Output_advanced_search_form_content</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_end.html">Hm_Output_advanced_search_form_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_start.html">Hm_Output_advanced_search_form_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_link.html">Hm_Output_advanced_search_link</a></li>
+				<li><a href="class-Hm_Output_advanced_search_results_table_end.html">Hm_Output_advanced_search_results_table_end</a></li>
 				<li><a href="class-Hm_Output_all_email_since_setting.html">Hm_Output_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Output_all_email_source_max_setting.html">Hm_Output_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Output_all_since_setting.html">Hm_Output_all_since_setting</a></li>
@@ -1168,6 +1194,8 @@
 				<li><a href="class-Hm_Output_auto_bcc_setting.html">Hm_Output_auto_bcc_setting</a></li>
 				<li><a href="class-Hm_Output_calendar_content.html">Hm_Output_calendar_content</a></li>
 				<li><a href="class-Hm_Output_calendar_page_link.html">Hm_Output_calendar_page_link</a></li>
+				<li><a href="class-Hm_Output_carddav_auth_settings.html">Hm_Output_carddav_auth_settings</a></li>
+				<li><a href="class-Hm_Output_carddav_contacts_form.html">Hm_Output_carddav_contacts_form</a></li>
 				<li><a href="class-Hm_Output_change_password.html">Hm_Output_change_password</a></li>
 				<li><a href="class-Hm_Output_change_password_link.html">Hm_Output_change_password_link</a></li>
 				<li><a href="class-Hm_Output_compose_form_attach.html">Hm_Output_compose_form_attach</a></li>
@@ -1198,6 +1226,7 @@
 				<li><a href="class-Hm_Output_developer_doc_link.html">Hm_Output_developer_doc_link</a></li>
 				<li><a href="class-Hm_Output_display_configured_feeds.html">Hm_Output_display_configured_feeds</a></li>
 				<li><a href="class-Hm_Output_display_configured_imap_servers.html">Hm_Output_display_configured_imap_servers</a></li>
+				<li><a href="class-Hm_Output_display_configured_jmap_servers.html">Hm_Output_display_configured_jmap_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_pop3_servers.html">Hm_Output_display_configured_pop3_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_smtp_servers.html">Hm_Output_display_configured_smtp_servers</a></li>
 				<li><a href="class-Hm_Output_display_feeds_status.html">Hm_Output_display_feeds_status</a></li>
@@ -1225,6 +1254,7 @@
 				<li><a href="class-Hm_Output_filter_github_data.html">Hm_Output_filter_github_data</a></li>
 				<li><a href="class-Hm_Output_filter_github_event_detail.html">Hm_Output_filter_github_event_detail</a></li>
 				<li><a href="class-Hm_Output_filter_github_status.html">Hm_Output_filter_github_status</a></li>
+				<li><a href="class-Hm_Output_filter_imap_advanced_search.html">Hm_Output_filter_imap_advanced_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_folders.html">Hm_Output_filter_imap_folders</a></li>
 				<li><a href="class-Hm_Output_filter_imap_search.html">Hm_Output_filter_imap_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_status_data.html">Hm_Output_filter_imap_status_data</a></li>
@@ -1323,6 +1353,7 @@
 				<li><a href="class-Hm_Output_login_end.html">Hm_Output_login_end</a></li>
 				<li><a href="class-Hm_Output_login_start.html">Hm_Output_login_start</a></li>
 				<li><a href="class-Hm_Output_logout_menu_item.html">Hm_Output_logout_menu_item</a></li>
+				<li><a href="class-Hm_Output_mailto_handler_setting.html">Hm_Output_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Output_main_menu_content.html">Hm_Output_main_menu_content</a></li>
 				<li><a href="class-Hm_Output_main_menu_end.html">Hm_Output_main_menu_end</a></li>
 				<li><a href="class-Hm_Output_main_menu_start.html">Hm_Output_main_menu_start</a></li>
@@ -1423,7 +1454,6 @@
 				<li><a href="class-Hm_Output_wordpress_connect_section.html">Hm_Output_wordpress_connect_section</a></li>
 				<li><a href="class-Hm_Output_wordpress_folders.html">Hm_Output_wordpress_folders</a></li>
 				<li><a href="class-Hm_Output_wordpress_since_setting.html">Hm_Output_wordpress_since_setting</a></li>
-				<li><a href="class-Hm_Page_Cache.html">Hm_Page_Cache</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
 				<li><a href="class-Hm_POP3.html">Hm_POP3</a></li>
@@ -1431,6 +1461,8 @@
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
 				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
+				<li><a href="class-Hm_Redis.html">Hm_Redis</a></li>
+				<li><a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1453,6 +1485,7 @@
 
 			<h3>Traits</h3>
 			<ul>
+				<li><a href="class-Hm_Cache_Base.html">Hm_Cache_Base</a></li>
 				<li><a href="class-Hm_Dispatch_Redirect.html">Hm_Dispatch_Redirect</a></li>
 				<li><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_Handler_Validate.html">Hm_Handler_Validate</a></li>
@@ -1490,6 +1523,7 @@
 				<li><a href="function-check_recaptcha.html">check_recaptcha</a></li>
 				<li><a href="function-checkbox_callback.html">checkbox_callback</a></li>
 				<li><a href="function-clear_existing_reply_details.html">clear_existing_reply_details</a></li>
+				<li><a href="function-combined_sort_dialog.html">combined_sort_dialog</a></li>
 				<li><a href="function-convert_html_to_text.html">convert_html_to_text</a></li>
 				<li><a href="function-create_secret.html">create_secret</a></li>
 				<li><a href="function-credentials_form.html">credentials_form</a></li>
@@ -1516,9 +1550,12 @@
 				<li><a href="function-filter_message_part.html">filter_message_part</a></li>
 				<li><a href="function-format_attachment_row.html">format_attachment_row</a></li>
 				<li><a href="function-format_data_sources.html">format_data_sources</a></li>
+				<li><a href="function-format_imap_envelope.html">format_imap_envelope</a></li>
 				<li><a href="function-format_imap_folder_section.html">format_imap_folder_section</a></li>
 				<li><a href="function-format_imap_from_fld.html">format_imap_from_fld</a></li>
 				<li><a href="function-format_imap_message_list.html">format_imap_message_list</a></li>
+				<li><a href="function-format_keyboard_action.html">format_keyboard_action</a></li>
+				<li><a href="function-format_list_headers.html">format_list_headers</a></li>
 				<li><a href="function-format_msg_html.html">format_msg_html</a></li>
 				<li><a href="function-format_msg_image.html">format_msg_image</a></li>
 				<li><a href="function-format_msg_part_row.html">format_msg_part_row</a></li>
@@ -1542,6 +1579,7 @@
 				<li><a href="function-get_imap_size.html">get_imap_size</a></li>
 				<li><a href="function-get_ini.html">get_ini</a></li>
 				<li><a href="function-get_ldap_value.html">get_ldap_value</a></li>
+				<li><a href="function-get_list_headers.html">get_list_headers</a></li>
 				<li><a href="function-get_message_list_settings.html">get_message_list_settings</a></li>
 				<li><a href="function-get_oauth2_data.html">get_oauth2_data</a></li>
 				<li><a href="function-get_outbound_msg_detail.html">get_outbound_msg_detail</a></li>
@@ -1572,6 +1610,7 @@
 				<li><a href="function-imap_move_same_server.html">imap_move_same_server</a></li>
 				<li><a href="function-imap_refresh_oauth2_token.html">imap_refresh_oauth2_token</a></li>
 				<li><a href="function-imap_sent_sources.html">imap_sent_sources</a></li>
+				<li><a href="function-imap_server_type.html">imap_server_type</a></li>
 				<li><a href="function-in_server_list.html">in_server_list</a></li>
 				<li><a href="function-interface_langs.html">interface_langs</a></li>
 				<li><a href="function-is_email_address.html">is_email_address</a></li>
@@ -1603,6 +1642,7 @@
 				<li><a href="function-prepare_imap_message_list.html">prepare_imap_message_list</a></li>
 				<li><a href="function-process_address_fld.html">process_address_fld</a></li>
 				<li><a href="function-process_imap_message_ids.html">process_imap_message_ids</a></li>
+				<li><a href="function-process_list_fld.html">process_list_fld</a></li>
 				<li><a href="function-process_move_to_arguments.html">process_move_to_arguments</a></li>
 				<li><a href="function-process_since_argument.html">process_since_argument</a></li>
 				<li><a href="function-process_site_setting.html">process_site_setting</a></li>
@@ -1611,7 +1651,6 @@
 				<li><a href="function-profile_from_compose_smtp_id.html">profile_from_compose_smtp_id</a></li>
 				<li><a href="function-profiles_by_smtp_id.html">profiles_by_smtp_id</a></li>
 				<li><a href="function-prompt_for_passhrase.html">prompt_for_passhrase</a></li>
-				<li><a href="function-propfind.html">propfind</a></li>
 				<li><a href="function-recaptcha_config.html">recaptcha_config</a></li>
 				<li><a href="function-replace_module.html">replace_module</a></li>
 				<li><a href="function-reply_format_body.html">reply_format_body</a></li>
@@ -1620,7 +1659,6 @@
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
 				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
-				<li><a href="function-report.html">report</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
 				<li><a href="function-save_uploaded_file.html">save_uploaded_file</a></li>
@@ -2096,70 +2134,75 @@
 </span></span><span id="394" class="l"><a href="#394">394: </a><span class="php-comment">     * @return string
 </span></span><span id="395" class="l"><a href="#395">395: </a><span class="php-comment">     */</span>
 </span><span id="396" class="l"><a href="#396">396: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> get_session_class() {
-</span><span id="397" class="l"><a href="#397">397: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'DB'</span>) {
-</span><span id="398" class="l"><a href="#398">398: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_DB_Session'</span>;
-</span><span id="399" class="l"><a href="#399">399: </a>        }
-</span><span id="400" class="l"><a href="#400">400: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'MEM'</span>) {
-</span><span id="401" class="l"><a href="#401">401: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_Memcached_Session'</span>;
-</span><span id="402" class="l"><a href="#402">402: </a>        }
-</span><span id="403" class="l"><a href="#403">403: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'custom'</span> &amp;&amp; <span class="php-keyword2">class_exists</span>(<span class="php-quote">'Custom_Session'</span>)) {
-</span><span id="404" class="l"><a href="#404">404: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Custom_Session'</span>;
-</span><span id="405" class="l"><a href="#405">405: </a>        }
-</span><span id="406" class="l"><a href="#406">406: </a>        <span class="php-keyword1">else</span> {
-</span><span id="407" class="l"><a href="#407">407: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_PHP_Session'</span>;
-</span><span id="408" class="l"><a href="#408">408: </a>        }
-</span><span id="409" class="l"><a href="#409">409: </a>        <span class="php-keyword1">return</span> <span class="php-var">$session_class</span>;
-</span><span id="410" class="l"><a href="#410">410: </a>    }
-</span><span id="411" class="l"><a href="#411">411: </a>
-</span><span id="412" class="l"><a href="#412">412: </a>    <span class="php-comment">/**
-</span></span><span id="413" class="l"><a href="#413">413: </a><span class="php-comment">     * @return string
-</span></span><span id="414" class="l"><a href="#414">414: </a><span class="php-comment">     */</span>
-</span><span id="415" class="l"><a href="#415">415: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> setup_auth() {
-</span><span id="416" class="l"><a href="#416">416: </a>        <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;standard_auth();
-</span><span id="417" class="l"><a href="#417">417: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
-</span><span id="418" class="l"><a href="#418">418: </a>            <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;dynamic_auth();
-</span><span id="419" class="l"><a href="#419">419: </a>        }
-</span><span id="420" class="l"><a href="#420">420: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
-</span><span id="421" class="l"><a href="#421">421: </a>            <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;custom_auth();
-</span><span id="422" class="l"><a href="#422">422: </a>        }
-</span><span id="423" class="l"><a href="#423">423: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
-</span><span id="424" class="l"><a href="#424">424: </a>            Hm_Functions::cease(<span class="php-quote">'Invalid auth configuration'</span>);
-</span><span id="425" class="l"><a href="#425">425: </a>            <span class="php-var">$auth_class</span> = <span class="php-quote">'Hm_Auth_None'</span>;
+</span><span id="397" class="l"><a href="#397">397: </a>        <span class="php-var">$custom_session_class</span> = <span class="php-var">$this</span>-&gt;config-&gt;get(<span class="php-quote">'session_class'</span>, <span class="php-quote">'Custom_Session'</span>);
+</span><span id="398" class="l"><a href="#398">398: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'DB'</span>) {
+</span><span id="399" class="l"><a href="#399">399: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_DB_Session'</span>;
+</span><span id="400" class="l"><a href="#400">400: </a>        }
+</span><span id="401" class="l"><a href="#401">401: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'MEM'</span>) {
+</span><span id="402" class="l"><a href="#402">402: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_Memcached_Session'</span>;
+</span><span id="403" class="l"><a href="#403">403: </a>        }
+</span><span id="404" class="l"><a href="#404">404: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'REDIS'</span>) {
+</span><span id="405" class="l"><a href="#405">405: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_Redis_Session'</span>;
+</span><span id="406" class="l"><a href="#406">406: </a>        }
+</span><span id="407" class="l"><a href="#407">407: </a>        <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;session_type == <span class="php-quote">'custom'</span> &amp;&amp; <span class="php-keyword2">class_exists</span>(<span class="php-var">$custom_session_class</span>)) {
+</span><span id="408" class="l"><a href="#408">408: </a>            <span class="php-var">$session_class</span> = <span class="php-var">$custom_session_class</span>;
+</span><span id="409" class="l"><a href="#409">409: </a>        }
+</span><span id="410" class="l"><a href="#410">410: </a>        <span class="php-keyword1">else</span> {
+</span><span id="411" class="l"><a href="#411">411: </a>            <span class="php-var">$session_class</span> = <span class="php-quote">'Hm_PHP_Session'</span>;
+</span><span id="412" class="l"><a href="#412">412: </a>        }
+</span><span id="413" class="l"><a href="#413">413: </a>        <span class="php-keyword1">return</span> <span class="php-var">$session_class</span>;
+</span><span id="414" class="l"><a href="#414">414: </a>    }
+</span><span id="415" class="l"><a href="#415">415: </a>
+</span><span id="416" class="l"><a href="#416">416: </a>    <span class="php-comment">/**
+</span></span><span id="417" class="l"><a href="#417">417: </a><span class="php-comment">     * @return string
+</span></span><span id="418" class="l"><a href="#418">418: </a><span class="php-comment">     */</span>
+</span><span id="419" class="l"><a href="#419">419: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> setup_auth() {
+</span><span id="420" class="l"><a href="#420">420: </a>        <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;standard_auth();
+</span><span id="421" class="l"><a href="#421">421: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
+</span><span id="422" class="l"><a href="#422">422: </a>            <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;dynamic_auth();
+</span><span id="423" class="l"><a href="#423">423: </a>        }
+</span><span id="424" class="l"><a href="#424">424: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
+</span><span id="425" class="l"><a href="#425">425: </a>            <span class="php-var">$auth_class</span> = <span class="php-var">$this</span>-&gt;custom_auth();
 </span><span id="426" class="l"><a href="#426">426: </a>        }
-</span><span id="427" class="l"><a href="#427">427: </a>        <span class="php-keyword1">return</span> <span class="php-var">$auth_class</span>;
-</span><span id="428" class="l"><a href="#428">428: </a>    }
-</span><span id="429" class="l"><a href="#429">429: </a>
-</span><span id="430" class="l"><a href="#430">430: </a>    <span class="php-comment">/**
-</span></span><span id="431" class="l"><a href="#431">431: </a><span class="php-comment">     * @return string|false
-</span></span><span id="432" class="l"><a href="#432">432: </a><span class="php-comment">     */</span>
-</span><span id="433" class="l"><a href="#433">433: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> dynamic_auth() {
-</span><span id="434" class="l"><a href="#434">434: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type == <span class="php-quote">'dynamic'</span> &amp;&amp; <span class="php-keyword2">in_array</span>(<span class="php-quote">'dynamic_login'</span>, <span class="php-var">$this</span>-&gt;config-&gt;get_modules(), <span class="php-keyword1">true</span>)) {
-</span><span id="435" class="l"><a href="#435">435: </a>            <span class="php-keyword1">return</span> <span class="php-quote">'Hm_Auth_Dynamic'</span>;
-</span><span id="436" class="l"><a href="#436">436: </a>        }
-</span><span id="437" class="l"><a href="#437">437: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="438" class="l"><a href="#438">438: </a>    }
-</span><span id="439" class="l"><a href="#439">439: </a>
-</span><span id="440" class="l"><a href="#440">440: </a>    <span class="php-comment">/**
-</span></span><span id="441" class="l"><a href="#441">441: </a><span class="php-comment">     * @return string|false
-</span></span><span id="442" class="l"><a href="#442">442: </a><span class="php-comment">     */</span>
-</span><span id="443" class="l"><a href="#443">443: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> standard_auth() {
-</span><span id="444" class="l"><a href="#444">444: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type &amp;&amp; <span class="php-keyword2">in_array</span>(<span class="php-var">$this</span>-&gt;auth_type, <span class="php-keyword1">array</span>(<span class="php-quote">'DB'</span>, <span class="php-quote">'LDAP'</span>, <span class="php-quote">'IMAP'</span>, <span class="php-quote">'POP3'</span>), <span class="php-keyword1">true</span>)) {
-</span><span id="445" class="l"><a href="#445">445: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Hm_Auth_%s'</span>, <span class="php-var">$this</span>-&gt;auth_type);
-</span><span id="446" class="l"><a href="#446">446: </a>        }
-</span><span id="447" class="l"><a href="#447">447: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="448" class="l"><a href="#448">448: </a>    }
-</span><span id="449" class="l"><a href="#449">449: </a>
-</span><span id="450" class="l"><a href="#450">450: </a>    <span class="php-comment">/**
-</span></span><span id="451" class="l"><a href="#451">451: </a><span class="php-comment">     * @return string|false
-</span></span><span id="452" class="l"><a href="#452">452: </a><span class="php-comment">     */</span>
-</span><span id="453" class="l"><a href="#453">453: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> custom_auth() {
-</span><span id="454" class="l"><a href="#454">454: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type == <span class="php-quote">'custom'</span> &amp;&amp; Hm_Functions::<span class="php-keyword2">class_exists</span>(<span class="php-quote">'Custom_Auth'</span>)) {
-</span><span id="455" class="l"><a href="#455">455: </a>            <span class="php-keyword1">return</span> <span class="php-quote">'Custom_Auth'</span>;
-</span><span id="456" class="l"><a href="#456">456: </a>        }
-</span><span id="457" class="l"><a href="#457">457: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="458" class="l"><a href="#458">458: </a>    }
-</span><span id="459" class="l"><a href="#459">459: </a>}
-</span><span id="460" class="l"><a href="#460">460: </a></span></code></pre>
+</span><span id="427" class="l"><a href="#427">427: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$auth_class</span> === <span class="php-keyword1">false</span>) {
+</span><span id="428" class="l"><a href="#428">428: </a>            Hm_Functions::cease(<span class="php-quote">'Invalid auth configuration'</span>);
+</span><span id="429" class="l"><a href="#429">429: </a>            <span class="php-var">$auth_class</span> = <span class="php-quote">'Hm_Auth_None'</span>;
+</span><span id="430" class="l"><a href="#430">430: </a>        }
+</span><span id="431" class="l"><a href="#431">431: </a>        <span class="php-keyword1">return</span> <span class="php-var">$auth_class</span>;
+</span><span id="432" class="l"><a href="#432">432: </a>    }
+</span><span id="433" class="l"><a href="#433">433: </a>
+</span><span id="434" class="l"><a href="#434">434: </a>    <span class="php-comment">/**
+</span></span><span id="435" class="l"><a href="#435">435: </a><span class="php-comment">     * @return string|false
+</span></span><span id="436" class="l"><a href="#436">436: </a><span class="php-comment">     */</span>
+</span><span id="437" class="l"><a href="#437">437: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> dynamic_auth() {
+</span><span id="438" class="l"><a href="#438">438: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type == <span class="php-quote">'dynamic'</span> &amp;&amp; <span class="php-keyword2">in_array</span>(<span class="php-quote">'dynamic_login'</span>, <span class="php-var">$this</span>-&gt;config-&gt;get_modules(), <span class="php-keyword1">true</span>)) {
+</span><span id="439" class="l"><a href="#439">439: </a>            <span class="php-keyword1">return</span> <span class="php-quote">'Hm_Auth_Dynamic'</span>;
+</span><span id="440" class="l"><a href="#440">440: </a>        }
+</span><span id="441" class="l"><a href="#441">441: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="442" class="l"><a href="#442">442: </a>    }
+</span><span id="443" class="l"><a href="#443">443: </a>
+</span><span id="444" class="l"><a href="#444">444: </a>    <span class="php-comment">/**
+</span></span><span id="445" class="l"><a href="#445">445: </a><span class="php-comment">     * @return string|false
+</span></span><span id="446" class="l"><a href="#446">446: </a><span class="php-comment">     */</span>
+</span><span id="447" class="l"><a href="#447">447: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> standard_auth() {
+</span><span id="448" class="l"><a href="#448">448: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type &amp;&amp; <span class="php-keyword2">in_array</span>(<span class="php-var">$this</span>-&gt;auth_type, <span class="php-keyword1">array</span>(<span class="php-quote">'DB'</span>, <span class="php-quote">'LDAP'</span>, <span class="php-quote">'IMAP'</span>, <span class="php-quote">'POP3'</span>), <span class="php-keyword1">true</span>)) {
+</span><span id="449" class="l"><a href="#449">449: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Hm_Auth_%s'</span>, <span class="php-var">$this</span>-&gt;auth_type);
+</span><span id="450" class="l"><a href="#450">450: </a>        }
+</span><span id="451" class="l"><a href="#451">451: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="452" class="l"><a href="#452">452: </a>    }
+</span><span id="453" class="l"><a href="#453">453: </a>
+</span><span id="454" class="l"><a href="#454">454: </a>    <span class="php-comment">/**
+</span></span><span id="455" class="l"><a href="#455">455: </a><span class="php-comment">     * @return string|false
+</span></span><span id="456" class="l"><a href="#456">456: </a><span class="php-comment">     */</span>
+</span><span id="457" class="l"><a href="#457">457: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> custom_auth() {
+</span><span id="458" class="l"><a href="#458">458: </a>        <span class="php-var">$custom_auth_class</span> = <span class="php-var">$this</span>-&gt;config-&gt;get(<span class="php-quote">'auth_class'</span>, <span class="php-quote">'Custom_Auth'</span>);
+</span><span id="459" class="l"><a href="#459">459: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;auth_type == <span class="php-quote">'custom'</span> &amp;&amp; Hm_Functions::<span class="php-keyword2">class_exists</span>(<span class="php-var">$custom_auth_class</span>)) {
+</span><span id="460" class="l"><a href="#460">460: </a>            <span class="php-keyword1">return</span> <span class="php-quote">'Custom_Auth'</span>;
+</span><span id="461" class="l"><a href="#461">461: </a>        }
+</span><span id="462" class="l"><a href="#462">462: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="463" class="l"><a href="#463">463: </a>    }
+</span><span id="464" class="l"><a href="#464">464: </a>}
+</span><span id="465" class="l"><a href="#465">465: </a></span></code></pre>
 
 	<div id="footer">
 		Cypht Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -2167,6 +2210,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?5ffb293c84eac40a2f427d44726f886b6ec2db0e"></script>
+<script src="elementlist.js?fb449a184f7b10227b019439792a4b96da0013a8"></script>
 </body>
 </html>

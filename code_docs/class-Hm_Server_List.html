@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -906,8 +912,6 @@
 <b><span>Hm_Server_List</span></b>			
 			
 			 uses 
-					<a href="class-Hm_Server_Connect.html"><span>Hm_Server_Connect</span></a>, 
-			
 					<a href="class-Hm_Server_Modify.html"><span>Hm_Server_Modify</span></a>
 			
 		</dd>
@@ -933,7 +937,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.servers.html">servers</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Server_List.html#166-287" title="Go to source code">servers.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Server_List.html#168-288" title="Go to source code">servers.php</a>
 		<br>
 	</div>
 
@@ -953,7 +957,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Hm_Server_List.html#176-191" title="Go to source code">add</a>( <span>array <var>$atts</var></span>, <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#177-192" title="Go to source code">add</a>( <span>array <var>$atts</var></span>, <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Add a server definition</p>
@@ -990,7 +994,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_del">#</a>
-		<code><a href="source-class-Hm_Server_List.html#193-204" title="Go to source code">del</a>( <span>integer <var>$id</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#194-205" title="Go to source code">del</a>( <span>integer <var>$id</var></span> )</code>
 
 		<div class="description short">
 			<p>Remove a server</p>
@@ -1029,7 +1033,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dump">#</a>
-		<code><a href="source-class-Hm_Server_List.html#206-224" title="Go to source code">dump</a>( <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#207-225" title="Go to source code">dump</a>( <span>integer <var>$id</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$full</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Return all server details</p>
@@ -1070,7 +1074,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Hm_Server_List.html#226-240" title="Go to source code">get</a>( <span>integer <var>$id</var></span>, <span>boolean <var>$full</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#227-241" title="Go to source code">get</a>( <span>integer <var>$id</var></span>, <span>boolean <var>$full</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1111,7 +1115,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clean">#</a>
-		<code><a href="source-class-Hm_Server_List.html#246-252" title="Go to source code">clean</a>( <span> <var>$server</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#247-253" title="Go to source code">clean</a>( <span> <var>$server</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1141,7 +1145,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_fetch">#</a>
-		<code><a href="source-class-Hm_Server_List.html#254-271" title="Go to source code">fetch</a>( <span>string <var>$username</var></span>, <span>string <var>$servername</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#255-272" title="Go to source code">fetch</a>( <span>string <var>$username</var></span>, <span>string <var>$servername</var></span> )</code>
 
 		<div class="description short">
 			<p>Fetch a server by the username and servername</p>
@@ -1182,7 +1186,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_match">#</a>
-		<code><a href="source-class-Hm_Server_List.html#273-286" title="Go to source code">match</a>( <span>array <var>$server</var></span>, <span>string <var>$user</var></span>, <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Hm_Server_List.html#274-287" title="Go to source code">match</a>( <span>array <var>$server</var></span>, <span>string <var>$user</var></span>, <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1217,6 +1221,16 @@
 
 
 	<table class="summary used">
+	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
+			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
+			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
 	<caption>Methods used from <a href="class-Hm_Server_Connect.html#methods">Hm_Server_Connect</a></caption>
 	<tr>
 		<td><code>
@@ -1229,16 +1243,6 @@
 		</code></td>
 	</tr>
 	</table>
-	<table class="summary used">
-	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
-			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
-			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
-		</code></td>
-	</tr>
-	</table>
 
 
 
@@ -1251,14 +1255,6 @@
 
 
 
-	<table class="summary used">
-	<caption>Properties used from <a href="class-Hm_Server_Connect.html#properties">Hm_Server_Connect</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Hm_Server_Connect.html#$server_list"><var>$server_list</var></a>
-		</code></td>
-	</tr>
-	</table>
 
 
 

@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -925,7 +931,7 @@
 		
 		<b>Package:</b> <a href="package-modules.html">modules</a>\<a href="package-modules.pop3.html">pop3</a>\<a href="package-modules.pop3.lib.html">lib</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_POP3_List.html#11-60" title="Go to source code">pop3/hm-pop3.php</a>
+			<b>Located at</b> <a href="source-class-Hm_POP3_List.html#11-55" title="Go to source code">pop3/hm-pop3.php</a>
 		<br>
 	</div>
 
@@ -992,7 +998,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_cache">#</a>
-		<code><a href="source-class-Hm_POP3_List.html#45-59" title="Go to source code">get_cache</a>( <span>object <var>$session</var></span>, <span>integer <var>$config</var></span>, <span> <var>$id</var></span> )</code>
+		<code><a href="source-class-Hm_POP3_List.html#45-54" title="Go to source code">get_cache</a>( <span>object <var>$hm_cache</var></span>, <span>integer <var>$id</var></span> )</code>
 
 		<div class="description short">
 			<p>Get a server cache</p>
@@ -1004,12 +1010,10 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$session</var></dt>
-					<dd>session object</dd>
-					<dt><var>$config</var></dt>
-					<dd>$id server id</dd>
+					<dt><var>$hm_cache</var></dt>
+					<dd>$session session object</dd>
 					<dt><var>$id</var></dt>
-					<dd></dd>
+					<dd>server id</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -1041,6 +1045,16 @@
 	</tr>
 	</table>
 	<table class="summary used">
+	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
+			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
+			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
 	<caption>Methods used from <a href="class-Hm_Server_Connect.html#methods">Hm_Server_Connect</a></caption>
 	<tr>
 		<td><code>
@@ -1049,16 +1063,6 @@
 			<a href="class-Hm_Server_Connect.html#_disconnect">disconnect()</a>, 
 			<a href="class-Hm_Server_Connect.html#_enable_server">enable_server()</a>, 
 			<a href="class-Hm_Server_Connect.html#_user_and_pass">user_and_pass()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary used">
-	<caption>Methods used from <a href="class-Hm_Server_Modify.html#methods">Hm_Server_Modify</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Hm_Server_Modify.html#_forget_credentials">forget_credentials()</a>, 
-			<a href="class-Hm_Server_Modify.html#_toggle_hidden">toggle_hidden()</a>, 
-			<a href="class-Hm_Server_Modify.html#_update_oauth2_token">update_oauth2_token()</a>
 		</code></td>
 	</tr>
 	</table>

@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -845,6 +851,7 @@
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
 				<li class="active"><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
+				<li><a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a></li>
 				<li><a href="class-Hm_Session.html">Hm_Session</a></li>
 				<li><a href="class-Hm_Session_Setup.html">Hm_Session_Setup</a></li>
 			</ul>
@@ -944,7 +951,8 @@
 
 	<div>
 		<h4>Indirect known subclasses</h4>
-			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>
+			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>, 
+			<a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a>
 	</div>
 
 
@@ -957,7 +965,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_PHP_Session.html#153-300" title="Go to source code">session_php.php</a>
+			<b>Located at</b> <a href="source-class-Hm_PHP_Session.html#155-302" title="Go to source code">session_php.php</a>
 		<br>
 	</div>
 
@@ -977,7 +985,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_authed">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#171-189" title="Go to source code">authed</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>boolean <var>$fingerprint</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#173-191" title="Go to source code">authed</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span>, <span>boolean <var>$fingerprint</var></span> )</code>
 
 		<div class="description short">
 			<p>Setup newly authenticated session</p>
@@ -1018,7 +1026,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_check">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#191-214" title="Go to source code">check</a>( <span>object <var>$request</var></span>, <span>string <var>$user</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$pass</var> = <span class="php-keyword1">false</span></span>, <span> <var>$fingerprint</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#193-216" title="Go to source code">check</a>( <span>object <var>$request</var></span>, <span>string <var>$user</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$pass</var> = <span class="php-keyword1">false</span></span>, <span> <var>$fingerprint</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Check for an existing session or a new user/pass login request</p>
@@ -1063,7 +1071,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#216-231" title="Go to source code">start</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#218-233" title="Go to source code">start</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Start the session. This could be an existing session or a new login</p>
@@ -1098,7 +1106,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_session_params">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#233-257" title="Go to source code">set_session_params</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#235-259" title="Go to source code">set_session_params</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Setup the cookie params for a session cookie</p>
@@ -1137,7 +1145,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_close_early">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#259-266" title="Go to source code">close_early</a>( )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#261-268" title="Go to source code">close_early</a>( )</code>
 
 		<div class="description short">
 			<p>Write session data to avoid locking, keep session active, but don't allow writing</p>
@@ -1167,7 +1175,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_destroy">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#268-285" title="Go to source code">destroy</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#270-287" title="Go to source code">destroy</a>( <span><code><a href="class-Hm_Request.html">Hm_Request</a></code> <var>$request</var></span> )</code>
 
 		<div class="description short">
 			<p>Destroy a session for good</p>
@@ -1202,7 +1210,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_end">#</a>
-		<code><a href="source-class-Hm_PHP_Session.html#287-299" title="Go to source code">end</a>( )</code>
+		<code><a href="source-class-Hm_PHP_Session.html#289-301" title="Go to source code">end</a>( )</code>
 
 		<div class="description short">
 			<p>End a session after a page request is complete. This only closes the session and
@@ -1301,7 +1309,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_PHP_Session.html#163" title="Go to source code"><var>$conn</var></a>
+				<a href="source-class-Hm_PHP_Session.html#165" title="Go to source code"><var>$conn</var></a>
 
 			<div class="description short">
 				
@@ -1326,7 +1334,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_PHP_Session.html#166" title="Go to source code"><var>$auth_failed</var></a>
+				<a href="source-class-Hm_PHP_Session.html#168" title="Go to source code"><var>$auth_failed</var></a>
 
 			<div class="description short">
 				
@@ -1351,7 +1359,7 @@ does not destroy it</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_PHP_Session.html#169" title="Go to source code"><var>$existing</var></a>
+				<a href="source-class-Hm_PHP_Session.html#171" title="Go to source code"><var>$existing</var></a>
 
 			<div class="description short">
 				

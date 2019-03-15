@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -916,7 +922,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.format.html">format</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_Transform.html#118-194" title="Go to source code">format.php</a>
+			<b>Located at</b> <a href="source-class-Hm_Transform.html#118-198" title="Go to source code">format.php</a>
 		<br>
 	</div>
 
@@ -936,7 +942,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stringify">#</a>
-		<code><a href="source-class-Hm_Transform.html#123-138" title="Go to source code">stringify</a>( <span>array|string <var>$data</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64_encode'</span></span> )</code>
+		<code><a href="source-class-Hm_Transform.html#123-138" title="Go to source code">stringify</a>( <span>mixed <var>$data</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64_encode'</span></span> )</code>
 
 		<div class="description short">
 			<p>Convert an array to a string</p>
@@ -1016,7 +1022,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unstringify">#</a>
-		<code><a href="source-class-Hm_Transform.html#154-169" title="Go to source code">unstringify</a>( <span>string|false <var>$data</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64_decode'</span></span> )</code>
+		<code><a href="source-class-Hm_Transform.html#154-173" title="Go to source code">unstringify</a>( <span>string|false <var>$data</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64_decode'</span></span>, <span>boolean <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Convert a stringified array back to an array</p>
@@ -1032,11 +1038,13 @@
 					<dd>data to be transformed from a string</dd>
 					<dt><var>$encoding</var></dt>
 					<dd>encoding to use for values</dd>
+					<dt><var>$return</var></dt>
+					<dd>return original string if true</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed<br>array on success, false on failure
+					mixed<br>array on success, false or original string on failure
 				</div>
 
 
@@ -1057,7 +1065,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hm_encode">#</a>
-		<code><a href="source-class-Hm_Transform.html#171-193" title="Go to source code">hm_encode</a>( <span>array <var>$data</var></span>, <span>string <var>$encoding</var></span> )</code>
+		<code><a href="source-class-Hm_Transform.html#175-197" title="Go to source code">hm_encode</a>( <span>array <var>$data</var></span>, <span>string <var>$encoding</var></span> )</code>
 
 		<div class="description short">
 			<p>Recursively encode values in an array</p>

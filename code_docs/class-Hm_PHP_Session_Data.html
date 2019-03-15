@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -845,6 +851,7 @@
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li class="active"><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
+				<li><a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a></li>
 				<li><a href="class-Hm_Session.html">Hm_Session</a></li>
 				<li><a href="class-Hm_Session_Setup.html">Hm_Session_Setup</a></li>
 			</ul>
@@ -936,7 +943,8 @@
 		<h4>Indirect known subclasses</h4>
 			<a href="class-Custom_Session.html">Custom_Session</a>, 
 			<a href="class-Hm_DB_Session.html">Hm_DB_Session</a>, 
-			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>
+			<a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a>, 
+			<a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a>
 	</div>
 
 
@@ -949,7 +957,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.session.html">session</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_PHP_Session_Data.html#60-151" title="Go to source code">session_php.php</a>
+			<b>Located at</b> <a href="source-class-Hm_PHP_Session_Data.html#60-153" title="Go to source code">session_php.php</a>
 		<br>
 	</div>
 
@@ -1121,7 +1129,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_del">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#130-139" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#130-141" title="Go to source code">del</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a value from the session</p>
@@ -1156,7 +1164,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save_data">#</a>
-		<code><a href="source-class-Hm_PHP_Session_Data.html#141-150" title="Go to source code">save_data</a>( )</code>
+		<code><a href="source-class-Hm_PHP_Session_Data.html#143-152" title="Go to source code">save_data</a>( )</code>
 
 		<div class="description short">
 			<p>Save session data</p>

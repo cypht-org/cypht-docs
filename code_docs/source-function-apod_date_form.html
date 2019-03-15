@@ -118,23 +118,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -151,6 +134,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -209,13 +210,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -852,11 +858,13 @@
 				<li><a href="class-Hm_Auth_IMAP.html">Hm_Auth_IMAP</a></li>
 				<li><a href="class-Hm_Auth_LDAP.html">Hm_Auth_LDAP</a></li>
 				<li><a href="class-Hm_Auth_POP3.html">Hm_Auth_POP3</a></li>
+				<li><a href="class-Hm_Cache.html">Hm_Cache</a></li>
 				<li><a href="class-Hm_Cal_Data.html">Hm_Cal_Data</a></li>
 				<li><a href="class-Hm_Cal_Event.html">Hm_Cal_Event</a></li>
 				<li><a href="class-Hm_Cal_Event_Store.html">Hm_Cal_Event_Store</a></li>
 				<li><a href="class-Hm_Cal_Output.html">Hm_Cal_Output</a></li>
 				<li><a href="class-Hm_Card_Parse.html">Hm_Card_Parse</a></li>
+				<li><a href="class-Hm_Carddav.html">Hm_Carddav</a></li>
 				<li><a href="class-Hm_Config.html">Hm_Config</a></li>
 				<li><a href="class-Hm_Contact.html">Hm_Contact</a></li>
 				<li><a href="class-Hm_Contact_Store.html">Hm_Contact_Store</a></li>
@@ -885,6 +893,7 @@
 				<li><a href="class-Hm_Handler_add_imap_servers_to_page_data.html">Hm_Handler_add_imap_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_pop3_servers_to_page_data.html">Hm_Handler_add_pop3_servers_to_page_data</a></li>
 				<li><a href="class-Hm_Handler_add_smtp_servers_to_page_data.html">Hm_Handler_add_smtp_servers_to_page_data</a></li>
+				<li><a href="class-Hm_Handler_advanced_search_prepare.html">Hm_Handler_advanced_search_prepare</a></li>
 				<li><a href="class-Hm_Handler_api_login_step_two.html">Hm_Handler_api_login_step_two</a></li>
 				<li><a href="class-Hm_Handler_autocomplete_contact.html">Hm_Handler_autocomplete_contact</a></li>
 				<li><a href="class-Hm_Handler_check_folder_icon_setting.html">Hm_Handler_check_folder_icon_setting</a></li>
@@ -959,7 +968,9 @@
 				<li><a href="class-Hm_Handler_imap_unread.html">Hm_Handler_imap_unread</a></li>
 				<li><a href="class-Hm_Handler_language.html">Hm_Handler_language</a></li>
 				<li><a href="class-Hm_Handler_load_carddav_contacts.html">Hm_Handler_load_carddav_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_carddav_settings.html">Hm_Handler_load_carddav_settings</a></li>
 				<li><a href="class-Hm_Handler_load_contacts.html">Hm_Handler_load_contacts</a></li>
+				<li><a href="class-Hm_Handler_load_edit_carddav_contact.html">Hm_Handler_load_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_contact.html">Hm_Handler_load_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_load_edit_id.html">Hm_Handler_load_edit_id</a></li>
 				<li><a href="class-Hm_Handler_load_edit_ldap_contact.html">Hm_Handler_load_edit_ldap_contact</a></li>
@@ -1015,17 +1026,20 @@
 				<li><a href="class-Hm_Handler_process_add_event.html">Hm_Handler_process_add_event</a></li>
 				<li><a href="class-Hm_Handler_process_add_feed.html">Hm_Handler_process_add_feed</a></li>
 				<li><a href="class-Hm_Handler_process_add_imap_server.html">Hm_Handler_process_add_imap_server</a></li>
+				<li><a href="class-Hm_Handler_process_add_jmap_server.html">Hm_Handler_process_add_jmap_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact.html">Hm_Handler_process_add_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_add_ldap_contact_from_message.html">Hm_Handler_process_add_ldap_contact_from_message</a></li>
 				<li><a href="class-Hm_Handler_process_add_pop3_server.html">Hm_Handler_process_add_pop3_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_smtp_server.html">Hm_Handler_process_add_smtp_server</a></li>
 				<li><a href="class-Hm_Handler_process_add_to_ldap_server.html">Hm_Handler_process_add_to_ldap_server</a></li>
+				<li><a href="class-Hm_Handler_process_adv_search_request.html">Hm_Handler_process_adv_search_request</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_since_setting.html">Hm_Handler_process_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_email_source_max_setting.html">Hm_Handler_process_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_since_setting.html">Hm_Handler_process_all_since_setting</a></li>
 				<li><a href="class-Hm_Handler_process_all_source_max_setting.html">Hm_Handler_process_all_source_max_setting</a></li>
 				<li><a href="class-Hm_Handler_process_api_login.html">Hm_Handler_process_api_login</a></li>
 				<li><a href="class-Hm_Handler_process_auto_bcc.html">Hm_Handler_process_auto_bcc</a></li>
+				<li><a href="class-Hm_Handler_process_carddav_auth_settings.html">Hm_Handler_process_carddav_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_change_password.html">Hm_Handler_process_change_password</a></li>
 				<li><a href="class-Hm_Handler_process_clear_special_folder.html">Hm_Handler_process_clear_special_folder</a></li>
 				<li><a href="class-Hm_Handler_process_compose_form_submit.html">Hm_Handler_process_compose_form_submit</a></li>
@@ -1038,6 +1052,7 @@
 				<li><a href="class-Hm_Handler_process_delete_ldap_contact.html">Hm_Handler_process_delete_ldap_contact</a></li>
 				<li><a href="class-Hm_Handler_process_delete_prompt_setting.html">Hm_Handler_process_delete_prompt_setting</a></li>
 				<li><a href="class-Hm_Handler_process_dynamic_login.html">Hm_Handler_process_dynamic_login</a></li>
+				<li><a href="class-Hm_Handler_process_edit_carddav_contact.html">Hm_Handler_process_edit_carddav_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_contact.html">Hm_Handler_process_edit_contact</a></li>
 				<li><a href="class-Hm_Handler_process_edit_shortcut.html">Hm_Handler_process_edit_shortcut</a></li>
 				<li><a href="class-Hm_Handler_process_enable_2fa.html">Hm_Handler_process_enable_2fa</a></li>
@@ -1063,6 +1078,7 @@
 				<li><a href="class-Hm_Handler_process_ldap_auth_settings.html">Hm_Handler_process_ldap_auth_settings</a></li>
 				<li><a href="class-Hm_Handler_process_ldap_fields.html">Hm_Handler_process_ldap_fields</a></li>
 				<li><a href="class-Hm_Handler_process_list_style_setting.html">Hm_Handler_process_list_style_setting</a></li>
+				<li><a href="class-Hm_Handler_process_mailto_handler_setting.html">Hm_Handler_process_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Handler_process_msg_part_icons.html">Hm_Handler_process_msg_part_icons</a></li>
 				<li><a href="class-Hm_Handler_process_nasa_connection.html">Hm_Handler_process_nasa_connection</a></li>
 				<li><a href="class-Hm_Handler_process_no_password_setting.html">Hm_Handler_process_no_password_setting</a></li>
@@ -1144,12 +1160,14 @@
 				<li><a href="class-Hm_IMAP_List.html">Hm_IMAP_List</a></li>
 				<li><a href="class-Hm_IMAP_Parser.html">Hm_IMAP_Parser</a></li>
 				<li><a href="class-Hm_IMAP_Struct.html">Hm_IMAP_Struct</a></li>
+				<li><a href="class-Hm_JMAP.html">Hm_JMAP</a></li>
 				<li><a href="class-Hm_LDAP_Contacts.html">Hm_LDAP_Contacts</a></li>
 				<li><a href="class-Hm_Memcached.html">Hm_Memcached</a></li>
 				<li><a href="class-Hm_Memcached_Session.html">Hm_Memcached_Session</a></li>
 				<li><a href="class-Hm_MIME_Msg.html">Hm_MIME_Msg</a></li>
 				<li><a href="class-Hm_Module_Exec.html">Hm_Module_Exec</a></li>
 				<li><a href="class-Hm_Msgs.html">Hm_Msgs</a></li>
+				<li><a href="class-Hm_Noop_Cache.html">Hm_Noop_Cache</a></li>
 				<li><a href="class-Hm_Oauth2.html">Hm_Oauth2</a></li>
 				<li><a href="class-Hm_Output.html">Hm_Output</a></li>
 				<li><a href="class-Hm_Output_.html">Hm_Output_</a></li>
@@ -1157,9 +1175,17 @@
 				<li><a href="class-Hm_Output_add_cal_event_form.html">Hm_Output_add_cal_event_form</a></li>
 				<li><a href="class-Hm_Output_add_feed_dialog.html">Hm_Output_add_feed_dialog</a></li>
 				<li><a href="class-Hm_Output_add_imap_server_dialog.html">Hm_Output_add_imap_server_dialog</a></li>
+				<li><a href="class-Hm_Output_add_jmap_server_dialog.html">Hm_Output_add_jmap_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_message_contacts.html">Hm_Output_add_message_contacts</a></li>
 				<li><a href="class-Hm_Output_add_pop3_server_dialog.html">Hm_Output_add_pop3_server_dialog</a></li>
 				<li><a href="class-Hm_Output_add_smtp_server_dialog.html">Hm_Output_add_smtp_server_dialog</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_end.html">Hm_Output_advanced_search_content_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_content_start.html">Hm_Output_advanced_search_content_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_content.html">Hm_Output_advanced_search_form_content</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_end.html">Hm_Output_advanced_search_form_end</a></li>
+				<li><a href="class-Hm_Output_advanced_search_form_start.html">Hm_Output_advanced_search_form_start</a></li>
+				<li><a href="class-Hm_Output_advanced_search_link.html">Hm_Output_advanced_search_link</a></li>
+				<li><a href="class-Hm_Output_advanced_search_results_table_end.html">Hm_Output_advanced_search_results_table_end</a></li>
 				<li><a href="class-Hm_Output_all_email_since_setting.html">Hm_Output_all_email_since_setting</a></li>
 				<li><a href="class-Hm_Output_all_email_source_max_setting.html">Hm_Output_all_email_source_max_setting</a></li>
 				<li><a href="class-Hm_Output_all_since_setting.html">Hm_Output_all_since_setting</a></li>
@@ -1168,6 +1194,8 @@
 				<li><a href="class-Hm_Output_auto_bcc_setting.html">Hm_Output_auto_bcc_setting</a></li>
 				<li><a href="class-Hm_Output_calendar_content.html">Hm_Output_calendar_content</a></li>
 				<li><a href="class-Hm_Output_calendar_page_link.html">Hm_Output_calendar_page_link</a></li>
+				<li><a href="class-Hm_Output_carddav_auth_settings.html">Hm_Output_carddav_auth_settings</a></li>
+				<li><a href="class-Hm_Output_carddav_contacts_form.html">Hm_Output_carddav_contacts_form</a></li>
 				<li><a href="class-Hm_Output_change_password.html">Hm_Output_change_password</a></li>
 				<li><a href="class-Hm_Output_change_password_link.html">Hm_Output_change_password_link</a></li>
 				<li><a href="class-Hm_Output_compose_form_attach.html">Hm_Output_compose_form_attach</a></li>
@@ -1198,6 +1226,7 @@
 				<li><a href="class-Hm_Output_developer_doc_link.html">Hm_Output_developer_doc_link</a></li>
 				<li><a href="class-Hm_Output_display_configured_feeds.html">Hm_Output_display_configured_feeds</a></li>
 				<li><a href="class-Hm_Output_display_configured_imap_servers.html">Hm_Output_display_configured_imap_servers</a></li>
+				<li><a href="class-Hm_Output_display_configured_jmap_servers.html">Hm_Output_display_configured_jmap_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_pop3_servers.html">Hm_Output_display_configured_pop3_servers</a></li>
 				<li><a href="class-Hm_Output_display_configured_smtp_servers.html">Hm_Output_display_configured_smtp_servers</a></li>
 				<li><a href="class-Hm_Output_display_feeds_status.html">Hm_Output_display_feeds_status</a></li>
@@ -1225,6 +1254,7 @@
 				<li><a href="class-Hm_Output_filter_github_data.html">Hm_Output_filter_github_data</a></li>
 				<li><a href="class-Hm_Output_filter_github_event_detail.html">Hm_Output_filter_github_event_detail</a></li>
 				<li><a href="class-Hm_Output_filter_github_status.html">Hm_Output_filter_github_status</a></li>
+				<li><a href="class-Hm_Output_filter_imap_advanced_search.html">Hm_Output_filter_imap_advanced_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_folders.html">Hm_Output_filter_imap_folders</a></li>
 				<li><a href="class-Hm_Output_filter_imap_search.html">Hm_Output_filter_imap_search</a></li>
 				<li><a href="class-Hm_Output_filter_imap_status_data.html">Hm_Output_filter_imap_status_data</a></li>
@@ -1323,6 +1353,7 @@
 				<li><a href="class-Hm_Output_login_end.html">Hm_Output_login_end</a></li>
 				<li><a href="class-Hm_Output_login_start.html">Hm_Output_login_start</a></li>
 				<li><a href="class-Hm_Output_logout_menu_item.html">Hm_Output_logout_menu_item</a></li>
+				<li><a href="class-Hm_Output_mailto_handler_setting.html">Hm_Output_mailto_handler_setting</a></li>
 				<li><a href="class-Hm_Output_main_menu_content.html">Hm_Output_main_menu_content</a></li>
 				<li><a href="class-Hm_Output_main_menu_end.html">Hm_Output_main_menu_end</a></li>
 				<li><a href="class-Hm_Output_main_menu_start.html">Hm_Output_main_menu_start</a></li>
@@ -1423,7 +1454,6 @@
 				<li><a href="class-Hm_Output_wordpress_connect_section.html">Hm_Output_wordpress_connect_section</a></li>
 				<li><a href="class-Hm_Output_wordpress_folders.html">Hm_Output_wordpress_folders</a></li>
 				<li><a href="class-Hm_Output_wordpress_since_setting.html">Hm_Output_wordpress_since_setting</a></li>
-				<li><a href="class-Hm_Page_Cache.html">Hm_Page_Cache</a></li>
 				<li><a href="class-Hm_PHP_Session.html">Hm_PHP_Session</a></li>
 				<li><a href="class-Hm_PHP_Session_Data.html">Hm_PHP_Session_Data</a></li>
 				<li><a href="class-Hm_POP3.html">Hm_POP3</a></li>
@@ -1431,6 +1461,8 @@
 				<li><a href="class-Hm_POP3_List.html">Hm_POP3_List</a></li>
 				<li><a href="class-Hm_POP3_Uid_Cache.html">Hm_POP3_Uid_Cache</a></li>
 				<li><a href="class-Hm_Profiles.html">Hm_Profiles</a></li>
+				<li><a href="class-Hm_Redis.html">Hm_Redis</a></li>
+				<li><a href="class-Hm_Redis_Session.html">Hm_Redis_Session</a></li>
 				<li><a href="class-Hm_Request.html">Hm_Request</a></li>
 				<li><a href="class-Hm_Request_Key.html">Hm_Request_Key</a></li>
 				<li><a href="class-Hm_Saved_Searches.html">Hm_Saved_Searches</a></li>
@@ -1453,6 +1485,7 @@
 
 			<h3>Traits</h3>
 			<ul>
+				<li><a href="class-Hm_Cache_Base.html">Hm_Cache_Base</a></li>
 				<li><a href="class-Hm_Dispatch_Redirect.html">Hm_Dispatch_Redirect</a></li>
 				<li><a href="class-Hm_Handler_Module_Exec.html">Hm_Handler_Module_Exec</a></li>
 				<li><a href="class-Hm_Handler_Validate.html">Hm_Handler_Validate</a></li>
@@ -1490,6 +1523,7 @@
 				<li><a href="function-check_recaptcha.html">check_recaptcha</a></li>
 				<li><a href="function-checkbox_callback.html">checkbox_callback</a></li>
 				<li><a href="function-clear_existing_reply_details.html">clear_existing_reply_details</a></li>
+				<li><a href="function-combined_sort_dialog.html">combined_sort_dialog</a></li>
 				<li><a href="function-convert_html_to_text.html">convert_html_to_text</a></li>
 				<li><a href="function-create_secret.html">create_secret</a></li>
 				<li><a href="function-credentials_form.html">credentials_form</a></li>
@@ -1516,9 +1550,12 @@
 				<li><a href="function-filter_message_part.html">filter_message_part</a></li>
 				<li><a href="function-format_attachment_row.html">format_attachment_row</a></li>
 				<li><a href="function-format_data_sources.html">format_data_sources</a></li>
+				<li><a href="function-format_imap_envelope.html">format_imap_envelope</a></li>
 				<li><a href="function-format_imap_folder_section.html">format_imap_folder_section</a></li>
 				<li><a href="function-format_imap_from_fld.html">format_imap_from_fld</a></li>
 				<li><a href="function-format_imap_message_list.html">format_imap_message_list</a></li>
+				<li><a href="function-format_keyboard_action.html">format_keyboard_action</a></li>
+				<li><a href="function-format_list_headers.html">format_list_headers</a></li>
 				<li><a href="function-format_msg_html.html">format_msg_html</a></li>
 				<li><a href="function-format_msg_image.html">format_msg_image</a></li>
 				<li><a href="function-format_msg_part_row.html">format_msg_part_row</a></li>
@@ -1542,6 +1579,7 @@
 				<li><a href="function-get_imap_size.html">get_imap_size</a></li>
 				<li><a href="function-get_ini.html">get_ini</a></li>
 				<li><a href="function-get_ldap_value.html">get_ldap_value</a></li>
+				<li><a href="function-get_list_headers.html">get_list_headers</a></li>
 				<li><a href="function-get_message_list_settings.html">get_message_list_settings</a></li>
 				<li><a href="function-get_oauth2_data.html">get_oauth2_data</a></li>
 				<li><a href="function-get_outbound_msg_detail.html">get_outbound_msg_detail</a></li>
@@ -1572,6 +1610,7 @@
 				<li><a href="function-imap_move_same_server.html">imap_move_same_server</a></li>
 				<li><a href="function-imap_refresh_oauth2_token.html">imap_refresh_oauth2_token</a></li>
 				<li><a href="function-imap_sent_sources.html">imap_sent_sources</a></li>
+				<li><a href="function-imap_server_type.html">imap_server_type</a></li>
 				<li><a href="function-in_server_list.html">in_server_list</a></li>
 				<li><a href="function-interface_langs.html">interface_langs</a></li>
 				<li><a href="function-is_email_address.html">is_email_address</a></li>
@@ -1603,6 +1642,7 @@
 				<li><a href="function-prepare_imap_message_list.html">prepare_imap_message_list</a></li>
 				<li><a href="function-process_address_fld.html">process_address_fld</a></li>
 				<li><a href="function-process_imap_message_ids.html">process_imap_message_ids</a></li>
+				<li><a href="function-process_list_fld.html">process_list_fld</a></li>
 				<li><a href="function-process_move_to_arguments.html">process_move_to_arguments</a></li>
 				<li><a href="function-process_since_argument.html">process_since_argument</a></li>
 				<li><a href="function-process_site_setting.html">process_site_setting</a></li>
@@ -1611,7 +1651,6 @@
 				<li><a href="function-profile_from_compose_smtp_id.html">profile_from_compose_smtp_id</a></li>
 				<li><a href="function-profiles_by_smtp_id.html">profiles_by_smtp_id</a></li>
 				<li><a href="function-prompt_for_passhrase.html">prompt_for_passhrase</a></li>
-				<li><a href="function-propfind.html">propfind</a></li>
 				<li><a href="function-recaptcha_config.html">recaptcha_config</a></li>
 				<li><a href="function-replace_module.html">replace_module</a></li>
 				<li><a href="function-reply_format_body.html">reply_format_body</a></li>
@@ -1620,7 +1659,6 @@
 				<li><a href="function-reply_to_id.html">reply_to_id</a></li>
 				<li><a href="function-reply_to_subject.html">reply_to_subject</a></li>
 				<li><a href="function-repopulate_compose_form.html">repopulate_compose_form</a></li>
-				<li><a href="function-report.html">report</a></li>
 				<li><a href="function-safe_output_callback.html">safe_output_callback</a></li>
 				<li><a href="function-save_draft.html">save_draft</a></li>
 				<li><a href="function-save_uploaded_file.html">save_uploaded_file</a></li>
@@ -1895,6 +1933,6 @@
 </div>
 </div>
 <script src="resources/combined.js?11103d5bda05b31faaed27f8dac7ff566f7e6eef"></script>
-<script src="elementlist.js?5ffb293c84eac40a2f427d44726f886b6ec2db0e"></script>
+<script src="elementlist.js?fb449a184f7b10227b019439792a4b96da0013a8"></script>
 </body>
 </html>

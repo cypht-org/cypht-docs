@@ -117,23 +117,6 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.2fa.html">
-						2fa<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-modules.2fa.handler.html">
-						handler					</a>
-
-						</li>
-				<li>
-					<a href="package-modules.2fa.output.html">
-						output					</a>
-
-						</li>
-							</ul></li>
-				<li>
 					<a href="package-modules.account.html">
 						account<span></span>
 					</a>
@@ -150,6 +133,24 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="package-modules.advanced.html">
+						advanced<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.html">
+						search<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-modules.advanced.search.output.html">
+						output					</a>
+
+						</li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-modules.api.html">
 						api<span></span>
@@ -208,13 +209,18 @@
 
 						<ul>
 				<li>
-					<a href="package-modules.carddav.contacts.functions.html">
-						functions					</a>
+					<a href="package-modules.carddav.contacts.handler.html">
+						handler					</a>
 
 						</li>
 				<li>
-					<a href="package-modules.carddav.contacts.handler.html">
-						handler					</a>
+					<a href="package-modules.carddav.contacts.lib.html">
+						lib					</a>
+
+						</li>
+				<li>
+					<a href="package-modules.carddav.contacts.output.html">
+						output					</a>
 
 						</li>
 							</ul></li></ul></li>
@@ -913,7 +919,7 @@
 		
 		<b>Package:</b> <a href="package-framework.html">framework</a>\<a href="package-framework.api.html">api</a><br>
 
-			<b>Located at</b> <a href="source-class-Hm_API_Curl.html#9-100" title="Go to source code">api.php</a>
+			<b>Located at</b> <a href="source-class-Hm_API_Curl.html#9-109" title="Go to source code">api.php</a>
 		<br>
 	</div>
 
@@ -933,7 +939,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#16-22" title="Go to source code">__construct</a>( <span>string <var>$format</var> = <span class="php-quote">'json'</span></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#17-23" title="Go to source code">__construct</a>( <span>string <var>$format</var> = <span class="php-quote">'json'</span></span> )</code>
 
 		<div class="description short">
 			<p>Init</p>
@@ -968,7 +974,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_command">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#24-42" title="Go to source code">command</a>( <span>string <var>$url</var></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$post</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$body</var> = <span class="php-quote">''</span></span>, <span> <var>$method</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#25-43" title="Go to source code">command</a>( <span>string <var>$url</var></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$post</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$body</var> = <span class="php-quote">''</span></span>, <span> <var>$method</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Execute command</p>
@@ -1015,7 +1021,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_curl_setopt">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#44-56" title="Go to source code">curl_setopt</a>( <span>resource|false <var>$ch</var></span>, <span>string <var>$url</var></span>, <span>array <var>$headers</var></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#45-61" title="Go to source code">curl_setopt</a>( <span>resource|false <var>$ch</var></span>, <span>string <var>$url</var></span>, <span>array <var>$headers</var></span> )</code>
 
 		<div class="description short">
 			<p>Setup curl options</p>
@@ -1054,7 +1060,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_curl_setopt_post">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#58-69" title="Go to source code">curl_setopt_post</a>( <span>resource|false <var>$ch</var></span>, <span>array <var>$post</var></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#63-74" title="Go to source code">curl_setopt_post</a>( <span>resource|false <var>$ch</var></span>, <span>array <var>$post</var></span> )</code>
 
 		<div class="description short">
 			<p>Setup optional post properties</p>
@@ -1091,7 +1097,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_curl_result">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#71-86" title="Go to source code">curl_result</a>( <span>resource|false <var>$ch</var></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#76-92" title="Go to source code">curl_result</a>( <span>resource <var>$ch</var></span> )</code>
 
 		<div class="description short">
 			<p>Process a curl request result</p>
@@ -1130,7 +1136,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_format_post_data">#</a>
-		<code><a href="source-class-Hm_API_Curl.html#88-99" title="Go to source code">format_post_data</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Hm_API_Curl.html#94-108" title="Go to source code">format_post_data</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Format key value pairs into post field format</p>
@@ -1172,14 +1178,39 @@
 
 	<table class="summary properties" id="properties">
 	<caption>Properties summary</caption>
+	<tr data-order="last_status" id="$last_status">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Hm_API_Curl.html#14" title="Go to source code"><var>$last_status</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$last_status" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
 	<tr data-order="format" id="$format">
 		<td class="attributes"><code>
-			private  
+			public  
 			string
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Hm_API_Curl.html#14" title="Go to source code"><var>$format</var></a>
+				<a href="source-class-Hm_API_Curl.html#15" title="Go to source code"><var>$format</var></a>
 
 			<div class="description short">
 				
