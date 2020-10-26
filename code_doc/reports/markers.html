@@ -54,7 +54,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="../reports/errors.html">                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">3146</span>
+                                <a href="../reports/errors.html">                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">3138</span>
                                 </a>
                             </li>
                             <li>
@@ -79,7 +79,7 @@
 <div id="___" class="container-fluid">    <section class="row-fluid">
         <div class="span2 sidebar">
             <ul class="side-nav nav nav-list">
-                <li class="nav-header">Navigation</li>                    <li><a href="#modules/core/handler_modules.php"><i class="icon-file"></i>modules/core/handler_modules.php</a></li>                    <li><a href="#modules/core/output_modules.php"><i class="icon-file"></i>modules/core/output_modules.php</a></li>                    <li><a href="#modules/imap/hm-imap.php"><i class="icon-file"></i>modules/imap/hm-imap.php</a></li>                    <li><a href="#modules/pop3/modules.php"><i class="icon-file"></i>modules/pop3/modules.php</a></li>                    <li><a href="#modules/feeds/modules.php"><i class="icon-file"></i>modules/feeds/modules.php</a></li>                    <li><a href="#modules/wordpress/modules.php"><i class="icon-file"></i>modules/wordpress/modules.php</a></li>            </ul>
+                <li class="nav-header">Navigation</li>                    <li><a href="#modules/feeds/modules.php"><i class="icon-file"></i>modules/feeds/modules.php</a></li>                    <li><a href="#modules/pop3/modules.php"><i class="icon-file"></i>modules/pop3/modules.php</a></li>                    <li><a href="#modules/wordpress/modules.php"><i class="icon-file"></i>modules/wordpress/modules.php</a></li>                    <li><a href="#modules/core/output_modules.php"><i class="icon-file"></i>modules/core/output_modules.php</a></li>                    <li><a href="#modules/imap/hm-imap.php"><i class="icon-file"></i>modules/imap/hm-imap.php</a></li>                    <li><a href="#modules/core/handler_modules.php"><i class="icon-file"></i>modules/core/handler_modules.php</a></li>            </ul>
         </div>
 
         <div class="span10 offset2">
@@ -89,9 +89,27 @@
                 <li>Markers</li>
             </ul>
             <div id="marker-accordion">                        <div class="package-contents">
-                            <a name="modules/core/handler_modules.php" id="modules/core/handler_modules.php"></a>
+                            <a name="modules/feeds/modules.php" id="modules/feeds/modules.php"></a>
                             <h3>
-                            <i class="icon-file"></i>modules/core/handler_modules.php
+                            <i class="icon-file"></i>modules/feeds/modules.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>                                        <tr>
+                                            <td>TODO</td>
+                                            <td>172</td>
+                                            <td>this is pretty ugly, try to break up</td>
+                                        </tr>                                </table>
+                            </div>
+                        </div>                        <div class="package-contents">
+                            <a name="modules/pop3/modules.php" id="modules/pop3/modules.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>modules/pop3/modules.php
                                 <small style="float: right;padding-right: 10px;">2</small>
                             </h3>
                             <div>
@@ -102,12 +120,30 @@
                                         <th>Description</th>
                                     </tr>                                        <tr>
                                             <td>TODO</td>
-                                            <td>699</td>
-                                            <td>rename to make it obvious this is session only</td>
+                                            <td>78</td>
+                                            <td>add support for more message actions</td>
                                         </tr>                                        <tr>
                                             <td>TODO</td>
-                                            <td>758</td>
-                                            <td>clean this up somehow</td>
+                                            <td>115</td>
+                                            <td>see if this can be broken up into smaller functions</td>
+                                        </tr>                                </table>
+                            </div>
+                        </div>                        <div class="package-contents">
+                            <a name="modules/wordpress/modules.php" id="modules/wordpress/modules.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>modules/wordpress/modules.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>                                        <tr>
+                                            <td>TODO</td>
+                                            <td>71</td>
+                                            <td>: fix for background unread</td>
                                         </tr>                                </table>
                             </div>
                         </div>                        <div class="package-contents">
@@ -155,9 +191,9 @@
                                         </tr>                                </table>
                             </div>
                         </div>                        <div class="package-contents">
-                            <a name="modules/pop3/modules.php" id="modules/pop3/modules.php"></a>
+                            <a name="modules/core/handler_modules.php" id="modules/core/handler_modules.php"></a>
                             <h3>
-                            <i class="icon-file"></i>modules/pop3/modules.php
+                            <i class="icon-file"></i>modules/core/handler_modules.php
                                 <small style="float: right;padding-right: 10px;">2</small>
                             </h3>
                             <div>
@@ -168,48 +204,12 @@
                                         <th>Description</th>
                                     </tr>                                        <tr>
                                             <td>TODO</td>
-                                            <td>78</td>
-                                            <td>add support for more message actions</td>
+                                            <td>699</td>
+                                            <td>rename to make it obvious this is session only</td>
                                         </tr>                                        <tr>
                                             <td>TODO</td>
-                                            <td>115</td>
-                                            <td>see if this can be broken up into smaller functions</td>
-                                        </tr>                                </table>
-                            </div>
-                        </div>                        <div class="package-contents">
-                            <a name="modules/feeds/modules.php" id="modules/feeds/modules.php"></a>
-                            <h3>
-                            <i class="icon-file"></i>modules/feeds/modules.php
-                                <small style="float: right;padding-right: 10px;">1</small>
-                            </h3>
-                            <div>
-                                <table class="table markers table-bordered">
-                                    <tr>
-                                        <th>Type</th>
-                                        <th>Line</th>
-                                        <th>Description</th>
-                                    </tr>                                        <tr>
-                                            <td>TODO</td>
-                                            <td>172</td>
-                                            <td>this is pretty ugly, try to break up</td>
-                                        </tr>                                </table>
-                            </div>
-                        </div>                        <div class="package-contents">
-                            <a name="modules/wordpress/modules.php" id="modules/wordpress/modules.php"></a>
-                            <h3>
-                            <i class="icon-file"></i>modules/wordpress/modules.php
-                                <small style="float: right;padding-right: 10px;">1</small>
-                            </h3>
-                            <div>
-                                <table class="table markers table-bordered">
-                                    <tr>
-                                        <th>Type</th>
-                                        <th>Line</th>
-                                        <th>Description</th>
-                                    </tr>                                        <tr>
-                                            <td>TODO</td>
-                                            <td>71</td>
-                                            <td>: fix for background unread</td>
+                                            <td>758</td>
+                                            <td>clean this up somehow</td>
                                         </tr>                                </table>
                             </div>
                         </div>            </div>
@@ -247,7 +247,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    onOctober 26th, 2020 at 20:43.
+                    onOctober 26th, 2020 at 21:50.
                 </section>
             </section>
         </section>
