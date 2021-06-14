@@ -62,10 +62,6 @@ class Hm_Crypt extends Hm_Crypt_Base {
      * Hash a password using libsodium. Args not defined here are for backwards
      * compat usage with our built in crypto
      * @param string $password password to hash
-     * @param string $salt password salt
-     * @param string $count iterations
-     * @param string $algo hash algo to use
-     * @param string type
      * @return string
      */
     public static function hash_password($password, $salt=false, $count=false, $algo='sha512', $type='php') {

@@ -17,14 +17,16 @@ if (!defined('DEBUG_MODE')) { die(); }
  * @return array
  */
 if (!hm_exists('imap_sent_sources')) {
-function imap_sent_sources($callback, $configured, $inbox) {
+function imap_sent_sources($callback, $mod) {
+    $inbox = $mod->user_config->get('smtp_auto_bcc_setting', false);
     $sources = array();
     foreach (Hm_IMAP_List::dump() as $index => $vals) {
         if (array_key_exists('hide', $vals) && $vals['hide']) {
             continue;
         }
-        if (array_key_exists($index, $configured) && array_key_exists('sent', $configured[$index]) && $configured[$index]['sent']) {
-            $sources[] = array('callback' => $callback, 'folder' => bin2hex($configured[$index]['sent']), 'type' => 'imap', 'name' => $vals['name'], 'id' => $index);
+        $folders = get_special_folders($mod, $index);
+        if (array_key_exists('sent', $folders) && $folders['sent']) {
+            $sources[] = array('callback' => $callback, 'folder' => bin2hex($folders['sent']), 'type' => 'imap', 'name' => $vals['name'], 'id' => $index);
         }
         elseif ($inbox) {
             $sources[] = array('callback' => $callback, 'folder' => bin2hex('INBOX'), 'type' => 'imap', 'name' => $vals['name'], 'id' => $index);
@@ -173,7 +175,7 @@ function format_imap_message_list($msg_list, $output_module, $parent_list=false,
     }
     $show_icons = $output_module->get('msg_list_icons');
     $list_page = $output_module->get('list_page', 0);
-    $list_sort = $output_module->get('list_sort');
+    $list_sort = $output_module->get('list_sort', $output_module->get('default_sort_order'));
     $list_filter = $output_module->get('list_filter');
     foreach($msg_list as $msg) {
         $row_class = 'email';
@@ -212,22 +214,25 @@ function format_imap_message_list($msg_list, $output_module, $parent_list=false,
         $flags = array();
         if (!stristr($msg['flags'], 'seen')) {
             $flags[] = 'unseen';
-            $row_class .= ' unseen';
             if ($icon != 'sent') {
                 $icon = 'env_closed';
             }
+        }
+        else {
+            $row_class .= ' seen';
         }
         if (trim($msg['x_auto_bcc']) === 'cypht') {
             $from = preg_replace("/(\<.+\>)/U", '', $msg['to']);
             $icon = 'sent';
         }
-        foreach (array('attachment', 'deleted', 'flagged', 'answered') as $flag) {
+        foreach (array('attachment', 'deleted', 'flagged', 'answered', 'draft') as $flag) {
             if (stristr($msg['flags'], $flag)) {
                 $flags[] = $flag;
             }
         }
         $source = $msg['server_name'];
         $row_class .= ' '.str_replace(' ', '_', $source);
+        $row_class .= ' '.implode(' ', $flags);
         if ($msg['folder'] && hex2bin($msg['folder']) != 'INBOX') {
             $source .= '-'.preg_replace("/^INBOX.{1}/", '', hex2bin($msg['folder']));
         }
@@ -244,6 +249,11 @@ function format_imap_message_list($msg_list, $output_module, $parent_list=false,
         if (!$show_icons) {
             $icon = false;
         }
+
+        //if (in_array('draft', $flags)) {
+        //    $url = '?page=compose&list_path='.sprintf('imap_%s_%s', $msg['server_id'], $msg['folder']).'&uid='.$msg['uid'].'&imap_draft=1';
+        //}
+
         if ($style == 'news') {
             $res[$id] = message_list_row(array(
                     array('checkbox_callback', $id),
@@ -527,6 +537,35 @@ function format_msg_part_section($struct, $output_mod, $part, $dl_link, $level=0
             }
         }
     }
+    return $res;
+}}
+
+/**
+ * Format the attached images section
+ * @subpackage imap/functions
+ * @param array $struct message structure
+ * @param object $output_mod Hm_Output_Module
+ * @param string $dl_link base arguments for a download link
+ * @return string
+ */
+if (!hm_exists('format_attached_image_section')) {
+function format_attached_image_section($struct, $output_mod, $dl_link) {
+    $res = '';
+    $isThereAnyImg = false;
+    foreach ($struct as $id => $vals) {
+        if ($vals['type'] === 'image') {
+            $res .= '<div><img class="attached_image" src="?'.$dl_link.'&amp;imap_msg_part='.$output_mod->html_safe($id).'" ></div>';
+            $isThereAnyImg = true;
+        }
+        if (isset($vals['subs'])) {
+            $res .= format_attached_image_section($vals['subs'], $output_mod, $dl_link);
+        }
+    }
+
+    if ($isThereAnyImg) {
+        $res = '<div class="attached_image_box">' . $res . '</div>';
+    }
+
     return $res;
 }}
 
@@ -892,10 +931,19 @@ function get_imap_part_name($struct, $uid, $part_id, $no_default=false) {
  */
 if (!hm_exists('clear_existing_reply_details')) {
 function clear_existing_reply_details($session) {
+    $msgs = array();
+    $max = 20;
     foreach ($session->dump() as $name => $val) {
         if (substr($name, 0, 19) == 'reply_details_imap_') {
-            $session->del($name);
+            $msgs[$name] = $val['ts'];
         }
+    }
+    arsort($msgs, SORT_NUMERIC);
+    if (count($msgs) <= $max) {
+        return ;
+    }
+    foreach (array_slice($msgs, $max) as $name) {
+        $session->del($name);
     }
 }}
 
@@ -1015,6 +1063,7 @@ function format_list_headers($mod) {
             $section = ' '.$mod->html_safe($name).': ';
             foreach ($vals['email'] as $v) {
                 $sources[] = '<a href="?page=compose&compose_to='.urlencode($mod->html_safe($v)).
+                    '&compose_from='.$mod->get('msg_headers')['Delivered-To'].
                     '">'.$mod->trans('email').'</a>';
             }
             foreach ($vals['links'] as $v) {

@@ -1,0 +1,70 @@
+<?php return array (
+  'root' => 
+  array (
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
+    'aliases' => 
+    array (
+    ),
+    'reference' => 'f59c9452011aeeb89f9d8a481216fcf327f915c6',
+    'name' => 'jason-munro/cypht',
+  ),
+  'versions' => 
+  array (
+    'christian-riesen/base32' => 
+    array (
+      'pretty_version' => '1.6.0',
+      'version' => '1.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2e82dab3baa008e24a505649b0d583c31d31e894',
+    ),
+    'codeitnowin/barcode' => 
+    array (
+      'pretty_version' => '3.0.5',
+      'version' => '3.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bd140d279fc813e00f72eaa4f033186bf78b8786',
+    ),
+    'erusev/parsedown' => 
+    array (
+      'pretty_version' => '1.8.0-beta-7',
+      'version' => '1.8.0.0-beta7',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955',
+    ),
+    'ezyang/htmlpurifier' => 
+    array (
+      'pretty_version' => 'v4.13.0',
+      'version' => '4.13.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
+    ),
+    'jason-munro/cypht' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f59c9452011aeeb89f9d8a481216fcf327f915c6',
+    ),
+    'paragonie/random_compat' => 
+    array (
+      'pretty_version' => 'v2.0.19',
+      'version' => '2.0.19.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '446fc9faa5c2a9ddf65eb7121c0af7e857295241',
+    ),
+  ),
+);
+
